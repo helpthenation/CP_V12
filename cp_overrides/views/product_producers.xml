@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="cp_producer_list_from" model="ir.ui.view">
+            <field name="name">cp_producer_list_form</field>
+            <field name="model">cp_product_producer</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="description" widget="html" options="{'style-inline': true}"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="cp_producer_list_tree" model="ir.ui.view">
+            <field name="name">cp_producer_list_tree</field>
+            <field name="model">cp_product_producer</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="description"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="cp_producer_list_action" model="ir.actions.act_window">
+            <field name="name">cp_producer_actions</field>
+            <field name="res_model">cp_product_producer</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem name="producer" action="cp_producer_list_action" id="cp_producer_list_menu"
+                  parent="sale_management.menu_product_settings"/>
+
+        <record id="cp_product_attribute_view_form" model="ir.ui.view">
+            <field name="name">cp_product_attribute_view_form</field>
+            <field name="model">product.attribute</field>
+            <field name="inherit_id" ref="product.product_attribute_view_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='create_variant']" position="after">
+                    <field name="enable_product_producer" class="enable-product-producer"/>
+                </xpath>
+                <xpath expr="//field[@name='value_ids']/tree/field[@name='name']" position="after">
+                    <field name="producer" class="producer"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

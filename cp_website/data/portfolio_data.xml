@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Website page template -->
+        <record id="portfolio" model="ir.ui.view">
+            <field name="name">Portfolio</field>
+            <field name="website_id" ref="website.default_website"/>
+            <field name="type">qweb</field>
+            <field name="key">website.portfolio</field>
+            <field name="arch" type="xml">
+                <t t-name="website.portfolio">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure oe_empty">
+                            <div class="oe_structure">
+                                <section class="d-inline-block w-100 oe_custom_bg" style="background-color: rgb(156, 198, 239);">
+                                    <div class="py-5 px-4">
+                                        <section class="w-100 px-lg-5 py-5 oe_custom_bg" style="background-color: rgb(206, 231, 247);">
+                                            <div class="container-fluid">
+                                                <div class="row align-items-center">
+                                                    <section class="col-lg-2 col-md-6 col-sm-6 t_space_section">
+                                                        <div class="t_img_hover_overflow">
+                                                            <img class="img img-responsive img-fluid d-block mx-auto"
+                                                                 alt="snippets" src="/web/image/1142/usm-haller.png"
+                                                                 data-original-title="" title=""
+                                                                 aria-describedby="tooltip646784"/>
+                                                        </div>
+                                                    </section>
+                                                    <section class="t_offer_2_left_txt  col-lg-4 col-md-6 col-sm-6 t_space_section">
+                                                        <section>
+                                                            <h2>USM Haller System</h2>
+                                                        </section>
+                                                        <section class="my-2 t_top_bottom">
+                                                            <h4>Der Klassiker aus der Schweiz</h4>
+                                                        </section>
+                                                        <section class="my-4 t_top_bottom">
+                                                            <h5 class="text-capitalize">Jahrelanges Feintuning erlaubt
+                                                                uns die individuelle neubeschichtung ganz nach ihren
+                                                                Wünschen. Fast jede Konfiguration ist ab Lager möglich.
+                                                            </h5>
+                                                        </section>
+                                                        <div class="s_btn pt16 pb16 t_btn_left_center aos-init"
+                                                             data-name="Buttons" data-aos="text-left">
+                                                            <a href="#" class="btn btn-primary btn-theme"
+                                                               data-original-title="" title=""
+                                                               aria-describedby="tooltip17171">Unsere USM HAller Welt
+                                                            </a>
+                                                        </div>
+                                                    </section>
+                                                    <section class="col-lg-2 col-md-6 col-sm-6 t_space_section">
+                                                        <div class="t_img_hover_overflow">
+                                                            <img class="img img-responsive img-fluid d-block mx-auto"
+                                                                 alt="snippets" src="/web/image/1144/usm-kitos2.png"/>
+                                                        </div>
+                                                    </section>
+                                                    <section
+                                                            class="t_offer_2_left_txt  col-lg-4 col-md-6 col-sm-6 t_space_section">
+                                                        <section>
+                                                            <h2>USM Kitos System</h2>
+                                                        </section>
+                                                        <section class="my-2 t_top_bottom">
+                                                            <h5>Die Management Serie aus dem Hause USM.</h5>
+                                                        </section>
+                                                        <section class="my-4 t_top_bottom">
+                                                            <p class="text-capitalize">Präzision trifft zeitloses
+                                                                Design. Wie gewohnt: Modular anpassbar.
+                                                            </p>
+                                                        </section>
+                                                        <div class="s_btn pt16 pb16 t_btn_left_center aos-init"
+                                                             data-name="Buttons" data-aos="text-left">
+                                                            <a href="#" class="btn btn-primary btn-theme"
+                                                               data-original-title="" title=""
+                                                               aria-describedby="tooltip133353">USM Kitos Welt
+                                                            </a>
+                                                        </div>
+                                                    </section>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </section>
+                                <div class="oe_structure"/>
+                                <section class="d-inline-block w-100 offer_3_main oe_custom_bg" style="background-color: rgb(214, 239, 214);">
+                                    <div class="container">
+                                        <div class="row align-items-center t_set_res">
+                                            <div class="col-lg-6">
+                                                <section class="card t_offer_bg_1 px-5 t_offerleft_h oe_custom_bg" style="background-color: rgb(181, 214, 165);">
+                                                    <div class="row align-items-center">
+                                                        <section class="col-lg-6 col-md-6 t_offer_3_text_left">
+                                                            <h3>VITRA</h3>
+                                                            <p>Seit über 11 Jahren haben wir jedes System von vitra
+                                                                kennenlernen dürfen.
+                                                            </p>
+                                                            <p>Permanent führen wir große Mengen diverser Produktlinien.
+                                                                Gerne erstellen wir ihnen eine persönliche Empfehlung.
+                                                            </p>
+                                                            <section>
+                                                                <a href="#" class="btn btn-primary btn-theme mt32 o_default_snippet_text">
+                                                                    Mehr erfahren
+                                                                </a>
+                                                            </section>
+                                                        </section>
+                                                        <div class="col-lg-6 col-md-6 text-center">
+                                                            <div class="t_img_hover_1">
+                                                                <br/>
+                                                                <br/>
+                                                                <br/>
+                                                                <h2>JOYN System</h2>
+                                                                <br/>
+                                                                <br/>
+                                                                <img alt="snippets"
+                                                                     class="d-block img img-fluid img-responsive mx-auto"
+                                                                     src="/web/image/861/joyngebraucht.png"
+                                                                     data-original-title="" title=""
+                                                                     aria-describedby="tooltip835116"/>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                            </div>
+                                            <section class="col-lg-6">
+                                                <div class="row align-items-center mb32">
+                                                    <div class="col-lg-6 col-sm-6 col-md-6 t_top_space">
+                                                        <section class="card px-4 py-2 t_offerright_h text-center oe_custom_bg" style="background-color: rgb(181, 214, 165);">
+                                                            <div class="t_img_hover_1">
+                                                                <img class="img img-responsive img-fluid d-block mx-auto" alt="snippets" src="/web/image/1104/vitra-adhoc.png"/>
+                                                            </div>
+                                                            <section class="t_offerright_txt">
+                                                                <a href="#">
+                                                                    <h4 data-original-title="" title="" aria-describedby="tooltip199321">AD HOC System</h4>
+                                                                </a>
+                                                                <p>Der Klassiker von Citterio Design.</p>
+                                                            </section>
+                                                        </section>
+                                                    </div>
+                                                    <div class="col-lg-6 col-sm-6 col-md-6 t_top_space">
+                                                        <section
+                                                                class="card px-4 py-2 t_offerright_h text-center oe_custom_bg"
+                                                                style="background-color: rgb(148, 189, 123);">
+                                                            <div class="t_img_hover_1">
+                                                                <img class="img img-responsive img-fluid d-block mx-auto"
+                                                                     alt="snippets"
+                                                                     src="/web/image/1148/vitra-storagewall.png"
+                                                                     data-original-title="" title=""
+                                                                     aria-describedby="tooltip684082"/>
+                                                            </div>
+                                                            <section class="t_offerright_txt">
+                                                                <a href="#">
+                                                                    <h4 data-original-title="" title=""
+                                                                        aria-describedby="tooltip836332">STORAGE WALL
+                                                                    </h4>
+                                                                </a>
+                                                                <p>Modulares Staumöbelsystem</p>
+                                                            </section>
+                                                        </section>
+                                                    </div>
+                                                </div>
+                                                <div class="row align-items-center">
+                                                    <div class="col-lg-6 col-sm-6 col-md-6">
+                                                        <section
+                                                                class="card px-4 py-2 t_offerright_h text-center oe_custom_bg"
+                                                                style="background-color: rgb(181, 214, 165);">
+                                                            <div class="t_img_hover_1">
+                                                                <img class="img img-responsive img-fluid d-block mx-auto"
+                                                                     alt="snippets"
+                                                                     src="/web/image/1146/vitra-level34.png"/>
+                                                            </div>
+                                                            <section class="t_offerright_txt">
+                                                                <a href="#">
+                                                                    <h4 data-original-title="" title=""
+                                                                        aria-describedby="tooltip993543">LEVEL 34 System
+                                                                    </h4>
+                                                                </a>
+                                                                <p>Design by Werner Aislinger</p>
+                                                            </section>
+                                                        </section>
+                                                    </div>
+                                                    <div class="col-lg-6 col-sm-6 col-md-6 t_top_box_space">
+                                                        <section
+                                                                class="card t_offer_bg_5 px-4 py-2 t_offerright_h text-center oe_custom_bg"
+                                                                style="background-color: rgb(181, 214, 165);">
+                                                            <div class="t_img_hover_1">
+                                                                <img class="img img-responsive img-fluid d-block mx-auto"
+                                                                     alt="snippets"
+                                                                     src="/web/image/1150/vitra-spatio.png"/>
+                                                            </div>
+                                                            <section class="t_offerright_txt">
+                                                                <a href="#">
+                                                                    <h4 data-original-title="" title=""
+                                                                        aria-describedby="tooltip210963">SPATIO
+                                                                    </h4>
+                                                                </a>
+                                                                <p>Management System</p>
+                                                            </section>
+                                                        </section>
+                                                    </div>
+                                                </div>
+                                            </section>
+                                        </div>
+                                    </div>
+                                </section>
+                                <div class="oe_structure"/>
+                                <section class="d-inline-block w-100 bg-600 oe_custom_bg" style="">
+                                    <div class="py-5 px-4">
+                                        <section class="w-100 px-lg-5 py-5 bg-white oe_custom_bg" style="">
+                                            <div class="container-fluid">
+                                                <div class="row align-items-center">
+                                                    <section class="col-lg-2 col-md-6 col-sm-6 t_space_section">
+                                                        <div class="t_img_hover_overflow">
+                                                            <img class="img img-responsive img-fluid d-block mx-auto"
+                                                                 alt="snippets"
+                                                                 src="/web/image/1152/wilkhahn-modus.png"/>
+                                                        </div>
+                                                    </section>
+                                                    <section class="t_offer_2_left_txt  col-lg-4 col-md-6 col-sm-6 t_space_section">
+                                                        <section>
+                                                            <h2>WILKHAHN Modus</h2>
+                                                        </section>
+                                                        <section class="my-2 t_top_bottom">
+                                                            <h5>Neue Polsterung nach ihren Farbwünschen möglich.</h5>
+                                                        </section>
+                                                        <section class="my-4 t_top_bottom">
+                                                            <p class="text-capitalize o_default_snippet_text">Ein
+                                                                Klassiker unter den Drehstühlen.
+                                                            </p>
+                                                            <p class="text-capitalize">Durch seine klaren Linien sehr
+                                                                beliegt in der Innenarchitektur.
+                                                            </p>
+                                                        </section>
+                                                        <div class="s_btn pt16 pb16 t_btn_left_center aos-init"
+                                                             data-name="Buttons" data-aos="text-left">
+                                                            <a href="#"
+                                                               class="btn btn-primary btn-theme o_default_snippet_text">
+                                                                Mehr erfahren
+                                                            </a>
+                                                        </div>
+                                                    </section>
+                                                    <section class="col-lg-2 col-md-6 col-sm-6 t_space_section">
+                                                        <div class="t_img_hover_overflow">
+                                                            <img class="img img-responsive img-fluid d-block mx-auto"
+                                                                 alt="snippets" src="/web/image/1114/wilkhahn-logon.png"
+                                                                 data-original-title="" title=""
+                                                                 aria-describedby="tooltip274256"/>
+                                                        </div>
+                                                    </section>
+                                                    <section class="t_offer_2_left_txt  col-lg-4 col-md-6 col-sm-6 t_space_section">
+                                                        <section>
+                                                            <h2>WILKHAHN Logon</h2>
+                                                        </section>
+                                                        <section class="my-2 t_top_bottom">
+                                                            <h5>Hochwertige Ausführungen auch mit neuen Platten
+                                                                möglich.
+                                                            </h5>
+                                                        </section>
+                                                        <section class="my-4 t_top_bottom">
+                                                            <p class="text-capitalize">Zeitlos, schlicht und gerade
+                                                                Linien prägen diese Serie.
+                                                                <br/>
+                                                            </p>
+                                                        </section>
+                                                        <div class="s_btn pt16 pb16 t_btn_left_center aos-init" data-name="Buttons" data-aos="text-left">
+                                                            <a href="#" class="btn btn-primary btn-theme o_default_snippet_text">Mehr erfahren</a>
+                                                        </div>
+                                                    </section>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </section>
+                                <div class="oe_structure"/>
+                                <section style="background-color: rgb(255, 198, 156);" class="oe_custom_bg none aos-init" data-aos="none">
+                                    <section class="container">
+                                        <div class="row py-5">
+                                            <div class="col-lg-4 align-self-center">
+                                                <section>
+                                                    <h2 class="t_offer_title t_offer_title_b text-left">BULO M-Serie
+                                                    </h2>
+                                                </section>
+                                                <section>
+                                                    <p class="text-left py-3 o_default_snippet_text">Die M-Serie ist die
+                                                        Nr. 1 der belgischen Edelschmiede.
+                                                    </p>
+                                                    <p class="text-left py-3">Eine unglaubliche Hingabe in Qualität und
+                                                        Eleganz. Bauhausstil in Perfektion.
+                                                    </p>
+                                                </section>
+                                                <section>
+                                                    <div class="js_timer_div"/>
+                                                </section>
+                                                <section class="text-left">
+                                                    <div class="s_btn pt16 pb16 mt16 t_inline_but" data-name="Buttons">
+                                                        <a href="/start"
+                                                           class="btn btn-primary btn-theme o_default_snippet_text">Know
+                                                            more
+                                                        </a>
+                                                    </div>
+                                                </section>
+                                            </div>
+                                            <div class="align-self-center text-center col-lg-5">
+                                                <div class="t_img_hover_1">
+                                                    <img class="img img-responsive img-fluid d-block mx-auto"
+                                                         alt="snippets" src="/web/image/1154/bulo-mserie.png"
+                                                         data-original-title="" title=""
+                                                         aria-describedby="tooltip628502"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </section>
+                                <div id="myCarousel1547670449148"
+                                     class="s_carousel carousel aos-init slide s_carousel_default" data-interval="10000"
+                                     data-aos="s_carousel_default">
+                                    <ol class="carousel-indicators d-none">
+                                        <li data-target="#myCarousel1547670449148" data-slide-to="0" class="active"/>
+                                    </ol>
+                                    <div class="carousel-inner t_arrow_small">
+                                        <div class="carousel-item oe_custom_bg active" data-name="Slide"
+                                             style="background-color: rgb(206, 222, 231);">
+                                            <div class="container">
+                                                <div class="row content t_text_img_left_right t_zoom_img_effect align-items-center">
+                                                    <div class="col-lg-6 py-5 text-center">
+                                                        <div class="t_img_hover_1">
+                                                            <img class="img img-responsive img-fluid d-block mx-auto"
+                                                                 alt="snippets"
+                                                                 src="/web/image/1156/okamura-contessa.png"/>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-content col-lg-5 py-5">
+                                                        <h2 class="mb16 t_carousel_text text-black">Okamura Contessa
+                                                            II
+                                                        </h2>
+                                                        <p class="t_carousel_subtext t_slider_sub_title_text o_default_snippet_text">
+                                                            Solch einen eleganten und bis ins kleinste Detail
+                                                            perfektionierten Drehstuhl haben wir vorher noch nie
+                                                            kennenlernen dürfen.
+                                                        </p>
+                                                        <p class="t_carousel_subtext t_slider_sub_title_text">Wir sind
+                                                            Stolz darauf, der erste Stützpunkthändler in Deutschland zu
+                                                            sein.&amp;nbsp;
+                                                        </p>
+                                                        <div class="s_btn pt16 pb16 mt16" data-name="Buttons">
+                                                            <a href="/start"
+                                                               class="btn btn-primary btn-theme o_default_snippet_text">
+                                                                Mehr erfahren
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-control-prev hidden d-none"
+                                             data-target="#myCarousel1547670449148" data-slide="prev" role="img"
+                                             aria-label="Previous" title="Previous">
+                                            <span class="carousel-control-prev-icon t_left_to_right_arrow"/>
+                                            <span class="sr-only o_default_snippet_text">Zurück</span>
+                                        </div>
+                                        <div class="carousel-control-next hidden d-none"
+                                             data-target="#myCarousel1547670449148" data-slide="next" role="img"
+                                             aria-label="Next" title="Next">
+                                            <span class="carousel-control-next-icon t_left_to_right_arrow"/>
+                                            <span class="sr-only o_default_snippet_text">Weiter</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="oe_structure">
+                                <section class="py-5 t_space_style">
+                                </section>
+                                <div class="oe_structure"/>
+                                <section class="d-inline-block w-100 offer_3_main">
+                                    <div class="container">
+                                        <div class="row align-items-center t_set_res">
+                                            <div class="col-lg-6">
+                                                <section class="card bg-200 t_offer_bg_1 px-5 t_offerleft_h">
+                                                    <div class="row align-items-center">
+                                                        <section class="col-lg-6 col-md-6 t_offer_3_text_left">
+                                                            <h3>CLAUSS &amp;amp; PALACIOS Collection</h3>
+                                                            <p>profitieren Sie von unserer Erfahrung hochwertige möbel
+                                                                direkt aus der Produktion zu erwerben.
+                                                            </p>
+                                                            <section>
+                                                                <a href="#" class="btn btn-primary btn-theme mt32 o_default_snippet_text">Mehr erfahren</a>
+                                                            </section>
+                                                        </section>
+                                                        <div class="col-lg-6 col-md-6 text-center">
+                                                            <div class="t_img_hover_1">
+                                                                <img alt="snippets"
+                                                                     class="img img-responsive img-fluid d-block mx-auto"
+                                                                     src="/web/image/1178/eliftpro.jpg"/>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                            </div>
+                                            <section class="col-lg-6">
+                                                <div class="row align-items-center mb32">
+                                                    <div class="col-lg-6 col-sm-6 col-md-6 t_top_space">
+                                                        <section
+                                                                class="card bg-200 px-4 py-2 t_offerright_h text-center">
+                                                            <div class="t_img_hover_1">
+                                                                <a href="/elift-pro-schreibtisch-elektrisch">
+                                                                    <img class="img img-responsive img-fluid d-block mx-auto"
+                                                                         alt="snippets"
+                                                                         src="/web/image/1168/eliftpro.png"/>
+                                                                </a>
+                                                            </div>
+                                                            <section class="t_offerright_txt">
+                                                                <a href="/elift-pro-schreibtisch-elektrisch">eLift Pro Serie</a>
+                                                                <p>Prof. Tischgestell elektrisch Höhenverstellbar</p>
+                                                            </section>
+                                                        </section>
+                                                    </div>
+                                                    <div class="col-lg-6 col-sm-6 col-md-6 t_top_space">
+                                                        <section
+                                                                class="card bg-200 px-4 py-2 t_offerright_h text-center">
+                                                            <div class="t_img_hover_1">
+                                                                <img class="img img-responsive img-fluid d-block mx-auto"
+                                                                     alt="snippets"
+                                                                     src="/web/image/1170/CP%20Team%20Linak%20Saeule.png"/>
+                                                            </div>
+                                                            <section class="t_offerright_txt">
+                                                                <a href="#">
+                                                                </a>
+                                                                <h4 data-original-title="" title=""
+                                                                    aria-describedby="tooltip862369">Sitz- Stehlösungen&amp;nbsp;
+                                                                </h4>
+                                                                <p>Team Work Serie bis zu 16 Säulen koppelbar.</p>
+                                                            </section>
+                                                        </section>
+                                                    </div>
+                                                </div>
+                                                <div class="row align-items-center">
+                                                    <div class="col-lg-6 col-sm-6 col-md-6">
+                                                        <section
+                                                                class="card bg-200 px-4 py-2 t_offerright_h text-center">
+                                                            <div class="t_img_hover_1">
+                                                                <img class="img img-responsive img-fluid d-block mx-auto"
+                                                                     alt="snippets"
+                                                                     src="/web/image/1172/Spider%20Bench.png"/>
+                                                            </div>
+                                                            <section class="t_offerright_txt">
+                                                                <a href="#">
+                                                                    <h4 data-original-title="" title=""
+                                                                        aria-describedby="tooltip808506">Spyder Serie
+                                                                    </h4>
+                                                                </a>
+                                                                <p>Modulares Office Konzept</p>
+                                                            </section>
+                                                        </section>
+                                                    </div>
+                                                    <div class="col-lg-6 col-sm-6 col-md-6 t_top_box_space">
+                                                        <section
+                                                                class="card bg-200 t_offer_bg_5 px-4 py-2 t_offerright_h text-center">
+                                                            <div class="t_img_hover_1">
+                                                                <img class="img img-responsive img-fluid d-block mx-auto"
+                                                                     alt="snippets" src="/web/image/1174/Giro_1.jpg"/>
+                                                            </div>
+                                                            <section class="t_offerright_txt">
+                                                                <a href="#">
+                                                                </a>
+                                                                <h4 data-original-title="" title=""
+                                                                    aria-describedby="tooltip612071">Agile workplace
+                                                                    <a href="#"/>
+                                                                </h4>
+                                                                <p>Flexibilität: arbeiten wo und wie man möchte.</p>
+                                                            </section>
+                                                        </section>
+                                                    </div>
+                                                </div>
+                                            </section>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section class="py-5 t_space_style"></section>
+                            </div>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <!-- Link to website page template -->
+        <record id="portfolio_page" model="website.page">
+            <field name="name">Portfolio</field>
+            <field name="website_published" eval="True"/>
+            <field name="url">/portfolio</field>
+            <field name="view_id" ref="portfolio"/>
+            <field name="track">True</field>
+        </record>
+        <!-- Main menu record -->
+        <record id="menu_portfolio" model="website.menu">
+            <field name="name">Portfolio</field>
+            <field name="url">/portfolio</field>
+            <field name="website_id" ref="website.default_website"/>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="page_id" ref="portfolio_page"/>
+            <field name="sequence" type="int">50</field>
+        </record>
+    </data>
+</odoo>

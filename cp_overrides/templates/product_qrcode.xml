@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="cp_product_qrcode">
+        <table class="table mb-0" style="border:2px solid black;width:100%;height:4.9in;">
+            <thead>
+                <tr>
+                    <td width="50%" style="border-right:2px solid black;text-align:center;vertical-align:middle;height:200px;">
+                        <strong style="font-size:100px;line-height:1.2;" t-field="o.default_code"/>
+                    </td>
+                    <td style="text-align:center; vertical-align:middle;height:200px;">
+                        <t t-esc ="o.qr_code_generator()"/>
+                        <t t-if="o.default_code">
+                            <img style="width:150px;height:150px;" t-attf-src="data:image/*;base64,{{o.qr_code}}"/>
+                        </t>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="border-top:2px solid black;height:200px;padding:10px;" colspan="2">
+                        <p style="margin:0;"><strong style="font-size:60px;line-height:1.2;" t-field="o.name"/></p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </template>
+
+    <template id="cp_product_variants_qrcode">
+        <table class="table mb-0" style="border:2px solid black;width:100%;height:4.9in;">
+            <thead>
+                <tr>
+                    <td width="50%" style="border-right:2px solid black;text-align:center;vertical-align:middle;height:200px;">
+                        <strong style="font-size:100px;line-height:1.2;" t-field="o.default_code"/>
+                    </td>
+                    <td style="text-align:center; vertical-align:middle;height:200px;">
+                        <t t-esc ="o.qr_code_generator()"/>
+                        <t t-if="o.default_code">
+                            <img style="width:150px;height:150px;" t-attf-src="data:image/*;base64,{{o.qr_code}}"/>
+                        </t>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="border-top:2px solid black;height:200px;padding:10px;" colspan="2">
+                        <p style="margin:0;"><strong style="font-size:60px;line-height:1.2;" t-field="o.name"/></p>
+                        <div class="attributes" style="margin-top: 20px;">
+                            <t t-foreach="o.attribute_value_ids" t-as="attribute">
+                                <span>
+                                    <span style="font-size:25px;" t-field="attribute.attribute_id"/>: <strong style="font-size:25px;margin-right:20px;" t-field="attribute.name"/>
+                                </span>
+                            </t>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </template>
+
+    <template id="cp_report_qrcode_product">
+        <t t-call="web.basic_layout">
+            <div class="page" style="position:absolute;top:0;left:0;width:100%;height:100%;margin:0;padding:0;">
+                <t t-foreach="docs" t-as="o">
+                    <t t-call="cp_overrides.cp_product_qrcode">
+                        <t t-set="o" t-value="o"/>
+                    </t>
+                </t>
+            </div>
+        </t>
+    </template>
+
+    <template id="cp_report_qrcode_product_variants">
+        <t t-call="web.basic_layout">
+            <div class="page" style="position:absolute;top:0;left:0;width:100%;height:100%;margin:0;padding:0;">
+                <t t-foreach="docs" t-as="o">
+                    <t t-call="cp_overrides.cp_product_variants_qrcode">
+                        <t t-set="o" t-value="o"/>
+                    </t>
+                </t>
+            </div>
+        </t>
+    </template>
+
+</odoo>

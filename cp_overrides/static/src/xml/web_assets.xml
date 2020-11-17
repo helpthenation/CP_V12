@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <!-- Website Layout -->
+        <template id="cp_website_layout" name="cp_website_layout" inherit_id="website.layout">
+            <xpath expr="." position="inside">
+                <link rel="stylesheet" type="text/scss" href="/cp_overrides/static/src/css/cp_ebay_tpl.css" />
+            </xpath>
+        </template>
+
+        <!-- Website Assets Backend/Frontend -->
+        <template id="cp_assets_backend" name="cp_assets_backend" inherit_id="website.assets_backend">
+            <xpath expr="//link[last()]" position="after">
+                <script type="text/javascript" src="/cp_overrides/static/src/js/toggle_product_producer.js"></script>
+                <script type="text/javascript" src="/cp_overrides/static/src/js/assets_backend.js"/>
+                <link rel="stylesheet" type="text/css" href="/cp_overrides/static/src/css/tablet.css" />
+            </xpath>
+        </template>
+        <template id="cp_assets_frontend" name="cp_assets_frontend" inherit_id="website.assets_frontend">
+            <xpath expr="//link[last()]" position="after">
+                <link rel="stylesheet" type="text/scss" href="/cp_overrides/static/src/scss/assets_frontend.scss" />
+            </xpath>
+        </template>
+
+        <template id="cp_frontend_layout" name="cp_frontend_layout" inherit_id="portal.frontend_layout">
+            <xpath expr="//meta[@name='keywords']" position="after">
+                <meta name="google-site-verification" content="jpjj-JayrgbxY45glgdMVGazpuYfb8XRTDFWPMWhqjI" />
+
+                <!-- CookieNotice Widget -->
+                <link rel="stylesheet" type="text/css" href="/cp_overrides/static/src/css/cookieconsent.min.css" />
+                <script type="text/javascript" src="/cp_overrides/static/src/js/cookieconsent.min.js"></script>
+
+                <!-- Google Tag Manager -->
+                <script type="text/javascript">
+                    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&amp;l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-MG2QCQH');
+                </script>
+                <!-- End Google Tag Manager -->
+
+                <script type="text/javascript">
+                    (function () {
+                        var _tsid = 'X40F596FC69C2301FBA37C809BAB80089';
+                        _tsConfig = {
+                            'yOffset': '0', /* offset from page bottom */
+                            'variant': 'reviews', /* default, reviews, custom, custom_reviews */
+                            'customElementId': '', /* required for variants custom and custom_reviews */
+                            'trustcardDirection': '', /* for custom variants: topRight, topLeft, bottomRight, bottomLeft */
+                            'customBadgeWidth': '', /* for custom variants: 40 - 90 (in pixels) */
+                            'customBadgeHeight': '', /* for custom variants: 40 - 90 (in pixels) */
+                            'disableResponsive': 'false', /* deactivate responsive behaviour */
+                            'disableTrustbadge': 'false',/* deactivate trustbadge */
+                            'customCheckoutElementId': 'trustedShopsCheckout'
+                        };
+                        var _ts = document.createElement('script');
+                        _ts.type = 'text/javascript';
+                        _ts.charset = 'utf-8';
+                        _ts.async = true;
+                        _ts.src = '//widgets.trustedshops.com/js/' + _tsid + '.js';
+                        var __ts = document.getElementsByTagName('script')[0];
+                        __ts.parentNode.insertBefore(_ts, __ts);
+                    })();
+                </script>
+            </xpath>
+            <xpath expr="//div[@id='wrapwrap']" position="before">
+                <!-- Google Tag Manager (noscript) -->
+                <noscript>
+                    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MG2QCQH" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+                </noscript>
+                <!-- End Google Tag Manager (noscript) -->
+
+                <!-- CookieNotice Widget -->
+                <t t-if="website.cp_is_cookie_notice">
+                <script type="text/javascript">
+                window.addEventListener("load", function(){
+
+                    var cp_msg = String("<t t-esc="website.cp_message"/>");
+                    var cp_esc_msg = escape(cp_msg);
+                    cp_esc_msg = decodeURIComponent(cp_esc_msg);
+
+                    window.cookieconsent.initialise({
+                        "palette": {
+                            "popup": {"background": "#000"},
+                            "button": {"background": "#f1d600"}
+                        },
+                        <t t-if="website.cp_position !='static_top'">
+                        "position": "<t t-esc="website.cp_position"/>",
+                        </t>
+
+                        <t t-if="website.cp_position == 'static_top'">
+                        "position": "top",
+                        "static": true,
+                        </t>
+                        "content": {
+                            "message": cp_esc_msg,
+                            "dismiss": "<t t-esc="website.cp_btn_text"/>",
+                            "allow": "allow",
+                            "link": "<t t-esc="website.cp_policy_link_text" />",
+                            "href": "<t t-esc="website.cp_policy_url" />"
+                        }
+                    })
+                });
+                </script>
+                </t>
+            </xpath>
+        </template>
+
+        <!-- TrustedShop Widget -->
+        <template id="cp_trustedshops_confirmation" name="cp_trustedshops_confirmation" inherit_id="website_sale.confirmation">
+            <xpath expr="//div[@class='oe_cart']" position="after">
+                <div id="trustedShopsCheckout" >
+                    <div style="display:none">
+                        <span id="tsCheckoutOrderNr"><t t-esc="order.name"/></span>
+                        <span id="tsCheckoutBuyerEmail"><t t-esc="order.partner_id.email"/></span>
+                        <span id="tsCheckoutOrderAmount"><strong t-esc="order.amount_total"/></span>
+                        <span id="tsCheckoutOrderCurrency"><strong t-field="order.pricelist_id.currency_id.name"/></span>
+                        <span id="tsCheckoutOrderPaymentType"><t t-esc="order.get_portal_last_transaction().acquirer_id.name" /></span>
+                        <span id="tsCheckoutOrderEstDeliveryDate"><t t-esc="order.get_expected_delivery_date()" /></span>
+                    </div>
+                </div>
+            </xpath>
+        </template>
+        <!-- This will display the short description in product page-->
+        <template id="cp_website_product" name="cp_website_product" inherit_id="website_sale.product" priority="15">
+            <xpath expr="//h1[@t-field='product.name']" position="after">
+                <div class="o_not_editable">
+                    <t t-raw="product.description_short" class="te_prod_desc_new" />
+                </div>
+            </xpath>
+        </template>
+    </data>
+</odoo>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Website page template -->
+        <record id="rights-of-widthdrawal" model="ir.ui.view">
+            <field name="name">Widerrufsbelehrung</field>
+            <field name="website_id" ref="website.default_website"/>
+            <field name="type">qweb</field>
+            <field name="key">website.rights-of-widthdrawal</field>
+            <field name="arch" type="xml">
+                <t name="Widerrufsbelehrung" t-name="website.rights-of-widthdrawal">
+                    <t t-call="website.layout">
+                        <t t-set="pageName" t-value="'rights-of-widthdrawal'"/>
+                        <div id="wrap" class="oe_structure oe_empty">
+                            <section>
+                                <div class="container">
+                                    <div class="row s_nb_column_fixed">
+                                        <div class="col-lg-12 s_title" style="text-align: center;">
+                                            <h4 class="s_title_default t_title_default">WIDERRUFSBELEHRUNG</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section>
+                                <div class="container">
+                                    <div class="row s_nb_column_fixed">
+                                        <div class="col-lg-12 s_title" style="text-align: center;">
+                                            <h4 class="s_title_default t_title_default" style="text-align: left; ">Informationen zum Widerruf</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="s_text_block">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-12 offset-lg-1 pt32 pb32">
+                                            <p class="lead o_default_snippet_text">Widerrufsrecht für Verbraucher (Verbraucher ist jede natürliche Person, die ein Rechtsgeschäft zu Zwecken abschließt, die überwiegend weder Ihrer gewerblichen noch ihrer selbstständigen beruflichen Tätigkeit zugerechnet werden können. )</p>
+                                            <p class="lead o_default_snippet_text">
+                                                <br/>
+                                            </p>
+                                            <p class="lead o_default_snippet_text">
+                                                <br/>
+                                            </p>
+                                            <p class="lead o_default_snippet_text">
+                                                <b>Widerrufsrecht:</b>
+                                            </p>
+                                            <p class="lead o_default_snippet_text">
+                                                <br/>
+                                            </p>
+                                            <p class="lead o_default_snippet_text">Sie haben das Recht, binnen vierzehn Tagen ohne Angabe von Gründen diesen Vertrag zu widerrufen.&amp;nbsp;</p>
+                                            <p class="lead o_default_snippet_text">
+                                                <br/>
+                                            </p>
+                                            <p class="lead o_default_snippet_text">Die Widerrufsfrist beträgt vierzehn Tage ab dem Tag an dem Sie oder ein von Ihnen benannter Dritter, der nicht der Beförderer ist, die Waren in Besitz genommen haben bzw. hat.</p>
+                                            <p class="lead o_default_snippet_text">
+                                                <br/>
+                                            </p>
+                                            <p class="lead o_default_snippet_text">Um Ihr Widerrufsrecht auszuüben, müssen Sie uns (</p>
+                                            <p class="lead o_default_snippet_text">
+                                                <br/>
+                                            </p>
+                                            <p class="lead o_default_snippet_text">Clauss &amp;amp; Palacios GmbH,</p>
+                                            <p class="lead o_default_snippet_text">Würbenthaler Straße 2,</p>
+                                            <p class="lead o_default_snippet_text">71065 Sindelfingen,</p>
+                                            <p class="lead o_default_snippet_text">Telefonnummer: 07031-4676323;&amp;nbsp;</p>
+                                            <p class="lead o_default_snippet_text">Telefaxnummer: 07031-4676329,&amp;nbsp;</p>
+                                            <p class="lead o_default_snippet_text">E-Mail-Adresse: info@clauss-palacios.de</p>
+                                            <p class="lead o_default_snippet_text">
+                                                <br/>
+                                            </p>
+                                            <p class="lead o_default_snippet_text">) mittels einer eindeutigen Erklärung (z.B. ein mit der Post versandter Brief, Telefax oder E-Mail) über Ihren Entschluss, diesen Vertrag zu widerrufen, informieren. Sie können dafür das beigefügte Muster-Widerrufsformular &amp;nbsp;</p>
+                                            <p class="lead o_default_snippet_text">verwenden, das jedoch nicht vorgeschrieben ist.</p>
+                                            <p class="lead o_default_snippet_text">
+                                                <br/>
+                                            </p>
+                                            <p class="lead o_default_snippet_text">Sie können das Muster- Widerrufsformular oder eine andere eindeutige Erklärung auch auf unserer Webseite (www.ketchup-mayo-senf.de) elektronisch ausfüllen und übermitteln. &amp;nbsp;</p>
+                                            <p class="lead o_default_snippet_text">
+                                                <br/>
+                                            </p>
+                                            <p class="lead o_default_snippet_text">Machen Sie von dieser Möglichkeit Gebrauch, so werden wir Ihnen &amp;nbsp;</p>
+                                            <p class="lead o_default_snippet_text">unverzüglich (z.B. per E-Mail) eine Bestätigung über den Eingang eines solchen Widerrufs übermitteln.</p>
+                                            <p class="lead o_default_snippet_text">
+                                                <br/>
+                                            </p>
+                                            <p class="lead o_default_snippet_text">Zur Wahrung der Widerrufsfrist reicht es aus, dass Sie die Mitteilung über die Ausübung des Widerrufsrechts vor Ablauf der Widerrufsfrist absenden.</p>
+                                            <p class="lead">
+                                                <br/>
+                                            </p>
+                                            <p class="lead o_default_snippet_text">
+                                                <br/>
+                                            </p>
+                                            <p class="lead o_default_snippet_text">
+                                                <b>Folgen des Widerrufs:</b>
+                                            </p>
+                                            <p class="lead o_default_snippet_text">Wenn Sie diesen Vertrag widerrufen, haben wir Ihnen alle Zahlungen, die wir von Ihnen erhalten haben, einschließlich der Lieferkosten (mit Ausnahme der zusätzlichen Kosten, die sich daraus ergeben, dass Sie eine andere Art der Lieferung als die von uns angebotene, günstige Standardlieferung gewählt haben),</p>
+                                            <p class="lead o_default_snippet_text">unverzüglich und spätestens binnen vierzehn Tagen ab dem Tag zurückzuzahlen, an dem die Mitteilung über Ihren Widerruf dieses Vertrags bei uns eingegangen ist.&amp;nbsp;</p>
+                                            <p class="lead o_default_snippet_text">
+                                                <br/>
+                                            </p>
+                                            <p class="lead o_default_snippet_text">Für diese Rückzahlung verwenden wir dasselbe Zahlungsmittel, das Sie bei der ursprünglichen Transaktion eingesetzt haben, es sei denn, mit Ihnen wurde ausdrücklich etwas anderes vereinbart; in keinem Fall werden Ihnen wegen dieser Rückzahlung Entgelte berechnet.&amp;nbsp;</p>
+                                            <p class="lead o_default_snippet_text">
+                                                <br/>
+                                            </p>
+                                            <p class="lead o_default_snippet_text">Wir können die Rückzahlung verweigern, bis wir die Waren wieder zurückerhalten haben oder bis Sie den Nachweis erbracht haben, dass Sie die Waren zurückgesandt haben, je nachdem, welches der frühere Zeitpunkt ist.Sie haben die Waren unverzüglich und in jedem Fall spätestens binnenvierzehn Tagen ab dem Tag, an dem Sie uns über den Widerruf dieses Vertrages unterrichten, an uns zurückzusenden oder zu übergeben.&amp;nbsp;</p>
+                                            <p class="lead o_default_snippet_text">Die Frist ist gewahrt, wenn Sie die Waren vor Ablauf der Frist von vierzehn Tagen absenden.</p>
+                                            <p class="lead o_default_snippet_text">
+                                                <br/>
+                                            </p>
+                                            <p class="lead o_default_snippet_text">Sie tragen die unmittelbaren Kosten der Rücksendung der Waren.</p>
+                                            <p class="lead o_default_snippet_text">
+                                                <br/>
+                                            </p>
+                                            <p class="lead">Sie müssen für einen etwaigen Wertverlust der Waren nur aufkommen, wenn dieser Wertverlust auf einen zur Prüfung der Beschaffenheit, Eigenschaften und Funktionsweise der Waren nicht notwendigen Umgang mit ihnen zurückzuführen ist.</p>
+                                            <p class="lead">
+                                                <br/>
+                                            </p>
+                                            <p class="lead">
+                                                <br/>
+                                            </p>
+                                            <p class="lead o_default_snippet_text">
+                                                <b>Ausschluss des Widerrufsrechtes:</b>
+                                            </p>
+                                            <p class="lead o_default_snippet_text">Das Widerrufsrecht besteht nicht bei Verträgen&amp;nbsp;</p>
+                                            <p class="lead o_default_snippet_text">
+                                                <br/>
+                                            </p>
+                                            <p class="lead o_default_snippet_text">- zur Lieferung von Waren, die nicht vorgefertigt sind und für deren Herstellung eine&amp;nbsp;</p>
+                                            <p class="lead o_default_snippet_text">individuelle Auswahl oder Bestimmung durch den Verbraucher maßgeblich ist oder&amp;nbsp;</p>
+                                            <p class="lead o_default_snippet_text">die eindeutig auf die persönlichen Bedürfnisse des Verbrauchers zugeschnitten&amp;nbsp;</p>
+                                            <p class="lead o_default_snippet_text">sind;</p>
+                                            <p class="lead o_default_snippet_text">
+                                                <br/>
+                                            </p>
+                                            <p class="lead o_default_snippet_text">- zur Lieferung von Waren, wenn diese nach der Lieferung auf Grund ihrer&amp;nbsp;</p>
+                                            <p class="lead">Beschaffenheit untrennbar mit anderen Gütern vermischt wurden.</p>
+                                            <p class="lead">
+                                                <br/>
+                                            </p>
+                                            <p class="lead">
+                                                <br/>
+                                            </p>
+                                            <p class="lead o_default_snippet_text">
+                                                <b>Download für Widerrufsformular</b>
+                                            </p>
+                                            <p class="lead">Sie als Kunde können gerne unser vorgefertiges Formular zum Widerruf hier runterladen:</p>
+                                            <p class="lead">
+                                                <br/>
+                                            </p>
+                                            <p class="lead">
+                                                <a href="/web/content/2411?unique=4e12ce423e304a1e0366a4c1fec7ee8f5f9e2741&amp;download=true" class="o_image" title="widerrufsformular.pdf" data-mimetype="application/pdf"/>
+                                                <br/>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <!-- Link to website page template -->
+        <record id="rights-of-widthdrawal_page" model="website.page">
+            <field name="name">Widerrufsbelehrung</field>
+            <field name="website_published">True</field>
+            <field name="url">/widerrufsbelehrung</field>
+            <field name="view_id" ref="rights-of-widthdrawal"/>
+        </record>
+    </data>
+</odoo>

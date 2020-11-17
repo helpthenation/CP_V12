@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <!-- Website page template -->
+        <record id="website.homepage" model="ir.ui.view" forcecreate="True">
+            <field name="name">Startseite</field>
+            <field name="website_id" ref="website.default_website"/>
+            <field name="type">qweb</field>
+            <field name="key">website.homepage</field>
+            <field name="arch" type="xml">
+                <t name="Homepage" t-name="website.homepage1">
+                    <t t-call="website.layout">
+                        <t t-set="pageName" t-value="'homepage'"/>
+                        <div id="wrap" class="oe_structure oe_empty">
+                            <section class="s_text_image aos-init oe_img_bg zoom-in pb256 oe_custom_bg" style="background-image: url(&quot;/web/image/772/main_img01.jpg&quot;); background-position: 53.4% 50.11%;" data-aos="zoom-in">
+                                <div class="container">
+                                    <div class="row aos-init align-items-end" data-aos="align-items-end">
+                                        <div class="pt16 pb16 bg-black-50 col-lg-7">
+                                            <h2 class="text-uppercase s_it_heading">
+                                                <font class="text-epsilon" style="">Gebrauchte Büromöbel, Renew oder Neu?</font>
+                                            </h2>
+                                            <div class="s_hr text-left pb32 pt8">
+                                                <hr class="border-600 aos-init s_hr_solid w-25 mr-auto s_hr_4px border-alpha aos-animate" data-aos="s_hr_4px"/>
+                                            </div>
+                                            <p>
+                                                <font class="text-white" style="">Willkommen auf Ketchup-Mayo-Senf.de, eine Marke der Clauss &amp;amp; Palacios GmbH.&amp;nbsp;</font>
+                                                <font class="text-white" style="">Erleben Sie gebrauchte,&amp;nbsp;</font>&amp;nbsp;
+                                                <span class="text-white" style="caret-color: rgb(11, 46, 89);">RENEW, &amp;nbsp;und neue Büromöbel in unserem 600qm großen OfficeLAB in Sindelfingen bei Stuttgart.</span>
+                                                <br/>
+                                                <br/>
+                                            </p>
+                                            <p>
+                                                <font class="text-epsilon" style="">Sehr gerne beraten wir Sie persönlich, damit Sie nicht aus über 1 Millionen Varianten wählen müssen.</font>
+                                            </p>
+                                            <div class="s_btn pt16 pb16 text-left aos-init" data-aos="text-left">
+                                                <a href="/kontakt"
+                                                    class="btn btn-primary"
+                                                    data-original-title=""
+                                                    title=""
+                                                    aria-describedby="tooltip662628">persönliche beratung</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <div class="oe_structure"/>
+                            <section class="py-5 t_space_style"></section>
+                            <section class="s_three_columns">
+                                <div class="container">
+                                    <div class="row d-flex align-items-stretch">
+                                        <div class="col-lg-4 col-md-4 s_col_no_bgcolor ts_img_hvr">
+                                            <div>
+                                                <div class="t_img_hover_overflow" style="background-color:#e9e9e9;">
+                                                    <a href="/gebrauchte-bueromoebel">
+                                                        <img class="card-img-top img img-responsive feature_image zoom_image"
+                                                            src="/web/image/861/joyngebraucht.png"
+                                                            alt="Odoo - Sample 3 for three columns"
+                                                            data-original-title=""
+                                                            title=""
+                                                            aria-describedby="tooltip168296"/>
+                                                    </a>
+                                                </div>
+                                                <div class="card-body">
+                                                    <p class="card-title text-center three_columns_heading">GEBRAUCHTE ARTIKEL</p>
+                                                    <p class="card-text text-center three_columns_para">2006 begann die Suche nach hochwertigen gebrauchten Artikeln europaweit.</p>
+                                                    <p class="card-text text-center three_columns_para">Nur Markenmöbel mit absolut hochwertiger Grundsubstanz durchlaufen den von uns definierten Prozeß an Kontrollen und Maßnahmen, um den optimalen Qualitätsstandard im Wiederverkauf zu bieten.
+                                                        <br/>
+                                                    </p>
+                                                    <div class="s_btn text-left pb0 pt16 text-center" data-name="Button">
+                                                        <a href="/gebrauchte-bueromoebel"
+                                                            class="btn btn-primary"
+                                                            data-original-title=""
+                                                            title=""
+                                                            aria-describedby="tooltip107894">Mehr Details</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 s_col_no_bgcolor ts_img_hvr">
+                                            <div>
+                                                <div class="t_img_hover_overflow" style="background-color:#e9e9e9;">
+                                                    <a href="/renew-bueromoebel">
+                                                        <img class="card-img-top img img-responsive feature_image zoom_image"
+                                                            src="/web/image/863/eaprenew.png"
+                                                            alt="Odoo - Sample 3 for three columns"
+                                                            data-original-title=""
+                                                            title=""
+                                                            aria-describedby="tooltip424371"/>
+                                                    </a>
+                                                </div>
+                                                <div class="card-body">
+                                                    <p class="card-title text-center three_columns_heading">"RENEW" ARTIKEL</p>
+                                                    <p class="card-text text-center three_columns_para">Die wohl nachhaltigste Art mit Möbeln umzugehen. Erlesene Markenartikel werden aufwendig von uns wieder in einen neuwertigen Zustand gebracht.</p>
+                                                    <p class="card-text text-center three_columns_para">Hierbei können Sie ihr Corporate Identity einbringen und Wünsche äußern, die eigentlich nur mit Neuware möglich sind.</p>
+                                                    <div class="s_btn text-left pb0 pt16 text-center" data-name="Button">
+                                                        <a href="/renew-bueromoebel"
+                                                            class="btn btn-primary"
+                                                            data-original-title=""
+                                                            title=""
+                                                            aria-describedby="tooltip261376">Mehr Details</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 s_col_no_bgcolor ts_img_hvr">
+                                            <div>
+                                                <div class="t_img_hover_overflow" style="background-color:#e9e9e9;">
+                                                    <a href="/neue-bueromoebel">
+                                                        <img class="card-img-top img img-responsive feature_image zoom_image" src="/web/image/865/contessaII_new.png" alt="Odoo - Sample 3 for three columns"/>
+                                                    </a>
+                                                </div>
+                                                <div class="card-body">
+                                                    <p class="card-title text-center three_columns_heading">NEUE ARTIKEL</p>
+                                                    <p class="card-text text-center three_columns_para">Ein nachhaltiges Möblierungskonzept erlaubt budgetschonend auch die Kombination mit Neumöbeln. Aus Erfahrung im Projektgeschäft selektieren wir markenunabhängig nur Produkte bester Qualität. &amp;nbsp;Umweltbewußt, werterhaltend und flexibel - Wertschätzung für Menschen in performativen Arbeitsumgebungen
+                                                        <br/>
+                                                    </p>
+                                                    <div class="s_btn text-left pb0 pt16 text-center" data-name="Button">
+                                                        <a href="/neue-bueromoebel"
+                                                            class="btn btn-primary"
+                                                            data-original-title=""
+                                                            title=""
+                                                            aria-describedby="tooltip428206">Mehr Details</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="py-5 t_space_style"></section>
+                            <div class="oe_structure"/>
+                            <section>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-6 s_col_no_bgcolor text-center col-lg-4" data-name="Box">
+                                            <section class="card rounded-5 t_pricing_box">
+                                                <h5 class="card-header four_column_title rounded-0 bg-white">BASIS ARBEITSPLATZ</h5>
+                                                <div class="card-body text-center py-4 common_border_bottom">
+                                                    <h2 class="card-title heading_price">
+                                                        <sup class="price_currency">€</sup>714
+                                                        <img class="img-fluid o_we_custom_image" src="/web/image/3512/IMG_0186.jpeg"/>
+                                                    </h2>
+                                                    <span class="cost_validity">GEBRAUCHT</span>
+                                                </div>
+                                                <ul class="list-group list-group-flush px-5 py-4">
+                                                    <li class="li_text list-unstyled py-3">160x80cm Vitra Ad Hoc Schreibtisch Platte neu Größe wählbar von 120-160cm</li>
+                                                    <li class="list-unstyled li_text py-3">VS Möbel Rollcontainer gebraucht</li>
+                                                    <li class="list-unstyled li_text py-3">Brunner Drive gebraucht</li>
+                                                    <li class="list-unstyled li_text py-3">3 OH Sideboard gebraucht</li>
+                                                    <li class="li_text list-unstyled py-3">Neupreis ca. 2380 €
+                                                        <br/>
+                                                    </li>
+                                                </ul>
+                                                <section>
+                                                    <a href="/shop/product/basis-arbeitsplatz-4168?search=arbeitsplatz"
+                                                        class="mb32 btn btn-primary"
+                                                        data-original-title=""
+                                                        title=""
+                                                        aria-describedby="tooltip94291">Zum Produkt</a>
+                                                </section>
+                                            </section>
+                                        </div>
+                                        <div class="col-md-6 col-sm-6 s_col_no_bgcolor text-center col-lg-4" data-name="Box">
+                                            <section class="card rounded-5 t_pricing_box">
+                                                <h5 class="card-header four_column_title rounded-0 bg-white">ECONOMY ARBEITSPLATZ</h5>
+                                                <div class="card-body py-4 common_border_bottom">
+                                                    <h2 class="card-title heading_price">
+                                                        <sup class="price_currency">€</sup>1249
+                                                        <img class="img-fluid o_we_custom_image" src="/web/image/3514/IMG_0192.jpeg"/>
+                                                    </h2>
+                                                    <span class="cost_validity">RENEW</span>
+                                                </div>
+                                                <ul class="list-group list-group-flush px-5 py-4">
+                                                    <li class="li_text list-unstyled py-3">160x80cm Vitra Ad Hoc Schreibtisch Platte neu Größe wählbar von 160-220cm</li>
+                                                    <li class="li_text list-unstyled py-3">Vitra Metropol Rollcontainer neu beschichtet</li>
+                                                    <li class="li_text list-unstyled py-3">Giroflex G64 neu gepolstert</li>
+                                                    <li class="li_text list-unstyled py-3">3 OH Sideboard Renew</li>
+                                                    <li class="li_text list-unstyled py-3">Neupreis ca. 3570 €
+                                                        <br/>
+                                                    </li>
+                                                </ul>
+                                                <section>
+                                                    <a href="/shop/product/5060-economy-arbeitsplatz-4169#scrollTop=0"
+                                                        class="mb32 btn btn-primary"
+                                                        data-original-title=""
+                                                        title=""
+                                                        aria-describedby="tooltip456324">Zum Produkt</a>
+                                                </section>
+                                            </section>
+                                        </div>
+                                        <div class="col-md-6  col-sm-6 s_col_no_bgcolor text-center col-lg-4" data-name="Box">
+                                            <section class="card rounded-5 t_pricing_box oe_custom_bg" style="">
+                                                <h5 class="card-header four_column_title rounded-0 bg-white">PROFESSIONAL ARBEITSPLATZ</h5>
+                                                <div class="card-body text-center py-4 common_border_bottom">
+                                                    <h2 class="card-title heading_price">
+                                                        <sup class="price_currency">€</sup>3670
+                                                        <img class="img-fluid o_we_custom_image" src="/web/image/3516/IMG_0195.jpeg"/>
+                                                    </h2>
+                                                    <span class="cost_validity">RENEW / NEU</span>
+                                                </div>
+                                                <ul class="list-group list-group-flush px-5 py-4">
+                                                    <li class="li_text list-unstyled py-3">200x90cm USM Kitos Platte neu pulverbeschichtet inkl. Bachmann Technik</li>
+                                                    <li class="list-unstyled li_text py-3">Vitra Metropol Rollcontainer neu beschichtet</li>
+                                                    <li class="li_text list-unstyled py-3">Bürostuhl Okamura Contessa II Neuware</li>
+                                                    <li class="list-unstyled li_text py-3">3 OH Sideboard Renew</li>
+                                                    <li class="list-unstyled li_text py-3">Neupreis ca. &amp;nbsp;7800 €
+                                                        <br/>
+                                                    </li>
+                                                </ul>
+                                                <section>
+                                                    <a href="/shop/product/5061-professional-arbeitsplatz-4186"
+                                                        class="mb32 btn btn-primary"
+                                                        data-original-title=""
+                                                        title=""
+                                                        aria-describedby="tooltip48094">Zum Produkt</a>
+                                                </section>
+                                            </section>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="py-5 t_space_style"></section>
+                            <section>
+                                <div class="container">
+                                    <div class="row s_nb_column_fixed">
+                                        <div class="col-lg-12 s_title" style="text-align: center;">
+                                            <h4 class="s_title_default t_title_default">GEBRAUCHTE BÜROMÖBEL - WOHER KOMMT KETCHUP-MAYO-SENF?!</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="s_text_block">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-12 pt32 pb32">
+                                            <p class="lead o_default_snippet_text">Ketchup Mayo Senf sind die klassischen Begriffe für Gebrauchte Büromöbel und noch treffender für Renew und neue Büromöbel. Oder nicht?</p>
+                                            <p class="lead o_default_snippet_text"/>
+                                            <p class="lead o_default_snippet_text">Woher kommt der Begriff Ketchup Mayo Senf und woher der Bezug zu gebrauchten Büromöbeln?</p>
+                                            <p class="lead o_default_snippet_text"/>
+                                            <p class="lead">Die Geschichte fängt im Jahr 2006 an, als wir, Eric Clauss der Jurist und Roberto Palacios der IT Spezialist uns zusammen taten, um an einer Ausschreibung über 3500 gebrauchte Büromöbel teil zu nehmen. Glücklicherweise haben wir diese Ausschreibung dann gewonnen, denn eigentlich hatten wir überhaupt keine Ahnung von dem Thema. Dies hatte im Nachhinein aber mehrere Vorteile. Zum einen hat jeder von uns beiden über 10 Kg abgenommen, da durch die fehlende Erfahrung alles von Hand getragen wurde, zum anderen können wir behaupten das Thema von der Pike auf gelernt zu haben.</p>
+                                            <p class="lead"/>
+                                            <p class="lead">Als der Abverkauf sehr gut funktioniert hat, wurde das Thema weiter ausgebaut. Damals wurden noch die Möbel exakt wie sie in das Lager kamen auch wieder verkauft. Da Eric ein Freund der abstrakten Kunst ist und auch Roberto selbst Musiker ist, wurde parallel eine Kunstgalerie eröffnet, die auf 500 qm viel zu hochwertige Künstler vertreten hat, als es die "Weltmetropole Sindelfingen" verstanden hat. Damals fingen wir an, die Galerie mit Designermöbeln aus unserem Fundus zu kombinieren. Dummerweise wurden die Designermöbel schneller verkauft als die Gemälde. Letzten Endes haben wir eingesehen, dass die Kunstkenner nicht in Sindelfingen verweilen, sondern eher in München, Berlin oder Hamburg zu Hause sind. Zudem wuchs das Möbel Thema immer mehr an und so mussten wir uns entscheiden, in welchen Bereich wir die maximale Kraft stecken.</p>
+                                            <p class="lead o_default_snippet_text">NIchtsdestotrotz haben wir die Zeit mit den überragenden Künstlern Jeffery Beardsall, Anton Patiño, und vielen mehr sehr genossen und bei manch einem Künstler hat sich gezeigt, dass wir den richtigen Riecher hatten.</p>
+                                            <p class="lead o_default_snippet_text">Zurück zu den gebrauchten Büromöbeln. Unser Anspruch an die Möbel und vor allem unser Wissen wuchs stetig. Daher haben wir angefangen zwei Schienen zu verfolgen. Zum einen die Designklassiker, zum anderen Systemmöbel, die wir nach Kundenwunsch anpassen können.</p>
+                                            <p class="lead o_default_snippet_text">Zur gleichen Zeit wurde auch die Sensibilität zum Thema Nachhaltigkeit in Deutschland immer größer. Für uns natürlich ein idealer Zustand, da unsere Arbeit von Anfang an 100% Nachhaltigkeit beinhaltete.</p>
+                                            <p class="lead o_default_snippet_text">Anpassbare Systemmöbel sind Möbel, deren Unterbau flexibel einsetzbar ist. Das beste Beispiel ist das Ad Hoc System von VITRA. D. h. wir nutzen das Untergestell, welches in der Regel kaum bis keine Gebrauchspuren aufweist und ergänzen es mit neuen Materialien wie die Tischplatten, oder CPU Halterungen, Akustikscreens, etc. sodass der Kunde final das Gefühl hat, für einen etwas höheren Gebrauchtpreis ein neue Büromöbel zu erhalten.</p>
+                                            <p class="lead o_default_snippet_text">Das Thema Nachhaltigkeit hat uns europaweit bekannt gemacht, sodass Facility Manager von großen Konzernen schon auf uns zukamen, da sie erfahren haben, dass es "some Germans" gibt, die es schaffen, den Maximalen Anteil ihrer hochwertigen gebrauchten Büromöbel wieder zu verwerten. Abgerundet wurde das Ganze durch einen Vermerk in deren Nachhaltigkeitsbericht, was wieder weitere Großkunden auf uns brachte.</p>
+                                            <p class="lead o_default_snippet_text">Das wohl interessanteste Projekt aber kam durch einen Konzern in Sindelfingen. Dieser hatte als Aufgabe, ca. 12000 Arbeitsplätze neu zu gestalten. Neben der klassischen Neumöbelplanung in Form von Mockups, Arbeitsgruppen und LeanAdmin Projekten kam die Idee auf, die alten Plätze so umzubauen, dass es den neuen Richtlinien und Designwünschen entspricht. Um die rechtliche Situation abzusichern wurde dann zudem noch die GS Prüfung eingefordert. Final wurden 500 Arbeitsplätze als Pilot erfolgreich umgesetzt, wodurch wir offiziell zu einem Hersteller mutiert sind.</p>
+                                            <p class="lead o_default_snippet_text"/>
+                                            <p class="lead o_default_snippet_text">Mit diesem über die Jahre angeeignetem Wissen haben wir dann begonnen die Rosinen heraus zu picken und auf der identischen Basis wie es die großen Hersteller auf dem Büromarkt auch machen Büromöbel herzustellen. Da wir keinen großen Wasserkopf finanzieren müssen und direkt am Kunden sind, können wir die meist fast identischen Waren deutlich günstiger anbieten.</p>
+                                            <p class="lead o_default_snippet_text"/>
+                                            <p class="lead o_default_snippet_text">Zudem hat die Erfahrung mit den gebrauchten Büromöbeln uns gezeigt, welche Produkte a) überhaupt eine solche Grundqualität bieten, dass man sie aufbereiten und wiederbeleben kann und b) welche so umgebaut werden können, dass sie wie neu aussehen, aber nachhaltig und wirtschaftlich sinnvoll erworben werden können. Dies ergänzt mit Neumöbeln macht für uns den besten Mix aus.</p>
+                                            <p class="lead o_default_snippet_text">Oben sehen Sie 3 Beispiele, wir wir mittlerweile Arbeitsplätze darstellen können. Preissensibel, Wirtschaftlich sinnvoll und dennoch mit der Möglichkeit auch Notfalls alles neu im Kundendesign darzustellen.</p>
+                                            <p class="lead o_default_snippet_text"/>
+                                            <p class="lead o_default_snippet_text">Office Lab:</p>
+                                            <p class="lead o_default_snippet_text">Anfang des Jahres haben wir uns dazu entschlossen, unser Lager in Sindelfingen aufzulösen und unser bestehendes Außenlager zu erweitern. Mit der gewonnenen Fläche von ca. 600qm wurde dieses Jahr mit viel Einsatz aller Mitarbeiter ein hochwertiger Showroom geschaffen, den wir nicht ohne Grund Office Lab nennen. "Lab" deshalb, weil wir Kunden die Möglichkeit bieten, ihre Wunscharbeitswelt in Form von Mockups vor der Entscheidung über meist hohe Budgets vorab zu testen und anzufassen. Zwischen diesen Kundenausstellungen zeigen wir natürlich möglichst viele unserer Möbel und Innovationen. Gerade das Thema Kabelmanagement, sowie die Vermischung von IT und Arbeitswelt kommt meistens zu kurz. Medientechnikintegration kann man am ehesten verstehen, wenn man es direkt sieht und erlebt.</p>
+                                            <p class="lead o_default_snippet_text"/>
+                                            <p class="lead o_default_snippet_text">Eigentich wollten wir ja erklären warum wir die Marke Ketchup-Mayo-Senf kreiert haben. Dazu folgende Geschichte:</p>
+                                            <p class="lead o_default_snippet_text">Einige Jahre vor der Schnapsidee mit den 3500 Möbeln gab es noch viele weitere Schnapsideen, die zum Glück nicht umgesetzt wurden. So auch eine, in der Münchner Innenstadt gleich ein halbes Kaufhaus anzumieten und dann Diskotheken, Medientreffpunkte und 24h Kaffees auf einmal zu installieren. Sehr komplexe Businesspläne haben das Thema abgerundet. Als wir dann gemerkt haben, dass es vielleicht nicht ganz schlecht wäre einen befreundeten Gastronom zu fragen, was er von unserer tollen Idee hält, antwortete dieser schlicht: "Jungs, sorry aber ihr habt keine Ahnung wie Gastronomie wirklich läuft. Entweder es ist so einfach wie Ketchup Mayo Senf, oder das Thema funktioniert nicht. Haltet es so einfach wie möglich."</p>
+                                            <p class="lead o_default_snippet_text"/>
+                                            <p class="lead o_default_snippet_text">Diese Lehre hat uns dazu bewegt die Begriffe "Ketchup Mayo Senf" als Synonym zu verwenden für einfache, schlichte erfolgreiche Prozesse. Eric vergleicht das gerne mit der modernen Möbelvariante von Kai-Zen.</p>
+                                            <p class="lead o_default_snippet_text"/>
+                                            <p class="lead">Wenn Sie auch Kunst mögen und Ketchup finden Sie hier bestimmt das Richtige:&amp;nbsp;
+                                                <a href="https://kochenkunstundketchup.de" target="_blank">Kochen, Kunst und Ketchup</a>&amp;nbsp;- Kulinarisches Lifestyle-Magazin aus Berlin
+                                            </p>
+                                            <p class="lead">Sollten Sie einfach nur gutes Ketchup suchen, dann finden Sie hier die richtige Anleitung:&amp;nbsp;
+                                                <a href="https://eatsmarter.de/ernaehrung/news/ketchup-selber-machen" target="_blank">Eat Smarter</a>&amp;nbsp;- Ketchup selber machen&amp;nbsp;
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="s_faq_collapse">
+                                <div class="container t_section_accordion">
+                                    <div class="row s_nb_column_fixed"></div>
+                                    <div class="row s_col_no_bgcolor">
+                                        <div class="col-lg-12 pt16 pb16">
+                                            <div id="myCollapse" class="accordion" role="tablist">
+                                                <div class="card bg-white">
+                                                    <a href="#"
+                                                        role="tab"
+                                                        data-toggle="collapse"
+                                                        aria-expanded="true"
+                                                        class="card-header"
+                                                        data-parent="#myCollapse"
+                                                        data-target="#myCollapseTab1547651541399"
+                                                        data-original-title=""
+                                                        title=""
+                                                        aria-describedby="tooltip667585">Gebrauchte Büromöbel - Keywords und Seomaßnahmen</a>
+                                                    <div class="collapse show" role="tabpanel" id="myCollapseTab1547651541399" style="">
+                                                        <div class="card-body">
+                                                            <p class="card-text">Leider sind auch wir gezwungen Seo Maßnahmen zu ergreifen, damit Sie uns auch in google finden. Daher entschuldigen wir uns hiermit bei allen, die sich bei manchen unserer Texte fragen "warum zum Henker schreiben die so komisch?". Das machen wir mit Absicht. Aber wenn Sie uns persönlich besuchen kommen, erhalten Sie auch gerne einen Kaffee oder auch ein Glas Umkehrosmosewasser. Dann merken sie, dass wir vieles genau so leben wie wir es schreiben, aber auch vieles ganz anders ausdrücken.</p>
+                                                            <h2 class="card-text">Gebrauchte Büromöbel &amp;lt;-H2 Überschrift</h2>
+                                                            <h3 class="card-text">Gebrauchte Büromöbel &amp;lt;-H3 Überschrift</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card bg-white">
+                                                    <a href="#"
+                                                        role="tab"
+                                                        data-toggle="collapse"
+                                                        aria-expanded="true"
+                                                        class="card-header"
+                                                        data-parent="#myCollapse"
+                                                        data-target="#myCollapseTab1547651541400"
+                                                        data-original-title=""
+                                                        title=""
+                                                        aria-describedby="tooltip95330">Verwendung von Cookies</a>
+                                                    <div class="collapse show" role="tabpanel" id="myCollapseTab1547651541400" style="">
+                                                        <div class="card-body">
+                                                            <p class="card-text">Die Website kann Cookies verwenden, um die Navigation des Benutzers auf dieser Website zu personalisieren und zu vereinfachen. Der Benutzer kann den Browser so konfigurieren, dass er über das Installieren von Cookies benachrichtigt wird und dies ablehnen kann.
+                                                                <br/>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <div class="oe_structure"/>
+                            <section class="py-5 t_space_style"></section>
+                            <div class="oe_structure"/>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <!-- Link to homepage template -->
+        <record id="website.homepage_page" model="website.page" forcecreate="True">
+            <field name="is_published">True</field>
+            <field name="is_homepage">True</field>
+            <field name="website_published">True</field>
+            <field name="url">/</field>
+            <field name="view_id" ref="website.homepage"/>
+            <field name="track">True</field>
+        </record>
+        <!-- Main menu record -->
+        <delete id="website.menu_home" model="website.menu"/>
+        <record id="menu_home" model="website.menu" forcecreate="True">
+            <field name="name">Startseite</field>
+            <field name="url">/</field>
+            <field name="website_id" ref="website.default_website"/>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="page_id" ref="website.homepage_page"/>
+            <field name="sequence" type="int">10</field>
+        </record>
+    </data>
+</odoo>

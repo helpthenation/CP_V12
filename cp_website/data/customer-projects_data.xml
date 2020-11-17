@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Website page template -->
+        <record id="customer-projects" model="ir.ui.view">
+            <field name="name">Kundenprojekte</field>
+            <field name="website_id" ref="website.default_website"/>
+            <field name="type">qweb</field>
+            <field name="key">website.customer-projects</field>
+            <field name="arch" type="xml">
+                <t name="Kundenprojekte" t-name="website.customer-projects">
+                    <t t-call="website.layout">
+                        <t t-set="pageName" t-value="'customer-projects'"/>
+                        <div id="wrap" class="oe_structure oe_empty">
+                            <section>
+                                <div class="container">
+                                    <div class="row s_nb_column_fixed">
+                                        <div class="col-lg-12 s_title pt32 pb16" style="text-align: center;">
+                                            <h4 class="s_title_default t_title_default">KUNDENBEISPIELE</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="s_three_columns bg-white oe_custom_bg pb48" style="">
+                                <div class="container">
+                                    <div class="row d-flex align-items-stretch" data-aos="align-items-stretch">
+                                        <div class="col-lg-4 col-md-4 s_col_no_bgcolor ts_img_hvr">
+                                            <div>
+                                                <div class="t_img_hover_overflow" style="background-color:#e9e9e9;">
+                                                    <img class="card-img-top img img-responsive feature_image zoom_image" src="/web/image/2474/Kundenbeispiele%20Daimler%20EAP256.jpg" alt="Odoo - Sample 3 for three columns" data-original-title="" title="" aria-describedby="tooltip903651"/>
+                                                </div>
+                                                <div class="card-body">
+                                                    <p class="card-title text-center three_columns_heading">R&amp;amp;D Daimler AG, Sindelfingen</p>
+                                                    <p class="card-text text-center three_columns_para o_default_snippet_text" style="text-align: justify; ">In einem Nachhaltigkeitsprojekt wurde für die Daimler AG Sindelfingen ein Arbeitsplatz komplett umgebaut und nach neuen Farbvorgaben und Größen entwickelt.</p>
+                                                    <p class="card-text text-center three_columns_para o_default_snippet_text" style="text-align: justify; ">
+                                                    <br/>
+                                                    </p>
+                                                    <p class="card-text text-center three_columns_para o_default_snippet_text" style="text-align: justify; ">Teil des Umbaus war unter anderem die GS Prüfung auf das neue Möbel, welche wir erfolgreich umgesetzt haben.</p>
+                                                    <p class="card-text text-center three_columns_para o_default_snippet_text" style="text-align: justify; ">
+                                                        <br/>
+                                                    </p>
+                                                    <p class="card-text text-center three_columns_para o_default_snippet_text" style="text-align: justify; ">Für den Fall einer defekten gebrauchten Säule, wurden Adapterplatten entwickelt um Säulen der neuesten Generation im Schadensfall einzusetzen. Somit wird die Lebensdauer und damit auch die CO2 Einsparung nachhaltig verlängert.</p>
+                                                    <p class="card-text text-center three_columns_para o_default_snippet_text" style="text-align: justify; ">
+                                                        <br/>
+                                                    </p>
+                                                    <p class="card-text text-center three_columns_para o_default_snippet_text" style="text-align: justify; ">Auch die Staumöbel wurden in diesem Projekt umgebaut sodass der Unterschied zu neuen Möbeln kaum erkennbar war.</p>
+                                                    <p class="card-text text-center three_columns_para o_default_snippet_text" style="text-align: justify; ">
+                                                        <br/>
+                                                    </p>
+                                                    <p class="card-text text-center three_columns_para" style="text-align: justify; ">Neu hinzu kamen ein für dieses Projekt eigens entwickeltes Kabelmanagement und Multifunktionsscreens mit akustischen Eigenschaften</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 s_col_no_bgcolor ts_img_hvr">
+                                            <div>
+                                                <div class="t_img_hover_overflow" style="background-color:#e9e9e9;">
+                                                    <img class="card-img-top img img-responsive feature_image zoom_image" src="/web/image/2476/Kundenbeispiele%20Carelution256.jpg" alt="Odoo - Sample 3 for three columns" data-original-title="" title="" aria-describedby="tooltip559121"/>
+                                                </div>
+                                                <div class="card-body">
+                                                    <p class="card-title text-center three_columns_heading">CareLutions, Stuttgart</p>
+                                                    <p class="card-text text-center three_columns_para o_default_snippet_text">Ein perfektes Beispiel für die Kombination aus Gebraucht, Renew und Neuware.</p>
+                                                    <p class="card-text text-center three_columns_para o_default_snippet_text">
+                                                        <br/>
+                                                    </p>
+                                                    <p class="card-text text-center three_columns_para o_default_snippet_text">Das Tischsystem Joyn von Vitra wurde komplett neu pulverbeschichtet und die Tischplatten erneuert. Damit gab es keine Gebrauchspuren mehr und alles was "angefasst" werden kann, war neu.</p>
+                                                    <p class="card-text text-center three_columns_para o_default_snippet_text">
+                                                        <br/>
+                                                    </p>
+                                                    <p class="card-text text-center three_columns_para o_default_snippet_text">Rollcontainer Modell Metropol von Vitra wurden ebenfalls in der gleichen Farbe pulverbeschichtet.</p>
+                                                    <p class="card-text text-center three_columns_para o_default_snippet_text">
+                                                        <br/>
+                                                    </p>
+                                                    <p class="card-text text-center three_columns_para o_default_snippet_text">Gebraucht aber in Topzustand waren die Staumöbel (Schränke, Spinde, etc.) von Vitra. Modell Storage.</p>
+                                                    <p class="card-text text-center three_columns_para o_default_snippet_text">
+                                                        <br/>
+                                                    </p>
+                                                    <p class="card-text text-center three_columns_para">Komplettiert wurde das Projekt mit neuen Bürostühlen von OKAMURA, Modell Sylphy.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 s_col_no_bgcolor ts_img_hvr">
+                                            <div>
+                                                <div class="t_img_hover_overflow" style="background-color:#e9e9e9;">
+                                                    <img class="card-img-top img img-responsive feature_image zoom_image" src="/web/image/2478/1527256.jpg" alt="Odoo - Sample 3 for three columns"/>
+                                                </div>
+                                                <div class="card-body">
+                                                    <p class="card-title text-center three_columns_heading">Virtual Identity, München</p>
+                                                    <p class="card-text text-center three_columns_para">Wir sind stolz darauf, einen Beitrag zu eines der schönsten Büros der Welt geleistet zu haben, welches den German Design Award 2019 gewonnen hat.</p>
+                                                    <p class="card-text text-center three_columns_para">
+                                                        <br/>
+                                                    </p>
+                                                    <p class="card-text text-center three_columns_para">Unser Beitrag hierbei waren die Workbenches, &amp;nbsp;Spezialanfertigungen auf Basis des Modells Ad Hoc von VITRA in Form einer zeitlosen Bench mit integriertem Kabelmanagement.</p>
+                                                    <p class="card-text text-center three_columns_para">
+                                                        <br/>
+                                                    </p>
+                                                    <p class="card-text text-center three_columns_para">Das Gesamtambiente der ehemaligen Bahnhofhalle ist perfekt für Kreativität und Flexibilität. Hier bekommt der Begriff Agile Working seine Vollendung.</p>
+                                                    <p class="card-text text-center three_columns_para">
+                                                        <br/>
+                                                    </p>
+                                                    <p class="card-text text-center three_columns_para">(Bild zeigt nicht das Projekt. Bild folgt)</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <!-- Link to website page template -->
+        <record id="customer-projects_page" model="website.page">
+            <field name="name">Kundenprojekte</field>
+            <field name="website_published">True</field>
+            <field name="url">/kundenprojekte</field>
+            <field name="view_id" ref="customer-projects"/>
+        </record>
+        <!-- Main menu record -->
+        <record id="menu_customer-projects" model="website.menu">
+            <field name="name">Kundenprojekte</field>
+            <field name="url">/kundenprojekte</field>
+            <field name="website_id" ref="website.default_website"/>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="page_id" ref="customer-projects_page"/>
+            <field name="sequence" type="int">60</field>
+        </record>
+    </data>
+</odoo>

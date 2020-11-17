@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <report
+        string="Product Qrcode"
+        id="cp_action_report_qrcode_product"
+        model="product.template"
+        report_type="qweb-pdf"
+        name="cp_overrides.cp_report_qrcode_product"
+        file="cp_overrides.cp_report_qrcode_product"
+        print_report_name="'QrCode_%s' % (object.name)"
+    />
+    <report
+        string="Product Qrcode (Variants)"
+        id="cp_action_report_qrcode_product_variants"
+        model="product.product"
+        report_type="qweb-pdf"
+        name="cp_overrides.cp_report_qrcode_product_variants"
+        file="cp_overrides.cp_report_qrcode_product_variants"
+        print_report_name="'QrCode_Variants_%s' % (object.name)"
+    />
+    
+    <record id="cp_overrides.cp_action_report_qrcode_product" model="ir.actions.report">
+        <field name="paperformat_id" ref="cp_overrides.cp_paperformat_qrcode"/>
+    </record>
+    <record id="cp_overrides.cp_action_report_qrcode_product_variants" model="ir.actions.report">
+        <field name="paperformat_id" ref="cp_overrides.cp_paperformat_qrcode"/>
+    </record>
+</odoo>

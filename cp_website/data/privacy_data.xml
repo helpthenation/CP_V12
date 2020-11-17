@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Website page template -->
+        <record id="privacy" model="ir.ui.view">
+            <field name="name">Datenschutz</field>
+            <field name="website_id" ref="website.default_website"/>
+            <field name="type">qweb</field>
+            <field name="key">website.privacy</field>
+            <field name="arch" type="xml">
+                <t name="Datenschutz" t-name="website.privacy">
+                    <t t-call="website.layout">
+                        <t t-set="pageName" t-value="'privacy'"/>
+                        <div id="wrap" class="oe_structure oe_empty">
+                            <section>
+                                <div class="container">
+                                <div class="row s_nb_column_fixed">
+                                    <div class="col-lg-12 s_title pt40 pb32" style="text-align: center;">
+                                    <h1 class="s_title_default t_title_default" style="text-align: left;">Datenschutzerklärung</h1>
+                                    </div>
+                                </div>
+                                </div>
+                            </section>
+                            <section class="s_text_block">
+                                <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-12 pt0 pb0">
+                                    <p class="lead">Verantwortliche Stelle im Sinne der Datenschutzgesetze, insbesondere der EU-Datenschutzgrundverordnung (DSGVO), ist:<br/></p>
+                                    </div>
+                                </div>
+                                </div>
+                            </section>
+                            <section>
+                                <div class="container">
+                                <div class="row s_nb_column_fixed">
+                                    <div class="col-lg-12 s_title pb24 pt0" style="text-align: center;">
+                                    <h2 class="s_title_default t_title_default" style="text-align: left;">
+                                        <font style="font-size: 14px;">Clauss &amp;amp; Palacios GmbH</font>
+                                    </h2>
+                                    </div>
+                                </div>
+                                </div>
+                            </section>
+                            <section>
+                                <div class="container">
+                                <div class="row s_nb_column_fixed">
+                                    <div class="col-lg-12 s_title" style="text-align: center;">
+                                    <h3 class="s_title_default t_title_default" style="text-align: left;">
+                                        <font style="font-size: 18px;">Ihre Betroffenenrechte</font>
+                                    </h3>
+                                    </div>
+                                </div>
+                                </div>
+                            </section>
+                            <section class="s_text_block">
+                                <div class="container">
+                                <div class="row">
+                                    <div class="pb32 pt0 col-lg-12">
+                                    <p class="lead">Unter den angegebenen Kontaktdaten unseres Datenschutzbeauftragten können Sie jederzeit folgende Rechte ausüben:<br/><br/>Auskunft über Ihre bei uns gespeicherten Daten und deren Verarbeitung, Berichtigung unrichtiger personenbezogener Daten, Löschung Ihrer bei uns gespeicherten Daten, Einschränkung der Datenverarbeitung, sofern wir Ihre Daten aufgrund gesetzlicher Pflichten noch nicht löschen dürfen, Widerspruch gegen die Verarbeitung Ihrer Daten bei uns und Datenübertragbarkeit, sofern Sie in die Datenverarbeitung eingewilligt haben oder einen Vertrag mit uns abgeschlossen haben.<br/><br/>Sofern Sie uns eine Einwilligung erteilt haben, können Sie diese jederzeit mit Wirkung für die Zukunft widerrufen.<br/><br/>Sie können sich jederzeit mit einer Beschwerde an die für Sie zuständige Aufsichtsbehörde wenden. Ihre zuständige Aufsichtsbehörde richtet sich nach dem Bundesland Ihres Wohnsitzes, Ihrer Arbeit oder der mutmaßlichen Verletzung. Eine Liste der Aufsichtsbehörden (für den nichtöffentlichen Bereich) mit Anschrift finden Sie unter: https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html.<br/></p>
+                                    </div>
+                                </div>
+                                </div>
+                            </section>
+                            <section>
+                                <div class="container">
+                                <div class="row s_nb_column_fixed">
+                                    <div class="col-lg-12 s_title" style="text-align: center;">
+                                    <h3 class="s_title_default t_title_default" style="text-align: left;">
+                                        <font style="font-size: 18px;">Zwecke der Datenverarbeitung durch die verantwortliche Stelle und Dritte</font>
+                                    </h3>
+                                    </div>
+                                </div>
+                                </div>
+                            </section>
+                            <section class="s_text_block">
+                                <div class="container">
+                                <div class="row">
+                                    <div class="pb32 col-lg-12 pt0">
+                                    <p class="lead">Wir verarbeiten Ihre personenbezogenen Daten nur zu den in dieser Datenschutzerklärung genannten Zwecken. Eine Übermittlung Ihrer persönlichen Daten an Dritte zu anderen als den genannten Zwecken findet nicht statt. Wir geben Ihre persönlichen Daten nur an Dritte weiter, wenn: Sie Ihre ausdrückliche Einwilligung dazu erteilt haben, die Verarbeitung zur Abwicklung eines Vertrags mit Ihnen erforderlich ist, die Verarbeitung zur Erfüllung einer rechtlichen Verpflichtung erforderlich ist, die Verarbeitung zur Wahrung berechtigter Interessen erforderlich ist und kein Grund zur Annahme besteht, dass Sie ein überwiegendes schutzwürdiges Interesse an der Nichtweitergabe Ihrer Daten haben.<br/></p>
+                                    </div>
+                                </div>
+                                </div>
+                            </section>
+                            <section>
+                                <div class="container">
+                                <div class="row s_nb_column_fixed">
+                                    <div class="col-lg-12 s_title" style="text-align: center;">
+                                    <h3 class="s_title_default t_title_default" style="text-align: left;">
+                                        <font style="font-size: 18px;">Cookies</font>
+                                    </h3>
+                                    </div>
+                                </div>
+                                </div>
+                            </section>
+                            <section class="s_text_block">
+                                <div class="container">
+                                <div class="row">
+                                    <div class="pb32 col-lg-12 pt0">
+                                    <p class="lead">Wie viele andere Webseiten verwenden wir auch so genannte „Cookies“. Cookies sind kleine Textdateien, die von einem Websiteserver auf Ihre Festplatte übertragen werden. Hierdurch erhalten wir automatisch bestimmte Daten wie z. B. IP-Adresse, verwendeter Browser, Betriebssystem und Ihre Verbindung zum Internet.</p>
+                                    <p class="lead">
+                                        <br/>
+                                    </p>
+                                    <p class="lead">Cookies können nicht verwendet werden, um Programme zu starten oder Viren auf einen Computer zu übertragen. Anhand der in Cookies enthaltenen Informationen können wir Ihnen die Navigation erleichtern und die korrekte Anzeige unserer Webseiten ermöglichen.<br/><br/>In keinem Fall werden die von uns erfassten Daten an Dritte weitergegeben oder ohne Ihre Einwilligung eine Verknüpfung mit personenbezogenen Daten hergestellt.<br/><br/>Natürlich können Sie unsere Website grundsätzlich auch ohne Cookies betrachten. Internet-Browser sind regelmäßig so eingestellt, dass sie Cookies akzeptieren. Im Allgemeinen können Sie die Verwendung von Cookies jederzeit über die Einstellungen Ihres Browsers deaktivieren. Bitte verwenden Sie die Hilfefunktionen Ihres Internetbrowsers, um zu erfahren, wie Sie diese Einstellungen ändern können. Bitte beachten Sie, dass einzelne Funktionen unserer Website möglicherweise nicht funktionieren, wenn Sie die Verwendung von Cookies deaktiviert haben.<br/></p>
+                                    </div>
+                                </div>
+                                </div>
+                            </section>
+                            <section>
+                                <div class="container">
+                                <div class="row s_nb_column_fixed">
+                                    <div class="col-lg-12 s_title" style="text-align: center;">
+                                    <h3 class="s_title_default t_title_default" style="text-align: left;">
+                                        <font style="font-size: 18px;">Registrierung auf unserer Webseite</font>
+                                    </h3>
+                                    </div>
+                                </div>
+                                </div>
+                            </section>
+                            <section class="s_text_block">
+                                <div class="container">
+                                <div class="row">
+                                    <div class="pb32 col-lg-12 pt0">
+                                    <p class="lead">Bei der Registrierung für die Nutzung unserer personalisierten Leistungen werden einige personenbezogene Daten erhoben, wie Name, Anschrift, Kontakt- und Kommunikationsdaten wie Telefonnummer und E-Mail-Adresse. Sind Sie bei uns registriert, können Sie auf Inhalte und Leistungen zugreifen, die wir nur registrierten Nutzern anbieten. Angemeldete Nutzer haben zudem die Möglichkeit, bei Bedarf die bei Registrierung angegebenen Daten jederzeit zu ändern oder zu löschen. Selbstverständlich erteilen wir Ihnen darüber hinaus jederzeit Auskunft über die von uns über Sie gespeicherten personenbezogenen Daten. Gerne berichtigen bzw. löschen wir diese auch auf Ihren Wunsch, soweit keine gesetzlichen Aufbewahrungspflichten entgegenstehen. Zur Kontaktaufnahme in diesem Zusammenhang nutzen Sie bitte die am Ende dieser Datenschutzerklärung angegebenen Kontaktdaten.<br/></p>
+                                    </div>
+                                </div>
+                                </div>
+                            </section>
+                            <section>
+                                <div class="container">
+                                <div class="row s_nb_column_fixed">
+                                    <div class="col-lg-12 s_title" style="text-align: center;">
+                                    <h3 class="s_title_default t_title_default" style="text-align: left;">
+                                        <font style="font-size: 18px;">SSL-Verschlüsselung</font>
+                                    </h3>
+                                    </div>
+                                </div>
+                                </div>
+                            </section>
+                            <section class="s_text_block">
+                                <div class="container">
+                                <div class="row">
+                                    <div class="pb32 pt0 col-lg-12">
+                                    <p class="lead">Um die Sicherheit Ihrer Daten bei der Übertragung zu schützen, verwenden wir dem aktuellen Stand der Technik entsprechende Verschlüsselungsverfahren (z. B. SSL) über HTTPS.<br/></p>
+                                    </div>
+                                </div>
+                                </div>
+                            </section>
+                            <section>
+                                <div class="container">
+                                <div class="row s_nb_column_fixed">
+                                    <div class="col-lg-12 s_title" style="text-align: center;">
+                                    <h3 class="s_title_default t_title_default" style="text-align: left;">
+                                        <font style="font-size: 18px;">Kommentarfunktion</font>
+                                    </h3>
+                                    </div>
+                                </div>
+                                </div>
+                            </section>
+                            <section class="s_text_block">
+                                <div class="container">
+                                <div class="row">
+                                    <div class="pb32 col-lg-12 pt0">
+                                    <p class="lead">Wenn Nutzer Kommentare auf unserer Website hinterlassen, werden neben diesen Angaben auch der Zeitpunkt ihrer Erstellung und der zuvor durch den Websitebesucher gewählte Nutzername gespeichert. Dies dient unserer Sicherheit, da wir für widerrechtliche Inhalte auf unserer Webseite belangt werden können, auch wenn diese durch Benutzer erstellt wurden.<br/></p>
+                                    </div>
+                                </div>
+                                </div>
+                            </section>
+                            <section>
+                                <div class="container">
+                                <div class="row s_nb_column_fixed">
+                                    <div class="col-lg-12 s_title" style="text-align: center;">
+                                    <h3 class="s_title_default t_title_default" style="text-align: left;">
+                                        <font style="font-size: 18px;">Newsletter</font>
+                                    </h3>
+                                    </div>
+                                </div>
+                                </div>
+                            </section>
+                            <section class="s_text_block">
+                                <div class="container">
+                                <div class="row">
+                                    <div class="pb32 col-lg-12 pt0">
+                                    <p class="lead">Auf Grundlage Ihrer ausdrücklich erteilten Einwilligung, übersenden wir Ihnen regelmäßig unseren Newsletter bzw. vergleichbare Informationen per E-Mail an Ihre angegebene E-Mail-Adresse.<br/><br/>Für den Empfang des Newsletters ist die Angabe Ihrer E-Mail-Adresse ausreichend. Bei der Anmeldung zum Bezug unseres Newsletters werden die von Ihnen angegebenen Daten ausschließlich für diesen Zweck verwendet. Abonnenten können auch über Umstände per E-Mail informiert werden, die für den Dienst oder die Registrierung relevant sind (Beispielsweise Änderungen des Newsletterangebots oder technische Gegebenheiten).<br/><br/>Für eine wirksame Registrierung benötigen wir eine valide E-Mail-Adresse. Um zu überprüfen, dass eine Anmeldung tatsächlich durch den Inhaber einer E-Mail-Adresse erfolgt, setzen wir das „Double-opt-in“-Verfahren ein. Hierzu protokollieren wir die Bestellung des Newsletters, den Versand einer Bestätigungsmail und den Eingang der hiermit angeforderten Antwort. Weitere Daten werden nicht erhoben. Die Daten werden ausschließlich für den Newsletterversand verwendet und nicht an Dritte weitergegeben.<br/><br/>Die Einwilligung zur Speicherung Ihrer persönlichen Daten und ihrer Nutzung für den Newsletterversand können Sie jederzeit widerrufen. In jedem Newsletter findet sich dazu ein entsprechender Link. Außerdem können Sie sich jederzeit auch direkt auf dieser Webseite abmelden oder uns Ihren entsprechenden Wunsch über die am Ende dieser Datenschutzhinweise angegebene Kontaktmöglichkeit mitteilen.<br/></p>
+                                    </div>
+                                </div>
+                                </div>
+                            </section>
+                            <section>
+                                <div class="container">
+                                <div class="row s_nb_column_fixed">
+                                    <div class="col-lg-12 s_title" style="text-align: center;">
+                                    <h3 class="s_title_default t_title_default" style="text-align: left;">
+                                        <font style="font-size: 18px;">Kontaktformular</font>
+                                    </h3>
+                                    </div>
+                                </div>
+                                </div>
+                            </section>
+                            <section class="s_text_block">
+                                <div class="container">
+                                <div class="row">
+                                    <div class="pb32 col-lg-12 pt0">
+                                    <p class="lead">Treten Sie bzgl. Fragen jeglicher Art per E-Mail oder Kontaktformular mit uns in Kontakt, erteilen Sie uns zum Zwecke der Kontaktaufnahme Ihre freiwillige Einwilligung. Hierfür ist die Angabe einer validen E-Mail-Adresse erforderlich. Diese dient der Zuordnung der Anfrage und der anschließenden Beantwortung derselben. Die Angabe weiterer Daten ist optional. Die von Ihnen gemachten Angaben werden zum Zwecke der Bearbeitung der Anfrage sowie für mögliche Anschlussfragen gespeichert. Nach Erledigung der von Ihnen gestellten Anfrage werden personenbezogene Daten automatisch gelöscht.<br/></p>
+                                    </div>
+                                </div>
+                                </div>
+                            </section>
+                            <section>
+                                <div class="container">
+                                <div class="row s_nb_column_fixed">
+                                    <div class="col-lg-12 s_title" style="text-align: center;">
+                                    <h3 class="s_title_default t_title_default" style="text-align: left;">
+                                        <font style="font-size: 18px;">Verwendung von Google Analytics</font>
+                                    </h3>
+                                    </div>
+                                </div>
+                                </div>
+                            </section>
+                            <section class="s_text_block">
+                                <div class="container">
+                                <div class="row">
+                                    <div class="pb32 col-lg-12 pt0">
+                                    <p class="lead">Diese Website benutzt Google Analytics, einen Webanalysedienst der Google Inc. (folgend: Google). Google Analytics verwendet sog. „Cookies“, also Textdateien, die auf Ihrem Computer gespeichert werden und die eine Analyse der Benutzung der Webseite durch Sie ermöglichen. Die durch das Cookie erzeugten Informationen über Ihre Benutzung dieser Webseite werden in der Regel an einen Server von Google in den USA übertragen und dort gespeichert. Aufgrund der Aktivierung der IP-Anonymisierung auf diesen Webseiten, wird Ihre IP-Adresse von Google jedoch innerhalb von Mitgliedstaaten der Europäischen Union oder in anderen Vertragsstaaten des Abkommens über den Europäischen Wirtschaftsraum zuvor gekürzt. Nur in Ausnahmefällen wird die volle IP-Adresse an einen Server von Google in den USA übertragen und dort gekürzt. Im Auftrag des Betreibers dieser Website wird Google diese Informationen benutzen, um Ihre Nutzung der Webseite auszuwerten, um Reports über die Webseitenaktivitäten zusammenzustellen und um weitere mit der Websitenutzung und der Internetnutzung verbundene Dienstleistungen gegenüber dem Webseitenbetreiber zu erbringen. Die im Rahmen von Google Analytics von Ihrem Browser übermittelte IP-Adresse wird nicht mit anderen Daten von Google zusammengeführt.<br/><br/>Die Zwecke der Datenverarbeitung liegen in der Auswertung der Nutzung der Website und in der Zusammenstellung von Reports über Aktivitäten auf der Website. Auf Grundlage der Nutzung der Website und des Internets sollen dann weitere verbundene Dienstleistungen erbracht werden. Die Verarbeitung beruht auf dem berechtigten Interesse des Webseitenbetreibers.<br/><br/>Sie können die Speicherung der Cookies durch eine entsprechende Einstellung Ihrer Browser-Software verhindern; wir weisen Sie jedoch darauf hin, dass Sie in diesem Fall gegebenenfalls nicht sämtliche Funktionen dieser Website vollumfänglich werden nutzen können. Sie können darüber hinaus die Erfassung der durch das Cookie erzeugten und auf Ihre Nutzung der Webseite bezogenen Daten (inkl. Ihrer IP-Adresse) an Google sowie die Verarbeitung dieser Daten durch Google verhindern, indem sie das unter dem folgenden Link verfügbare Browser-Plugin herunterladen und installieren: Browser Add On zur Deaktivierung von Google Analytics.<br/><br/>Zusätzlich oder als Alternative zum Browser-Add-On können Sie das Tracking durch Google Analytics auf unseren Seiten unterbinden, indem Sie diesen Link anklicken. Dabei wird ein Opt-Out-Cookie auf Ihrem Gerät installiert. Damit wird die Erfassung durch Google Analytics für diese Website und für diesen Browser zukünftig verhindert, so lange das Cookie in Ihrem Browser installiert bleibt.<br/></p>
+                                    </div>
+                                </div>
+                                </div>
+                            </section>
+                            <section>
+                                <div class="container">
+                                <div class="row s_nb_column_fixed">
+                                    <div class="col-lg-12 s_title" style="text-align: center;">
+                                    <h3 class="s_title_default t_title_default" style="text-align: left;">
+                                        <font style="font-size: 18px;">Verwendung von Google Maps</font>
+                                    </h3>
+                                    </div>
+                                </div>
+                                </div>
+                            </section>
+                            <section class="s_text_block">
+                                <div class="container">
+                                <div class="row">
+                                    <div class="pb32 col-lg-12 pt0">
+                                    <p class="lead">Diese Webseite verwendet Google Maps API, um geographische Informationen visuell darzustellen. Bei der Nutzung von Google Maps werden von Google auch Daten über die Nutzung der Kartenfunktionen durch Besucher erhoben, verarbeitet und genutzt. Nähere Informationen über die Datenverarbeitung durch Google können Sie den Google-Datenschutzhinweisen entnehmen. Dort können Sie im Datenschutzcenter auch Ihre persönlichen Datenschutz-Einstellungen verändern.<br/><br/>Ausführliche Anleitungen zur Verwaltung der eigenen Daten im Zusammenhang mit Google-Produkten finden Sie hier.<br/></p>
+                                    </div>
+                                </div>
+                                </div>
+                            </section>
+                            <section>
+                                <div class="container">
+                                <div class="row s_nb_column_fixed">
+                                    <div class="col-lg-12 s_title" style="text-align: center;">
+                                    <h3 class="s_title_default t_title_default" style="text-align: left;">
+                                        <font style="font-size: 18px;">Eingebettete YouTube-Videos</font>
+                                    </h3>
+                                    </div>
+                                </div>
+                                </div>
+                            </section>
+                            <section class="s_text_block">
+                                <div class="container">
+                                <div class="row">
+                                    <div class="pb32 col-lg-12 pt0">
+                                    <p class="lead">Auf einigen unserer Webseiten betten wir Youtube-Videos ein. Betreiber der entsprechenden Plugins ist die YouTube, LLC, 901 Cherry Ave., San Bruno, CA 94066, USA. Wenn Sie eine Seite mit dem YouTube-Plugin besuchen, wird eine Verbindung zu Servern von Youtube hergestellt. Dabei wird Youtube mitgeteilt, welche Seiten Sie besuchen. Wenn Sie in Ihrem Youtube-Account eingeloggt sind, kann Youtube Ihr Surfverhalten Ihnen persönlich zuzuordnen. Dies verhindern Sie, indem Sie sich vorher aus Ihrem Youtube-Account ausloggen.<br/><br/>Wird ein Youtube-Video gestartet, setzt der Anbieter Cookies ein, die Hinweise über das Nutzerverhalten sammeln.<br/><br/>Wer das Speichern von Cookies für das Google-Ad-Programm deaktiviert hat, wird auch beim Anschauen von Youtube-Videos mit keinen solchen Cookies rechnen müssen. Youtube legt aber auch in anderen Cookies nicht-personenbezogene Nutzungsinformationen ab. Möchten Sie dies verhindern, so müssen Sie das Speichern von Cookies im Browser blockieren.<br/><br/>Weitere Informationen zum Datenschutz bei „Youtube“ finden Sie in der Datenschutzerklärung des Anbieters unter: https://www.google.de/intl/de/policies/privacy/<br/></p>
+                                    </div>
+                                </div>
+                                </div>
+                            </section>
+                            <section>
+                                <div class="container">
+                                <div class="row s_nb_column_fixed">
+                                    <div class="col-lg-12 s_title" style="text-align: center;">
+                                    <h3 class="s_title_default t_title_default" style="text-align: left;">
+                                        <font style="font-size: 18px;">Einbindung des Trusted Shops Trustbadge</font>
+                                    </h3>
+                                    </div>
+                                </div>
+                                </div>
+                            </section>
+                            <section class="s_text_block">
+                                <div class="container">
+                                <div class="row">
+                                    <div class="pb32 col-lg-12 pt0">
+                                    <p class="lead">Zur Anzeige unseres Trusted Shops Gütesiegels und der gegebenenfalls gesammelten Bewertungen sowie zum Angebot der Trusted Shops Produkte für Käufer nach einer Bestellung ist auf dieser Webseite das Trusted Shops Trustbadge eingebunden.<br/><br/>Dies dient der Wahrung unserer im Rahmen einer Interessensabwägung überwiegenden berechtigten Interessen an einer optimalen Vermarktung durch Ermöglichung eines sicheren Einkaufs gemäß Art. 6 Abs. 1 S. 1 lit. f DSGVO. Das Trustbadge und die damit beworbenen Dienste sind ein Angebot der Trusted Shops GmbH, Subbelrather Str. 15C, 50823 Köln. Das Trustbadge wird im Rahmen einer Auftragsverarbeitung durch einen CDN-Anbieter (Content-Delivery-Network) zur Verfügung gestellt. Die Trusted Shops GmbH setzt auch Dienstleister aus den USA ein. Ein angemessenes Datenschutzniveau ist sichergestellt. Weitere Informationen zum Datenschutz der Trusted Shops GmbH finden Sie hier: https://www.trustedshops.de/impressum/#datenschutz<br/><br/>Bei dem Aufruf des Trustbadge speichert der Webserver automatisch ein sogenanntes Server-Logfile, das auch Ihre IP-Adresse, Datum und Uhrzeit des Abrufs, übertragene Datenmenge und den anfragenden Provider (Zugriffsdaten) enthält und den Abruf dokumentiert. Einzelne Zugriffsdaten werden für die Analyse von Sicherheitsauffälligkeiten in einer Sicherheitsdatenbank gespeichert. Die Logfiles werden spätestens 90 Tage nach Erstellung automatisch gelöscht.<br/><br/>Weitere personenbezogene Daten werden an die Trusted Shops GmbH übertragen, wenn Sie sich nach Abschluss einer Bestellung für die Nutzung von Trusted Shops Produkten entscheiden oder sich bereits für die Nutzung registriert haben. Es gilt die zwischen Ihnen und Trusted Shops getroffene vertragliche Vereinbarung. Hierfür erfolgt eine automatische Erhebung personenbezogener Daten aus den Bestelldaten. Ob Sie als Käufer bereits für eine Produktnutzung registriert ist, wird anhand eines neutralen Parameters, der per kryptologischer Einwegfunktion gehashten E-Mail-Adresse, automatisiert überprüft. Die E-Mail Adresse wird vor der Übermittlung in diesen für Trusted Shops nicht zu entschlüsselnden Hash-Wert umgerechnet. Nach Überprüfung auf einen Match, wird der Parameter automatisch gelöscht.<br/><br/>Dies ist für die Erfüllung unserer und Trusted Shops‘ überwiegender berechtigter Interessen an der Erbringung des jeweils an die konkrete Bestellung gekoppelten Käuferschutzes und der transaktionellen Bewertungsleistungen gem. Art. 6 Abs. 1 S. 1 lit. f DSGVO erforderlich. Weitere Details, auch zum Widerspruch, sind der oben und im Trustbadge verlinkten Trusted Shops Datenschutzerklärung zu entnehmen.<br/></p>
+                                    </div>
+                                </div>
+                                </div>
+                            </section>
+                            <section>
+                                <div class="container">
+                                <div class="row s_nb_column_fixed">
+                                    <div class="col-lg-12 s_title" style="text-align: center;">
+                                    <h3 class="s_title_default t_title_default" style="text-align: left;">
+                                        <font style="font-size: 18px;">Änderung unserer Datenschutzbestimmungen</font>
+                                    </h3>
+                                    </div>
+                                </div>
+                                </div>
+                            </section>
+                            <section class="s_text_block">
+                                <div class="container">
+                                <div class="row">
+                                    <div class="pb32 col-lg-12 pt0">
+                                    <p class="lead">Wir behalten uns vor, diese Datenschutzerklärung anzupassen, damit sie stets den aktuellen rechtlichen Anforderungen entspricht oder um Änderungen unserer Leistungen in der Datenschutzerklärung umzusetzen, z.B. bei der Einführung neuer Services. Für Ihren erneuten Besuch gilt dann die neue Datenschutzerklärung.<br/></p>
+                                    </div>
+                                </div>
+                                </div>
+                            </section>
+                            <section>
+                                <div class="container">
+                                <div class="row s_nb_column_fixed">
+                                    <div class="col-lg-12 s_title" style="text-align: center;">
+                                    <h3 class="s_title_default t_title_default" style="text-align: left;">
+                                        <font style="font-size: 18px;">Fragen an den Datenschutzbeauftragten</font>
+                                    </h3>
+                                    </div>
+                                </div>
+                                </div>
+                            </section>
+                            <section class="s_text_block">
+                                <div class="container">
+                                <div class="row">
+                                    <div class="pb32 col-lg-12 pt0">
+                                    <p class="lead">Bei Fragen zur Erhebung, Verarbeitung oder Nutzung Ihrer personenbezogenen Daten, bei Auskünften, Berichtigung, Einschränkung oder Löschung von Daten sowie Widerruf erteilter Einwilligungen oder Widerspruch gegen eine bestimmte Datenverwendung wenden Sie sich bitte direkt an uns über die Kontaktdaten in unserem Impressum.<br/></p>
+                                    </div>
+                                </div>
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <!-- Link to website page template -->
+        <record id="privacy_page" model="website.page">
+            <field name="name">Datenschutz</field>
+            <field name="website_published">True</field>
+            <field name="url">/datenschutz</field>
+            <field name="view_id" ref="privacy"/>
+        </record>
+    </data>
+</odoo>

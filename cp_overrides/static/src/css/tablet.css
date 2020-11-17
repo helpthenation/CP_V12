@@ -1,0 +1,50 @@
+.carousel-indicators{
+    position: unset;
+}
+.carousel-control-next-icon{
+    margin-left: 130px;
+}
+.carousel-control-prev-icon{
+    margin-right: 130px;
+}
+.carousel-item {
+    text-align: center;
+    height: 500px;
+}
+
+.tablet-image {
+    width: 50%;
+    height: 100%;
+    text-align: center;
+}
+
+.tablet-carousel-arrow {
+    top: 200px;
+}
+
+.tablet-card-header {
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+    height: 38px;
+}
+
+.tablet-accordion {
+    width: 100%;
+    height: 38px;
+    text-align: right;
+    font-size: 16px;
+    border: 0px;
+    margin: 0px 0px 0px;
+    padding: 0px;
+}
+
+.tablet-carousel {
+    width: 100%;
+    height: 38px;
+    text-align: right;
+    font-size: 16px;
+    border: 0px;
+    margin-top: 10px;
+    padding: 0px;
+}

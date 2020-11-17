@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="ebay_ext_template" model="mail.template">
+            <field name="name">eBay Template</field>
+            <field name="model_id" ref="product.model_product_template"/>
+            <field name="auto_delete" eval="True"/>
+            <field name="body_html">
+<![CDATA[
+<!--
+    Start Bootstrap - Shop Homepage (https://startbootstrap.com/template-overviews/shop-homepage)
+    * Copyright 2013-2019 Start Bootstrap
+    * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-shop-homepage/blob/master/LICENSE)
+-->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+% set use_ext_css = object.env['ir.config_parameter'].sudo().get_param('ebay_ext.ebay_enable_ext_stylesheet')
+% if use_ext_css:
+    % set ext_css_path = object.env['ir.config_parameter'].sudo().get_param('ebay_ext.ebay_external_stylesheeturl')
+    % if ext_css_path:
+<link href="${ext_css_path}" rel="stylesheet" />
+    % else:
+<div class="alert alert-danger" role="alert">
+    <h4 class="alert-heading">No stylesheet path configured!</h4>
+    <p>Please go to <mark><b><i>Settings / Sales / eBay</i></b></mark> configuration section and define the public accessible stylesheet URL to get this ebay template rendered correctly.</p>
+    <hr>
+    <p>Please note, if your stylesheet serving instance is protected from public access, you must host your stylesheet file on a public hosting provider!
+    </p>
+</div>
+    % endif
+% else:
+<link href="/ebay_ext/static/src/css/ebay_template.css" rel="stylesheet" />
+%endif
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">Ihr Shop Logo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item home active">
+                    <a class="nav-link" href="#">
+                        <i class="fa fa-home" aria-hidden="true"></i>Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item about">
+                    <a class="nav-link" href="#">
+                        <i class="fa fa-user" aria-hidden="true"></i>Über uns
+                    </a>
+                </li>
+                <li class="nav-item services">
+                    <a class="nav-link" href="#">
+                        <i class="fa fa-star" aria-hidden="true"></i>Services
+                    </a>
+                </li>
+                <li class="nav-item contact">
+                    <a class="nav-link" href="#">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>Kontakt
+                    </a>
+                </li>
+                <li class="nav-item search">
+                    <a target="_self" href="">
+                        <div class="search-button"><i class="fa fa-search"></i></div>
+                        <div class="search-field">Shop durchsuchen...</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Navigation -->
+
+<!-- Skills -->
+<div class="container-fluid hidden-xs">
+    <div class="container">
+        <div class="row skills">
+            <div class="col-sm-3"><i class="fa fa-user" aria-hidden="true"></i> <a href="#" target="_self">Kompetente Beratung</a></div>
+            <div class="col-sm-3"><i class="fa fa-truck" aria-hidden="true"></i> <a href="#" target="_self">Versand deutschlandweit</a></div>
+            <div class="col-sm-3"><i class="fa fa-refresh" aria-hidden="true"></i> <a href="#" target="_self">Geld-Zurück-Garantie</a></div>
+            <div class="col-sm-3"><i class="fa fa-star" aria-hidden="true"></i> <a href="#" target="_self">Zufriedenheitsgarantie</a></div>
+        </div>
+    </div>
+</div>
+<!-- Skills -->
+
+<!-- Slider -->
+<div class="container-fluid slider-bg hidden-xs">
+    <div class="container">
+        <div class="row">
+        <div class="slider">
+            <ul>
+                <li><img alt="" class="img-responsive" height="300" src="https://via.placeholder.com/1400x330/eeeeee/999?text=Grafik-1(1400x300)" /></li>
+                <li><img alt="" class="img-responsive" height="300" src="https://via.placeholder.com/1400x330/eeeeee/999?text=Grafik-2(1400x300)" /></li>
+                <li><img alt="" class="img-responsive" height="300" src="https://via.placeholder.com/1400x330/eeeeee/999?text=Grafik-3(1400x300)" /></li>
+            </ul>
+        </div>
+        </div>
+    </div>
+</div>
+<!-- Slider -->
+
+<!-- Content -->
+<div class="container-fluid">
+    <div class="container">
+
+        <!-- Article -->
+        <div class="row article">
+            <h1>${object.ebay_title}</h1>
+            <!-- Articlepics -->
+            <div class="col-md-6 artpic">
+                <div class="articlepics galerie">
+                    % if object.product_image_ids:
+                        % for product_image_toggle in object.product_image_ids:
+                            % if loop.first:
+                    <input name="switch" id="slide${loop.index}" class="anker slide" type="radio" checked="checked">
+                            % else:
+                    <input name="switch" id="slide${loop.index}" class="anker slide" type="radio">
+                            % endif
+                        % endfor
+                    % endif
+                    <ul>
+                        % if object.product_image_ids:
+                            % for product_image in object.product_image_ids:
+                        <li class="pic${loop.index} img slide">
+                            <img src="${product_image.ebay_image_url}" alt="${product_image.name}" />
+                        </li>
+                            % endfor
+                        % endif
+                    </ul>
+                    <!-- Thumbnails -->
+                    <div class="thumb">
+                        % if object.product_image_ids:
+                            % for product_image_thumb in object.product_image_ids:
+                        <label class="pic${loop.index} col-xs-3" for="slide${loop.index}"><span class="anker"></span>
+                            <img src="${product_image_thumb.ebay_image_url}" alt="${product_image_thumb.name}" style="width: 75px;height: 75px;" />
+                        </label>
+                            % endfor
+                        % endif
+                    </div>
+                    <!-- Thumbnails -->
+                </div>
+            </div>
+            <!-- Articlepics -->
+
+            <!-- Articledescription -->
+            <div class="col-md-6 desc">
+                <h2>Artikelbeschreibung</h2>
+                <h3>Eigenschaften</h3>
+                % if object.attribute_line_ids:
+                <ul class="row">
+                    % for attrobj in object.attribute_line_ids:
+                        % if loop.index<9:
+                            % if attrobj.attribute_id.create_variant=='no_variant' and attrobj.attribute_id.ebay_attr_is_variant==False:
+                                % if len(object.attribute_line_ids)<=4:
+                    <li class="col-md-12">
+                                % else:
+                    <li class="col-md-6">
+                                % endif
+                        <strong>${attrobj.attribute_id.name|e}:</strong>
+                                % for value in attrobj.value_ids:
+                        ${value.name|e}
+                                % endfor
+                        </li>
+                            % endif
+                        % endif
+                    % endfor
+                </ul>
+                % endif
+
+                % if object.product_variant_count > 1:
+                <h3>Varianten</h3>
+                <!-- Variants -->
+                <div class="variants">
+                    % if object.attribute_line_ids:
+                        % for attrobj in object.attribute_line_ids:
+                            % if attrobj.attribute_id.create_variant=='always' and attrobj.attribute_id.ebay_attr_is_variant==False:
+                    <h5><strong>${attrobj.attribute_id.name}</strong></h5>
+                    <p>
+                                % for value in attrobj.value_ids:
+                        <span class="var">${value.name|e}</span>
+                                % endfor
+                    </p>
+                            % elif attrobj.attribute_id.create_variant=='always' and attrobj.attribute_id.ebay_attr_is_variant==True:
+                    <h5><strong>${attrobj.attribute_id.name}</strong></h5>
+                                % for value in attrobj.value_ids:
+                                    % if loop.first:
+                    <input type="radio" name="variants" id="variant${loop.index}" checked="checked"/>
+                                    % else:
+                    <input type="radio" name="variants" id="variant${loop.index}"/>
+                                    % endif
+                    <label for="variant${loop.index}"><span class="var">${value.name|e}</span></label>
+                                % endfor
+                            % endif
+                        % endfor
+                    % endif
+
+                    % set attrloop = 1
+                    % for variant in object.product_variant_ids:
+                        % if variant.ebay_variant_listing==True:
+                    <div id="variant-content${attrloop}" class="variant-content">
+                        <h5><strong>Abmessung</strong></h5>
+                        <ul class="row">
+                            <li class="col-md-4 border-0">
+                                <strong class="mr-3">Länge:</strong>
+                                <span>${(variant.width)*100}cm</span>
+                            </li>
+                            <li class="col-md-4 border-0">
+                                <strong class="mr-3">Höhe:</strong>
+                                <span>${(variant.height)*100}cm</span>
+                            </li>
+                            <li class="col-md-4 border-0">
+                                <strong class="mr-3">Tiefe:</strong>
+                                <span>${(variant.depth)*100}cm</span>
+                            </li>
+                        </ul>
+                        <!-- Buy-Now-Box -->
+                        <div class="row buynowbox">
+                            <!-- Preis -->
+                            <div class="col-sm-6 price">
+                                <h3>nur ${'%0.2f' % variant.ebay_fixed_price|float}€</h3>
+                                <small>inkl. 19% MwSt.</small>
+                                <!-- Preis -->
+                            </div>
+                            <!-- Buttons -->
+                            <div class="col-sm-6">
+                                <!-- BUY NOW BUTTON -->
+                                <a target="_self" class="skb" href="#CenterPanelDF">Sofort-Kaufen</a>
+                                <!-- WATCH BUTTON -->
+                                <a target="_self" class="beo" href="<ebayWatchListAddLink>">
+                                    <i class="fa fa-plus-circle"></i> Artikel beobachten
+                                </a>
+                                <!-- ASK QUESTION BUTTON -->
+                                <a target="_self" class="beo" href="<ebayAskQuestionLink>">
+                                    <i class="fa fa-question-circle"></i> Frage stellen
+                                </a>
+                            </div>
+                            <!-- Buttons -->
+                        </div>
+                        <!-- Buy-Now-Box -->
+                    </div>
+                            % set attrloop = attrloop + 1
+                        % endif
+                    % endfor
+                </div>
+                <!-- Variants -->
+                % else:
+                <h3>Abmessungen</h3>
+                <ul class="row">
+                    <li class="col-md-4 border-0">
+                        <strong class="mr-3">Länge:</strong>
+                        <span>${(object.width)*100}cm</span>
+                    </li>
+                    <li class="col-md-4 border-0">
+                        <strong class="mr-3">Höhe:</strong>
+                        <span>${(object.height)*100}cm</span>
+                    </li>
+                    <li class="col-md-4 border-0">
+                        <strong class="mr-3">Tiefe:</strong>
+                        <span>${(object.depth)*100}cm</span>
+                    </li>
+                </ul>
+                <!-- Buy-Now-Box -->
+                <div class="row buynowbox">
+                    <div class="col-sm-6 price">
+                        <h3>nur ${'%0.2f' % object.ebay_fixed_price|float}€</h3>
+                        <small>inkl. 19% MwSt.</small>
+                    </div>
+                    <div class="col-sm-6">
+                        <!-- BUY NOW BUTTON -->
+                        <a class="article-buynow" href="#${object.ebay_id}" target="_self">Sofort-Kaufen</a>
+                        <!-- WATCH BUTTON -->
+                        <a class="article-buynow-lnk" href="#" target="_self"><i class="fa fa-plus-circle"></i>Artikel beobachten</a>
+                        <!-- ASK QUESTION BUTTON -->
+                        <a class="article-buynow-lnk" href="#" target="_self"><i class="fa fa-question-circle"></i> Frage stellen</a>
+                    </div>
+                </div>
+                <!-- Kaufen-Box -->
+            </div>
+            <!-- Artikelbeschreibung -->
+        </div>
+        <!-- Article -->
+
+        <!-- Tabs -->
+        <div class="tabs">
+            <input type="radio" name="tabs" id="tab1" checked="">
+            <label for="tab1"><span>Beschreibung</span></label>
+            <input type="radio" name="tabs" id="tab2">
+            <label for="tab2"><span>Kaufabwicklung</span></label>
+            <input type="radio" name="tabs" id="tab3">
+            <label for="tab3"><span>Versand</span></label>
+
+            <div id="tab-content1" class="tab-content">
+                <h2>${object.ebay_title}</h2>
+                %if object.ebay_description:
+                ${object.ebay_description|safe}
+                % endif
+            </div>
+            <div id="tab-content2" class="tab-content">
+                <h2>Hinweise zur Zahlung</h2>
+                <blockquote>Kaufen Sie bitte zuerst alle Artikel und führen Sie danach die Kaufabwicklung durch.<br />
+                Nur so ist es uns möglich, die Artikel zu einer Sammellieferung zusammen zu fassenund Ihnen unnötige Versandkosten zu ersparen.</blockquote>
+                <blockquote>Wenn Sie mit PayPal bezahlen, wird die Lieferadresse die in Ihrem PayPal Konto hinterlegt ist, als gültige Lieferadresse an uns übertragen (<kbd>PayPal-Käuferschutz</kbd>).<br />
+                <mark>Bitte achten Sie darauf, dass Ihre PayPal Lieferadresse aktuell ist.</mark></blockquote>
+            </div>
+            <div id="tab-content3" class="tab-content">
+                <h2>Hinweise zum Versand</h2>
+                <h4>Diesen Artikel versenden wir mit DHL.</h4>
+                <blockquote>Ein Versand an eine DHL-Packstation ist nicht möglich.<br />
+                <p>Bitte beachten Sie vor einer Bestellung darauf, dass Ihre angegebene Lieferadresse korrekt ist.</blockquote>
+                <blockquote>Bitte beachten Sie auch die Hinweise zur <mark>Lieferung bei <strong>Zahlungen mit PayPal</strong></mark> unter dem Reiter <mark>"<strong>Kaufabwicklung</strong>"</mark></blockquote>
+            </div>
+        </div>
+        <!-- Tabs -->
+
+        <!-- Service -->
+        <div id="service" class="row service">
+            <div class="col-md-4">
+                <div>
+                    <i class="fa fa-recycle"></i>
+                    <h2>Service 1</h2>
+                    Example service description. Example service description. Example service description.
+                    Example service description. Example service description. Example service description.
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div>
+                    <i class="fa fa-refresh"></i>
+                    <h2>Service 2</h2>
+                    Example service description. Example service description. Example service description.
+                    Example service description. Example service description. Example service description.
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div>
+                    <i class="fa fa-trophy"></i>
+                    <h2>Service 3</h2>
+                    Example service description. Example service description. Example service description.
+                    Example service description. Example service description. Example service description.
+                </div>
+            </div>
+        </div>
+        <!-- Service -->
+
+        <!-- Cross-Selling -->
+        <div class="row">
+        <h1>More offers from our shop</h1>
+            <div class="col-md-3 col-sm-6 xsell">
+                <a target="_self" href="#">
+                    <img alt="" class="img-responsive" width="500" height="500" src="https://via.placeholder.com/1170x330/eeeeee/999?text=Grafik-1(500x500)"/>
+                    <h4>Example Product 1 <span>999,00 &euro;</span></h4>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6 xsell">
+                <a target="_self" href="#">
+                    <img alt="" class="img-responsive" width="500" height="500" src="https://via.placeholder.com/1170x330/eeeeee/999?text=Grafik-2(500x500)"/>
+                    <h4>Example Product 2 <span>998,00 &euro;</span></h4>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6 xsell">
+                <a target="_blank" href="#">
+                    <img alt="" class="img-responsive" width="500" height="500" src="https://via.placeholder.com/1170x330/eeeeee/999?text=Grafik-3(500x500)"/>
+                    <h4>Example Product 3 <span>997,00 &euro;</span></h4>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6 xsell">
+                <a target="_blank" href="#">
+                    <img alt="" class="img-responsive" width="500" height="500" src="https://via.placeholder.com/1170x330/eeeeee/999?text=Grafik-4(500x500)"/>
+                    <h4>Example Product 4 <span>996,00 &euro;</span></h4>
+                </a>
+            </div>
+        </div>
+        <!-- Cross-Selling -->
+
+    </div>
+</div>
+<!-- Content -->
+
+<!-- Newsletter -->
+<div class="container-fluid newsletter">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8">
+                <i class="fa fa-envelope-o" aria-hidden="true"></i> Angebote bequem per E-Mail erhalten
+            </div>
+            <div class="col-sm-4">
+                <a target="_self" class="nlb" href="#"><i class="fa fa-mail" aria-hidden="true"></i> Newsletter abonnieren</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Newsletter -->
+
+<!-- Footer -->
+<div class="container-fluid footer bg-dark">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <h6>Links</h6>
+                <ul>
+                    <li><a target="_self" href="#">Unser Shop</a></li>
+                    <li><a target="_self" href="#">Verkäuferprofil</a></li>
+                    <li><a target="_self" href="#">Bewertungen</a></li>
+                    <li><a target="_self" href="#">Shop speichern</a></li>
+                    <li><a target="_self" href="#">Kontakt</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h6>Zahlung</h6>
+                <p class="payment">
+                    <i class="fa fa-paypal fa-fw"></i> PayPal<br>
+                    <i class="fa fa-bank fa-fw"></i> Überweisung<br>
+                    <i class="fa fa-credit-card fa-fw"></i> Kreditkarte<br>
+                    <i class="fa fa-eur fa-fw"></i> Barzahlung<br>
+                </p>
+            </div>
+            <div class="col-md-3">
+                <h6>Versand</h6>
+                <p class="shipment">
+                    Die eBay Hinweise zum Versand finden Sie weiter unten auf der Seite.
+                </p>
+            </div>
+            <div class="col-md-3">
+                <h6>Kontakt</h6>
+                <p>Haben Sie Fragen zu unseren Angeboten? Kontaktieren Sie uns über das eBay Kontaktformular.</p>
+                <a class="contact" target="_self" href="#">eBay Nachricht</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer -->
+]]>
+            </field>
+        </record>
+    </data>
+</odoo>

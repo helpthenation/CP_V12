@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="cp_sale_template" model="mail.template">
+            <field name="name">Quotation / Order: Send by e-mail</field>
+            <field name="subject">${object.company_id.name} ${object.state in ('draft', 'sent') and 'Quotation' or 'Order'} (Ref ${object.name or 'n/a' })</field>
+            <field name="email_from">${object.company_id and object.company_id.email or ''}</field>
+            <field name="email_to">${object.partner_id.id}</field>
+            <field name="partner_to">${object.partner_id.id}</field>
+            <field name="reply_to">${object.company_id and object.company_id.email or ''}</field>
+            <field name="lang">${object.partner_id.lang}</field>
+            <field name="model_id" ref="sale.model_sale_order"/>
+            <field name="auto_delete" eval="True"/>
+            <field name="body_html">
+<![CDATA[
+<div style="margin: 0px; padding: 0px;">
+    <p style="margin: 0px; padding: 0px; font-size: 13px;">
+        <strong>Dear(r) ${object.partner_id.title.name or ''} ${object.partner_id.name}</strong><br/>
+        Attached please find the offer with the number ${doc_name} ${object.name}.<br/>
+        We would be very happy if you like the offer<br/>
+        For further inquiries, we are happy to help.
+    </p>
+</div>
+]]>
+            </field>
+            <field name="report_template" ref="sale.action_report_saleorder"/>
+            <field name="report_name">${object.state in ('draft', 'sent') and 'Quotation_' or 'Order_'}${(object.name or '').replace('/','_')}</field>
+        </record>
+        <record id="cp_account_template" model="mail.template">
+            <field name="name">Invoice: Send by e-mail</field>
+            <field name="subject">${object.company_id.name} Invoice ${object.number or 'n/a'}</field>
+            <field name="email_from">${object.company_id and object.company_id.email or ''}</field>
+            <field name="email_to">${object.partner_id.id|safe}</field>
+            <field name="partner_to">${object.partner_id.id}</field>
+            <field name="reply_to">${(object.company_id and object.company_id.email or '')}</field>
+            <field name="lang">${object.partner_id.lang}</field>
+            <field name="model_id" ref="account.model_account_invoice"/>
+            <field name="auto_delete" eval="True"/>
+            <field name="body_html">
+<![CDATA[
+<div style="margin: 0px; padding: 0px;">
+    <p style="margin: 0px; padding: 0px; font-size: 13px;">
+        Dear ${object.partner_id.title.name or ''} ${object.partner_id.name}<br/>
+        <br/>
+        Here is your invoice <strong>${object.number}</strong> (with reference: ${object.origin})
+        amounting in <strong>${format_amount(object.amount_total, object.currency_id)}</strong>
+        from ${object.company_id.name}.
+        ${object.state in ('paid') and 'This invoice is already paid.' or 'Please remit payment at your earliest convenience.'}
+    </p>
+</div>
+]]>
+            </field>
+            <field name="report_template" ref="account.account_invoices"/>
+            <field name="report_name">Invoice_${(object.number or '').replace('/','_')}</field>
+        </record>
+        <record id="cp_kms_ebay_template" model="mail.template">
+            <field name="name">KMS eBay Template</field>
+            <field name="model_id" ref="product.model_product_template"/>
+            <field name="auto_delete" eval="True"/>
+            <field name="body_html">
+<![CDATA[
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+% set use_ext_css = object.env['ir.config_parameter'].sudo().get_param('ebay_ext.ebay_enable_ext_stylesheet')
+% if use_ext_css:
+    % set ext_css_path = object.env['ir.config_parameter'].sudo().get_param('ebay_ext.ebay_external_stylesheeturl')
+    % if ext_css_path:
+<link href="${ext_css_path}" rel="stylesheet" />
+    % else:
+<div class="alert alert-danger" role="alert">
+    <h4 class="alert-heading">No stylesheet path configured!</h4>
+    <p>Please go to <mark><b><i>Settings / Sales / eBay</i></b></mark> configuration section and define the public accessible stylesheet URL to get this ebay template rendered correctly.</p>
+    <hr>
+    <p>Please note, if your stylesheet serving instance is protected from public access, you must host your stylesheet file on a public hosting provider!
+    </p>
+</div>
+    % endif
+% else:
+<link href="/ebay_ext/static/src/css/ebay_template.css" rel="stylesheet" />
+%endif
+<!-- Header -->
+<div class="container-fluid">
+    <div class="container header">
+        <div class="row">
+            <!-- Logo -->
+            <div class="col-sm-6 logo">
+                <img alt="Logo Ketchup-Mayo-Senf.de" height="52" src="https://www.ketchup-mayo-senf.de/web/image/res.company/1/logo?unique=bb8ff29" width="397" />
+            </div>
+            <!-- Suche -->
+            <div class="col-sm-6 hidden-xs suche">
+                <a target="_self" href="https://www.ebay.de/sch/ketchup-mayo-senf/m.html?_nkw=&_armrs=1&_ipg=&_from=">
+                    <div class="suchbutton"><i class="fa fa-search"></i></div>
+                    <div class="suchfeld">Shop durchsuchen...</div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Header -->
+<!-- Menubar -->
+<div class="container-fluid kategorien">
+    <div class="container">
+        <!-- Row -->
+        <div class="row">
+            <!-- Categories -->
+            <ul class="hidden-xs">
+                <li>
+                    <a href="https://www.ebay.de/usr/ketchup-mayo-senf" target="_self"><i class="fa fa-home" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                    <a href="http://www.ebaystores.de/ketchup-mayo-senf/Stuhle-/_i.html?_fsub=27151203014&_sid=518835684&_trksid=p4634.c0.m322" target="_self">St&uuml;hle</a>
+                </li>
+                <li>
+                    <a href="http://www.ebaystores.de/ketchup-mayo-senf/Tische-/_i.html?_fsub=27151204014&_sid=518835684&_trksid=p4634.c0.m322" target="_self">Tische</a>
+                </li>
+                <li>
+                    <a href="http://www.ebaystores.de/ketchup-mayo-senf/Staumobel-/_i.html?_fsub=27151206014&_sid=518835684&_trksid=p4634.c0.m322" target="_self">Staum&ouml;bel</a></li>
+                <li>
+                    <a href="http://www.ebaystores.de/ketchup-mayo-senf/Buroausstattung-/_i.html?_fsub=27151207014&_sid=518835684&_trksid=p4634.c0.m322" target="_self">B&uuml;roausstattung</a>
+                </li>
+                <li>
+                    <a href="http://www.ebaystores.de/ketchup-mayo-senf/Staumobel-/_i.html?_fsub=27151206014&_sid=518835684&_trksid=p4634.c0.m322" target="_self">Raumteiler</a>
+                </li>
+                <li>
+                    <a href="http://www.ebaystores.de/ketchup-mayo-senf/Arbeitsplatze" target="_self">Arbeitspl&auml;tze</a>
+                </li>
+                <li>
+                    <a href="http://www.ebaystores.de/ketchup-mayo-senf/Sonstige-/_i.html?_fsub=1&_sid=518835684&_trksid=p4634.c0.m322" target="_self">Sonstige</a>
+                </li>
+            </ul>
+            <!-- Categories -->
+            <!-- Mobil -->
+            <ul class="resmenu hidden-lg hidden-md hidden-sm">
+                <li>
+                    <a target="_self" href="https://www.ebay.de/str/ketchupmayosenf">
+                        <i class="fa fa-home" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a target="_self" href="https://www.ebay.de/usr/ketchup-mayo-senf">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a target="_self" href="https://feedback.ebay.de/ws/eBayISAPI.dll?ViewFeedback2&userid=ketchup-mayo-senf">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a target="_self" href="https://my.ebay.de/ws/eBayISAPI.dll?AcceptSavedSeller&sellerid=ketchup-mayo-senf&ssPageName=STRK:MEFS:ADDSTR&rt=nc">
+                        <i class="fa fa-bookmark" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a target="_self" href="https://contact.ebay.de/ws/eBayISAPI.dll?ContactUserNextGen&recipient=ketchup-mayo-senf">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+            <!-- Mobil -->
+        </div>
+        <!-- Row -->
+    </div>
+</div>
+<!-- Menubar -->
+<!-- Info -->
+<div class="container-fluid hidden-xs">
+    <div class="container">
+        <!-- Row -->
+        <div class="row info">
+            <div class="col-sm-3">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <a href="http://www.ebaystores.de/ketchup-mayo-senf/Kontakt.html" target="_self">Kompetente Beratung</a>
+            </div>
+            <div class="col-sm-3">
+                <i class="fa fa-truck" aria-hidden="true"></i>
+                <a href="#tab-content3" target="_self">Versand deutschlandweit</a>
+            </div>
+            <div class="col-sm-3">
+                <i class="fa fa-comments" aria-hidden="true"></i>
+                <a href="https://contact.ebay.de/ws/eBayISAPI.dll?ContactUserNextGen&recipient=ketchup-mayo-senf" target="_self">Europaversand auf Anfrage</a>
+            </div>
+            <div class="col-sm-3">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <a href="#kms-service" target="_self">Gebraucht, RENEW & Neuware</a>
+            </div>
+        </div>
+        <!-- Row -->
+    </div>
+</div>
+<!-- Info -->
+<!-- Slider Background -->
+<div class="container-fluid slider-bg hidden-xs">
+    <div class="container">
+        <!-- Slider -->
+        <div class="slider">
+            <ul>
+                <li><img alt="Slider Bild 1" class="img-responsive" height="300" src="https://s19.directupload.net/images/200130/26df6ufo.png" /></li>
+                <li><img alt="Slider Bild 2" class="img-responsive" height="300" src="https://s19.directupload.net/images/200130/tqgctqfe.png" /></li>
+            </ul>
+        </div>
+        <!-- Slider -->
+    </div>
+</div>
+<!-- Slider Background -->
+
+<!-- Content -->
+<div class="container-fluid">
+    <div class="container">
+
+        <!-- Article -->
+        <div class="row art">
+            <h1>${object.ebay_title}</h1>
+            <!-- Articlepics -->
+            <div class="col-md-6 artpic">
+                <div class="artikelbilder galerie">
+                    % if object.product_image_ids:
+                        % for product_image_toggle in object.product_image_ids:
+                            % if loop.first:
+                    <input name="switch" id="slide${loop.index}" class="anker slide" type="radio" checked="checked"/>
+                            % else:
+                    <input name="switch" id="slide${loop.index}" class="anker slide" type="radio"/>
+                            % endif
+                        % endfor
+                    % endif
+                    <ul>
+                        % if object.product_image_ids:
+                            % for product_image in object.product_image_ids:
+                        <li class="pic${loop.index} img slide">
+                            <img src="${product_image.ebay_image_url}" alt="${product_image.name}" />
+                        </li>
+                            % endfor
+                        % endif
+                    </ul>
+                    <!-- Thumbnails -->
+                    <div class="thumb">
+                        % if object.product_image_ids:
+                            % for product_image_thumb in object.product_image_ids:
+                        <label class="pic${loop.index} col-xs-3" for="slide${loop.index}"><span class="anker"></span>
+                            <img src="${product_image_thumb.ebay_image_url}" alt="${product_image_thumb.name}" style="width: 75px;height: 75px;" />
+                        </label>
+                            % endfor
+                        % endif
+                    </div>
+                    <!-- Thumbnails -->
+                </div>
+            </div>
+            <!-- Articlepics -->
+
+            <!-- Artikelbeschreibung -->
+            <div class="col-md-6 dsc">
+                <h2>Artikelbeschreibung</h2>
+                <h3>Eigenschaften</h3>
+                % if object.attribute_line_ids:
+                <ul class="row">
+                    % for attrobj in object.attribute_line_ids:
+                        % if loop.index<9:
+                            % if attrobj.attribute_id.create_variant=='no_variant' and attrobj.attribute_id.ebay_attr_is_variant==False:
+                                % if len(object.attribute_line_ids)<=4:
+                    <li class="col-md-12">
+                                % else:
+                    <li class="col-md-6">
+                                % endif
+                        <strong>${attrobj.attribute_id.name|e}:</strong>
+                                % for value in attrobj.value_ids:
+                        ${value.name|e}
+                                % endfor
+                        </li>
+                            % endif
+                        % endif
+                    % endfor
+                </ul>
+                % endif
+
+                % if object.product_variant_count > 1:
+                <h3>Varianten</h3>
+                <!-- Variants -->
+                <div class="variants">
+                    % if object.attribute_line_ids:
+                        % for attrobj in object.attribute_line_ids:
+                            % if attrobj.attribute_id.create_variant=='always' and attrobj.attribute_id.ebay_attr_is_variant==False:
+                    <h5><strong>${attrobj.attribute_id.name}</strong></h5>
+                    <p>
+                                % for value in attrobj.value_ids:
+                        <span class="var">${value.name|e}</span>
+                                % endfor
+                    </p>
+                            % elif attrobj.attribute_id.create_variant=='always' and attrobj.attribute_id.ebay_attr_is_variant==True:
+                    <h5><strong>${attrobj.attribute_id.name}</strong></h5>
+                                % for value in attrobj.value_ids:
+                                    % if loop.first:
+                    <input type="radio" name="variants" id="variant${loop.index}" checked="checked"/>
+                                    % else:
+                    <input type="radio" name="variants" id="variant${loop.index}" />
+                                    % endif
+                    <label for="variant${loop.index}"><span class="var">${value.name|e}</span></label>
+                                % endfor
+                            % endif
+                        % endfor
+                    % endif
+
+                    % set attrloop = 1
+                    % for variant in object.product_variant_ids:
+                        % if variant.ebay_variant_listing==True:
+                    <div id="variant-content${attrloop}" class="variant-content">
+                        <h5><strong>Abmessung</strong></h5>
+                        <ul class="row">
+                            <li class="col-md-4 border-0">
+                                <strong class="mr-3">Länge:</strong>
+                                <span>${variant.width}m</span>
+                            </li>
+                            <li class="col-md-4 border-0">
+                                <strong class="mr-3">Höhe:</strong>
+                                <span>${variant.height}m</span>
+                            </li>
+                            <li class="col-md-4 border-0">
+                                <strong class="mr-3">Tiefe:</strong>
+                                <span>${variant.depth}m</span>
+                            </li>
+                        </ul>
+                        <!-- Buy-Now-Box -->
+                        <div class="row kaufenbox">
+                            <!-- Preis -->
+                            <div class="col-sm-6 preis">
+                                <h3>nur ${'%0.2f' % variant.ebay_fixed_price|float}€</h3>
+                                <small>inkl. 16% MwSt.</small>
+                                <!-- Preis -->
+                            </div>
+                            <!-- Buttons -->
+                            <div class="col-sm-6">
+                                <!-- SOFORT KAUFEN -->
+                                <a target="_self" class="skb" href="#CenterPanelDF">Sofort-Kaufen</a>
+                                <!-- BEOBACHTEN -->
+                                <a target="_self" class="beo" href="https://www.ebay.de/myb/WatchListAdd?_trksid=p2047675.l1360&amp;SubmitAction.AddToListVI=x&amp;item=163485205195&amp;rt=nc&amp;srt=01000400000050608f7f32ed8086d664f58061d02e24515ee333467506715a4aa8e2e5dc43cccd7b44785393b5bc398eaba719e84581338ddd8ff73785698398d900051af0434cabdff39266d63e5a56dae74ce6390b2c&amp;wt=4529e26356bd5e801d613072aa92b2e5&amp;ssPageName=VIP:watchlink:top:de&amp;sourcePage=4340">
+                                    <i class="fa fa-plus-circle"></i> Artikel beobachten
+                                </a>
+                                <!-- FRAGE STELLEN -->
+                                <a target="_self" class="beo" href="https://contact.ebay.de/ws/eBayISAPI.dll?ContactUserNextGen&amp;recipient=ketchup-mayo-senf">
+                                    <i class="fa fa-question-circle"></i> Frage stellen
+                                </a>
+                            </div>
+                            <!-- Buttons -->
+                        </div>
+                        <!-- Buy-Now-Box -->
+                    </div>
+                            % set attrloop = attrloop + 1
+                        % endif
+                    % endfor
+                </div>
+                <!-- Variants -->
+                % else:
+                <h3>Abmessungen</h3>
+                <ul class="row">
+                    <li class="col-md-4 border-0">
+                        <strong class="mr-3">Länge:</strong>
+                        <span>${object.width}m</span>
+                    </li>
+                    <li class="col-md-4 border-0">
+                        <strong class="mr-3">Höhe:</strong>
+                        <span>${object.height}m</span>
+                    </li>
+                    <li class="col-md-4 border-0">
+                        <strong class="mr-3">Tiefe:</strong>
+                        <span>${object.depth}m</span>
+                    </li>
+                </ul>
+                <!-- Buy-Now-Box -->
+                <div class="row kaufenbox">
+                    <!-- Preis -->
+                    <div class="col-sm-6 preis">
+                        <h3>nur ${'%0.2f' % object.ebay_fixed_price|float}€</h3>
+                        <small>inkl. 16% MwSt.</small>
+                        <!-- Preis -->
+                    </div>
+                    <!-- Buttons -->
+                    <div class="col-sm-6">
+                        <!-- SOFORT KAUFEN -->
+                        <a target="_self" class="skb" href="https://offer.ebay.de/ws/eBayISAPI.dll?BinConfirm&item=${object.ebay_id}" target="_self">Sofort-Kaufen</a>
+                        <!-- BEOBACHTEN -->
+                        <a target="_self" class="beo" href="https://www.ebay.de/myb/WatchListAdd?_trksid=p2047675.l1360&SubmitAction.AddToListVI=x&item=163485205195&rt=nc&srt=01000400000050608f7f32ed8086d664f58061d02e24515ee333467506715a4aa8e2e5dc43cccd7b44785393b5bc398eaba719e84581338ddd8ff73785698398d900051af0434cabdff39266d63e5a56dae74ce6390b2c&wt=4529e26356bd5e801d613072aa92b2e5&ssPageName=VIP:watchlink:top:de&sourcePage=4340">
+                            <i class="fa fa-plus-circle"></i> Artikel beobachten
+                        </a>
+                        <!-- FRAGE STELLEN -->
+                        <a target="_self" class="beo" href="https://contact.ebay.de/ws/eBayISAPI.dll?ContactUserNextGen&recipient=ketchup-mayo-senf" target="_self">
+                            <i class="fa fa-question-circle"></i> Frage stellen
+                        </a>
+                    </div>
+                    <!-- Buttons -->
+                </div>
+                <!-- Buy-Now-Box -->
+                % endif
+
+            </div>
+            <!-- Articlepics -->
+        </div>
+        <!-- Article -->
+
+        <!-- Tabs -->
+        <div class="tabs">
+            <input type="radio" name="tabs" id="tab1" checked="checked">
+            <label for="tab1"><span>Beschreibung</span></label>
+            <input type="radio" name="tabs" id="tab2">
+            <label for="tab2"><span>Hersteller</span></label>
+            <input type="radio" name="tabs" id="tab3">
+            <label for="tab3"><span>Kauf & Versand</span></label>
+
+            <div id="tab-content1" class="tab-content">
+                <div class="col-md-8">
+                    <h2>${object.ebay_title}</h2>
+                    % if object.ebay_description:
+                    ${object.ebay_description|safe}
+                    % endif
+                </div>
+                <div class="col-md-4">
+                    <h2>Eigenschaften</h2>
+                    % if object.attribute_line_ids:
+                    <table>
+                        <tbody>
+                            % for attrobj in object.attribute_line_ids:
+                                % if attrobj.attribute_id.create_variant=='no_variant':
+                            <tr>
+                                <td>${attrobj.attribute_id.name|e}</td>
+                                <td>
+                                    % for value in attrobj.value_ids:
+                                    ${value.name|e}
+                                    % endfor
+                                </td>
+                            </tr>
+                                % endif
+                            % endfor
+                        </tbody>
+                    </table>
+                    % endif
+                </div>
+            </div>
+            <div id="tab-content2" class="tab-content">
+                <h2>Hersteller Informationen</h2>
+                % if object.attribute_line_ids:
+                    % for attr in object.attribute_line_ids:
+                        % if attr.attribute_id.enable_product_producer==True:
+                            % for value in attr.value_ids
+                                % if value.producer:
+                <h4>${value.producer.name}</h4>
+                ${value.producer.description|safe}
+                                % else:
+                <p><strong>Keine Hersteller Information vorhanden!</strong></p>
+                                % endif
+                            % endfor
+                        % endif
+                    % endfor
+                % endif
+            </div>
+            <div id="tab-content3" class="tab-content">
+                <h2>Hinweise zur Zahlung</h2>
+                <blockquote>Kaufen Sie bitte zuerst alle Artikel und führen Sie danach die Kaufabwicklung durch.<br />
+                Nur so ist es uns möglich, die Artikel zu einer Sammellieferung zusammen zu fassenund Ihnen unnötige Versandkosten zu ersparen.</blockquote>
+                <blockquote>Wenn Sie mit PayPal bezahlen, wird die Lieferadresse die in Ihrem PayPal Konto hinterlegt ist, als gültige Lieferadresse an uns übertragen <kbd>(PayPal-Käuferschutz)</kbd>.<br />
+                <mark>Bitte achten Sie darauf, dass Ihre PayPal Lieferadresse aktuell ist.</mark></blockquote>
+                <br />
+                <h2>Hinweise zum Versand</h2>
+                <blockquote>
+                    <p><b>Wir versenden Pakete über einen Paketdienstleister (i.d.R. DHL).</b></p>
+                    <p>Größere Waren werden palettiert per Stückgut transportiert. Sollte ein Versand nicht angeboten werden, liegt das i.d.R. an der Größe.</p>
+                    <p>Gerne erstellen wir Ihnen auf Anfrage ein individuelles Angebot (Möbelspedition).</p>
+                    <p>Sollten Sie mehrere Produkte kaufen, fragen Sie uns vor der Bestellung nach einen Sammeltransportpreis. Europaweite Transporte sind ebenfalls auf Anfrage möglich.</p>
+                    <p>Bei Stühlen sind die angegebenen Maße die des Versandkartons und nicht des Stuhls selbst. Bei den meisten Stühlen finden Sie die genauen Angaben auf den Herstellerseiten.</p>
+                </blockquote>
+                <blockquote>Bitte beachten Sie auch die <mark>Hinweise bzgl. der <strong>Wiederrufsbelehrung</strong></mark> und den zusätzlichen <mark><strong>Versandbedingungen</strong></mark> in unseren <strong>AGBs</strong>.</blockquote>
+            </div>
+        </div>
+        <!-- Tabs -->
+
+        <!-- Service -->
+        <div id="kms-service" class="row service">
+            <div class="col-md-4">
+                <div>
+                    <i class="fa fa-recycle"></i>
+                    <h2>Gebraucht</h2>
+                    <p>Bei uns finden Sie gebrauchte Büromöbel in einem Top-Zustand und das zu einem Top-Preis.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div>
+                    <i class="fa fa-refresh"></i>
+                    <h2>RENEW</h2>
+                    <p>Viele unserer gebrauchten Büromöbel lassen wir professionell wieder aufbereiten.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div>
+                    <i class="fa fa-trophy"></i>
+                    <h2>Neuware</h2>
+                    <p>Wir führen ebenfalls ein breites Sortiment an neuen Büromöbeln zu unschlagbar günstigen Preisen.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Service -->
+
+        <!-- Cross-Selling -->
+        <h1>Weitere Angebote aus unserem Shop</h1>
+        <div class="row x-selling">
+            <div class="col-md-3 col-sm-6 xsell">
+                <a target="_self" href="https://www.ebay.de/itm/Vitra-Ad-Hoc-Schreibtisch-Thekenaufsatz-blau-/202672073144?hash=item2f303269b8">
+                    <img alt="Vitra Ad Hoc Schreibtisch mit Thekenaufsatz" class="img-responsive" width="800" height="800" src="https://i.ebayimg.com/images/g/6xQAAOSwLgFc0Jsn/s-l1600.jpg"/>
+                    <h4>Vitra Ad Hoc Schreibtisch mit Thekenaufsatz <span>714,00 €</span></h4>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6 xsell">
+                <a target="_self" href="https://www.ebay.de/itm/USM-Haller-Sideboard-1x2-OH-75x50cm-dunkelblau-Rollen-/163485217516?hash=item26107a72ec">
+                    <img alt="USM Haller Sideboard 1x2 OH 75x50cm" class="img-responsive" width="1000" height="1000" src="https://i.ebayimg.com/images/g/OmAAAOSwiwZcO1nx/s-l1600.jpg"/>
+                    <h4>USM Haller Sideboard 1x2 OH 75x50cm <span>833,00 €</span></h4>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6 xsell">
+                <a target="_self" href="https://www.ebay.de/itm/Rosenthal-Muevo-kompletter-Arbeitsplatz-Chefzimmer-/163679206565?hash=item261c0a7ca5">
+                    <img alt="Rosenthal Muevo kompletter Arbeitsplatz Chefzimmer" class="img-responsive" width="500" height="500" src="https://i.ebayimg.com/images/g/ydUAAOSwz5Nc0I6z/s-l500.jpg"/>
+                    <h4>Rosenthal Muevo kompletter Arbeitsplatz Chefzimmer <span>3570,00 €</span></h4>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6 xsell">
+                <a target="_self" href="https://www.ebay.de/itm/Okamura-repiroue-Sitz-Stehhocker-hohenverstellbar-NEUWARE-Farbe-wahlbar-/202564438611?hash=item2f29c80a53">
+                    <img alt="Okamura Repiroue Sitz-/Stehhocker" class="img-responsive" width="1200" height="1200" src="https://i.ebayimg.com/images/g/cc8AAOSwJ~xcOlR8/s-l1600.jpg"/>
+                    <h4>Okamura Repiroue Sitz-/Stehhocker <span>624,75 €</span></h4>
+                </a>
+            </div>
+        </div>
+        <!-- Cross-Selling -->
+
+    </div>
+</div>
+<!-- Content -->
+
+<!-- Newsletter -->
+<div class="container-fluid newsletter">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8">
+                <i class="fa fa-envelope-o" aria-hidden="true"></i> Angebote bequem per E-Mail erhalten
+            </div>
+            <div class="col-sm-4">
+                <a target="_self" class="news" href="https://my.ebay.de/ws/eBayISAPI.dll?AcceptSavedSeller&sellerid=ketchup-mayo-senf&ssPageName=STRK:MEFS:ADDSTR&rt=nc">
+                    Newsletter abonnieren
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Newsletter -->
+
+<!-- Footer -->
+<div class="container-fluid footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <h6>Links</h6>
+                <ul>
+                    <li><a target="_self" href="https://www.ebay.de/str/ketchupmayosenf">Unser Shop</a></li>
+                    <li><a target="_self" href="https://www.ebay.de/usr/ketchup-mayo-senf">Verkäuferprofil</a></li>
+                    <li><a target="_self" href="https://feedback.ebay.de/ws/eBayISAPI.dll?ViewFeedback2&userid=ketchup-mayo-senf">Bewertungen</a></li>
+                    <li><a target="_self" href="https://my.ebay.de/ws/eBayISAPI.dll?AcceptSavedSeller&sellerid=ketchup-mayo-senf&ssPageName=STRK:MEFS:ADDSTR&rt=nc">Shop speichern</a></li>
+                    <li><a target="_self" href="https://contact.ebay.de/ws/eBayISAPI.dll?ContactUserNextGen&recipient=ketchup-mayo-senf">Kontakt</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h6>Zahlung</h6>
+                <p class="zvb">
+                    <i class="fa fa-paypal fa-fw"></i> PayPal<br>
+                    <i class="fa fa-bank fa-fw"></i> Überweisung<br>
+                    <i class="fa fa-credit-card fa-fw"></i> Kreditkarte<br>
+                    <i class="fa fa-eur fa-fw"></i> Barzahlung<br>
+                </p>
+            </div>
+            <div class="col-md-3">
+                <h6>Versand</h6>
+                <p class="zvb">Die eBay Hinweise zum Versand finden Sie weiter unten auf der Seite.</p>
+            </div>
+            <div class="col-md-3">
+                <h6>Kontakt</h6>
+                <p>Haben Sie Fragen zu unseren Angeboten? Kontaktieren Sie uns über das eBay Kontaktformular.</p>
+                <a class="kontakt" target="_self" href="https://contact.ebay.de/ws/eBayISAPI.dll?ContactUserNextGen&recipient=ketchup-mayo-senf">
+                    eBay Nachricht
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer -->
+]]>
+            </field>
+        </record>
+    </data>
+    <data>
+        <record id="cp_email_template_tree" model="ir.ui.view">
+            <field name="name">email.template.tree</field>
+            <field name="model">mail.template</field>
+            <field name="inherit_id" ref="mail.email_template_tree"/>
+            <field name="arch" type="xml">
+                <xpath expr="field[@name='name']" position="before">
+                    <field name="id" string="ID"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

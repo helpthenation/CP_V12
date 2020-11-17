@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Website page template -->
+        <record id="imprint" model="ir.ui.view">
+            <field name="name">Impressum</field>
+            <field name="website_id" ref="website.default_website"/>
+            <field name="type">qweb</field>
+            <field name="key">website.imprint</field>
+            <field name="arch" type="xml">
+                <t name="Impressum" t-name="website.imprint">
+                    <t t-call="website.layout">
+                        <t t-set="pageName" t-value="'imprint'"/>
+                        <div id="wrap" class="oe_structure oe_empty">
+                            <section>
+                                <div class="container">
+                                    <div class="row s_nb_column_fixed">
+                                        <div class="col-lg-12 s_title pt32 pb32" style="text-align: center;">
+                                            <h1 class="t_title_default s_title_default" style="text-align: left;">Impressum</h1>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="s_text_block">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="pb32 col-lg-12 pt0">
+                                            <p style="margin-bottom: 15px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background-color: transparent; float: left; width: 1078px; caret-color: rgb(68, 68, 68); color: rgb(68, 68, 68); font-family: Roboto, sans-serif;">
+                                                <strong style="margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background-color: transparent;">Angaben gemäß § 5 TMG:</strong>
+                                            </p>
+                                            <p style="margin-bottom: 15px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background-color: transparent; float: left; width: 1078px; caret-color: rgb(68, 68, 68); color: rgb(68, 68, 68); font-family: Roboto, sans-serif;">Clauss &amp;amp; Palacios GmbH
+                                                <br/>
+                                            </p>
+                                            <p style="margin-bottom: 15px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background-color: transparent; float: left; width: 1078px; caret-color: rgb(68, 68, 68); color: rgb(68, 68, 68); font-family: Roboto, sans-serif;">
+                                                <strong style="margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background-color: transparent;">Postanschrift:</strong>
+                                                <br/>Würbenthalerstr. 2
+                                                <br/>71065 Sindelfingen
+                                                <br/>
+                                            </p>
+                                            <p style="margin-bottom: 15px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background-color: transparent; float: left; width: 1078px; caret-color: rgb(68, 68, 68); color: rgb(68, 68, 68); font-family: Roboto, sans-serif;">
+                                                <strong style="margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background-color: transparent;">Kontakt:</strong>
+                                            </p>
+                                            <p style="margin-bottom: 15px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background-color: transparent; float: left; width: 1078px; caret-color: rgb(68, 68, 68); color: rgb(68, 68, 68); font-family: Roboto, sans-serif;">Telefon: 07031 3042070
+                                                <br/>Telefax: 07031 3042079
+                                                <br/>E-Mail: info@clauss-palacios.de
+                                            </p>
+                                            <p style="margin-bottom: 15px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background-color: transparent; float: left; width: 1078px; caret-color: rgb(68, 68, 68); color: rgb(68, 68, 68); font-family: Roboto, sans-serif;">
+                                                <strong style="margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background-color: transparent;">Vertreten durch:</strong>
+                                            </p>
+                                            <p style="margin-bottom: 15px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background-color: transparent; float: left; width: 1078px; caret-color: rgb(68, 68, 68); color: rgb(68, 68, 68); font-family: Roboto, sans-serif;">Geschäftsführer: Eric Clauss, Roberto Palacios</p>
+                                            <p style="margin-bottom: 15px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background-color: transparent; float: left; width: 1078px; caret-color: rgb(68, 68, 68); color: rgb(68, 68, 68); font-family: Roboto, sans-serif;">
+                                                <br/>
+                                                <strong style="margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background-color: transparent;">Eingetragen am</strong>
+                                            </p>
+                                            <p style="margin-bottom: 15px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background-color: transparent; float: left; width: 1078px; caret-color: rgb(68, 68, 68); color: rgb(68, 68, 68); font-family: Roboto, sans-serif;">Handelsregister: Amtsgericht Stuttgart, HRB 244999
+                                                <br/>
+                                            </p>
+                                            <p style="margin-bottom: 15px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background-color: transparent; float: left; width: 1078px; caret-color: rgb(68, 68, 68); color: rgb(68, 68, 68); font-family: Roboto, sans-serif;">
+                                                <br/>
+                                                <strong style="margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background-color: transparent;">Umsatzsteuer-Identifikationsnummer</strong>
+                                            </p>
+                                            <p style="margin-bottom: 15px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background-color: transparent; float: left; width: 1078px; caret-color: rgb(68, 68, 68); color: rgb(68, 68, 68); font-family: Roboto, sans-serif;">DE813076338
+                                                <br/>
+                                            </p>
+                                            <p style="margin-bottom: 15px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background-color: transparent; float: left; width: 1078px; caret-color: rgb(68, 68, 68); color: rgb(68, 68, 68); font-family: Roboto, sans-serif;">
+                                                <br/>
+                                                <strong style="margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background-color: transparent;">Urheberrechtliche Hinweise</strong>
+                                            </p>
+                                            <p style="margin-bottom: 15px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background-color: transparent; float: left; width: 1078px; caret-color: rgb(68, 68, 68); color: rgb(68, 68, 68); font-family: Roboto, sans-serif;">Okamura
+ Corporation Tokyo 9F Hokusai Shin-Akasaka Bldg. E.2-14-27, Alaska, 
+Minato-ku, Tokyo 107-0052, Japan 
+https://www.okamura.co.jp/en_us/contact/
+                                                <br/>
+                                            </p>
+                                            <h2 style="line-height: 40px; text-rendering: optimizeLegibility; margin: 0px; font-size: 14px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background-color: transparent; color: rgb(68, 68, 68);">
+                                                <br/>
+                                            </h2>
+                                            <h2 style="line-height: 40px; text-rendering: optimizeLegibility; margin: 0px; font-size: 14px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background-color: transparent; color: rgb(68, 68, 68);">
+                                                <br/>
+                                            </h2>
+                                            <h2 style="line-height: 40px; text-rendering: optimizeLegibility; margin: 0px; font-size: 14px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background-color: transparent; color: rgb(68, 68, 68);">
+                                                <br/>
+                                            </h2>
+                                            <h2 style="line-height: 40px; text-rendering: optimizeLegibility; margin: 0px; font-size: 14px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background-color: transparent; color: rgb(68, 68, 68);">
+                                                <br/>
+                                            </h2>
+                                            <h2 style="line-height: 40px; text-rendering: optimizeLegibility; margin: 0px; font-size: 14px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background-color: transparent; color: rgb(68, 68, 68);"></h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="s_text_block">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="pb32 col-lg-12 pt0">
+                                            <h2 style="line-height: 40px; text-rendering: optimizeLegibility; margin: 0px; font-size: 14px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background-color: transparent; color: rgb(68, 68, 68);">
+                                                <b>Versandzentrum, Retourenannahme und Kundenservice für gebrauchte Büromöbel</b>
+                                            </h2>
+                                            <ul class="subcatList clear" style="padding: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 19.75px; border: 0px; outline: 0px; vertical-align: baseline; background-color: transparent; list-style: none; float: left; width: 840.828125px;">
+                                                <li style="line-height: 20px; margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background-color: transparent; list-style: none;">
+                                                    <h3 style="line-height: 30px; text-rendering: optimizeLegibility; margin: 0px; font-size: 14px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background-color: transparent; color: rgb(68, 68, 68);">
+                                                        <b>Adresse für Retouren und Besuch:</b>
+                                                    </h3>
+                                                    <p>Clauss &amp;amp; Palacios GmbH
+                                                        <br/>Würbenthaler Str. 2
+                                                        <br/>71065 Sindelfingen
+                                                    </p>
+                                                </li>
+                                                <li style="line-height: 20px; margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background-color: transparent; list-style: none;">
+                                                    <p>
+                                                        <br/>
+                                                    </p>
+                                                </li>
+                                                <li style="line-height: 20px; margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background-color: transparent; list-style: none;">
+                                                    <p>Telefon: +49 07031 30 42 07 - 0&amp;nbsp;
+                                                        <br/>Telefax: +49 07031 30 42 07 - 9&amp;nbsp;
+                                                        <br/>E-Mail: info@clauss-palacios.de
+                                                        <br/>Internet: http://www.ketchup-mayo-senf.de
+                                                    </p>
+                                                </li>
+                                                <li style="line-height: 20px; margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background-color: transparent; list-style: none;">
+                                                    <h3 style="line-height: 30px; text-rendering: optimizeLegibility; margin: 0px; font-size: 14px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background-color: transparent; color: rgb(68, 68, 68);">
+                                                        <b>Öffnungszeiten:</b>
+                                                    </h3>
+                                                    <p style="padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background-color: transparent;">Montag bis Freitag 09-13 Uhr und 14-18 Uhr. Generell nur mit Terminabsprache!&amp;nbsp;
+                                                        <br/>
+                                                        <br/>
+                                                    </p>
+                                                </li>
+                                                <li style="line-height: 20px; margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background-color: transparent; list-style: none;">
+                                                    <h3 style="line-height: 30px; text-rendering: optimizeLegibility; margin: 0px; font-size: 14px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background-color: transparent; color: rgb(68, 68, 68);">
+                                                        <b>Firmensitz und Verwaltung:</b>
+                                                    </h3>
+                                                    <p style="padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background-color: transparent;">Clauss &amp;amp; Palacios GmbH
+                                                        <br/>Würbenthalerstr. 2
+                                                        <br/>71065 Sindelfingen
+                                                        <br/>Geschäftsführung: Eric Clauss, Roberto Palacios
+                                                        <br/>Registergericht: Stuttgart
+                                                        <br/>Registernummer: HRB 244999
+                                                        <br/>Umsatzsteuer-Identifikationsnummer: DE813076338
+                                                        <br/>
+                                                    </p>
+                                                    <p style="padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background-color: transparent;">Alternative Streitbeilegung gemäß Art. 14 Abs. 1 ODR-VO und § 36 VSBG:
+                                                        <br/>
+                                                        <br/>Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit, die Sie unter&amp;nbsp;
+                                                        <a href="http://ec.europa.eu/consumers/odr/" style="color: rgb(235, 92, 28); text-decoration: underline; margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline;">http://ec.europa.eu/consumers/odr/</a>&amp;nbsp;finden.&amp;nbsp;
+                                                        <br/>Verbraucher haben die Möglichkeit, sich für die Beilegung ihrer Streitigkeiten an die:&amp;nbsp;
+                                                        <br/>
+                                                        <br/>Allgemeine Verbraucherschlichtungsstelle des Zentrums für Schlichtung e. V., Anschrift
+                                                        <br/>Straßburger Str. 8  - 77694 Kehl -  Deutschland&amp;nbsp;
+                                                        <br/>Kontaktinformationen
+                                                        <br/>E-Mail-Adresse: mail@verbraucher-schlichter.de
+                                                        <br/>Website:&amp;nbsp;
+                                                        <a href="https://www.verbraucher-schlichter.de/" style="color: rgb(235, 92, 28); text-decoration: underline; margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline;">https://www.verbraucher-schlichter.de</a>
+                                                        <br/>Telefon: +49 7851 79579 40
+                                                        <br/>Fax: +49 7851 79579 41
+                                                        <br/>zu wenden.
+                                                        <br/>Wir sind bereit, an einem außergerichtlichen Schlichtungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
+                                                    </p>
+                                                </li>
+                                                <li style="line-height: 20px; margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background-color: transparent; list-style: none;">
+                                                    <h3 style="line-height: 30px; text-rendering: optimizeLegibility; margin: 0px; font-size: 14px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background-color: transparent; color: rgb(68, 68, 68);">
+                                                        <b>
+                                                            <br/>
+                                                        </b>
+                                                    </h3>
+                                                </li>
+                                                <li style="line-height: 20px; margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background-color: transparent; list-style: none;">
+                                                    <h3 style="line-height: 30px; text-rendering: optimizeLegibility; margin: 0px; font-size: 14px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background-color: transparent; color: rgb(68, 68, 68);">
+                                                        <b>Haftungshinweis:&amp;nbsp;</b>
+                                                    </h3>
+                                                    <p style="padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background-color: transparent;">Trotz
+ sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für 
+die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind 
+ausschließlich deren Betreiber verantwortlich.&amp;nbsp;
+                                                        <br/>
+                                                        <br/>Alle Rechte 
+vorbehalten. Alle Urheberrechte und andere Rechte auf sämtliche 
+Abbildungen, Texte, Software, Websitedesign und andere Materialien sind 
+Eigentum der Clauss &amp;amp; Palacios GmbH.&amp;nbsp;
+                                                        <br/>Die Verwendung ohne 
+vorherige schriftliche Zustimmung der Clauss &amp;amp; Palacios GmbH ist 
+ausdrücklich untersagt. Bei widerrechtlicher Verwendung behält sich die 
+Clauss &amp;amp; Palacios GmbH vor, Nutzungsentgeld für den Zeitraum der 
+Nutzung zu erheben.
+                                                    </p>
+                                                </li>
+                                                <li style="line-height: 20px; margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background-color: transparent; list-style: none;">
+                                                    <h2 style="line-height: 40px; text-rendering: optimizeLegibility; margin: 0px; font-size: 14px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background-color: transparent; color: rgb(68, 68, 68);">
+                                                        <b>Quicklinks:</b>
+                                                    </h2>
+                                                    <a href="https://www.ketchup-mayo-senf.de/"
+                                                        style="color: rgb(68, 68, 68); margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline;"
+                                                        data-original-title=""
+                                                        title=""
+                                                        aria-describedby="tooltip254292">Büromöbel Startseite</a>&amp;nbsp;
+                                                    <a href="https://www.ketchup-mayo-senf.de/UEbersicht" style="color: rgb(68, 68, 68); margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline;" data-original-title="" title="">gebrauchte Büromöbel Übersicht</a>&amp;nbsp;
+                                                    <a href="https://www.ketchup-mayo-senf.de/gebrauchte-Bueromoebel/Arbeitsplatz/Buerostuhl/" style="color: rgb(68, 68, 68); margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline;">gebrauchte Bürostühle</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <!-- Link to website page template -->
+        <record id="imprint_page" model="website.page">
+            <field name="name">Impressum</field>
+            <field name="website_published">True</field>
+            <field name="url">/impressum</field>
+            <field name="view_id" ref="imprint"/>
+        </record>
+    </data>
+</odoo>

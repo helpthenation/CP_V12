@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <record id="cp_view_delivery_price_rule_form" model="ir.ui.view">
+            <field name="name">cp_view_delivery_price_rule_form</field>
+            <field name="model">delivery.price.rule</field>
+            <field name="inherit_id" ref="delivery.view_delivery_price_rule_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//group[2]" position="replace">
+                    <group>
+                        <label for="variable" string="Condition"/>
+                        <div class="o_row">
+                            <field name="variable"/>
+                            <field name="operator"/>
+                            <field name="max_value"/>
+                        </div>
+                    </group>
+                    <div>
+                        <group>
+                            <field name="add_additional_condition"/>
+                            <field name="condition_extra" attrs="{'invisible': [('add_additional_condition', '=', False)]}"/>
+                        </group>
+                    </div>
+                    <group>
+                        <label for="variable_extra" string="Condition" attrs="{'invisible': [('add_additional_condition', '=', False)]}"/>
+                        <div class="o_row">
+                            <field name="variable_extra" attrs="{'invisible': [('add_additional_condition', '=', False)]}"/>
+                            <field name="operator_extra" attrs="{'invisible': [('add_additional_condition', '=', False)]}"/>
+                            <field name="max_value_extra" attrs="{'invisible': [('add_additional_condition', '=', False)]}"/>
+                        </div>
+
+                        <label for="list_base_price" string="Delivery Cost"/>
+                        <div>
+                            <field name="list_base_price" class="oe_inline"/>
+                            +
+                            <field name="list_price" class="oe_inline"/>
+                            *
+                            <field name="variable_factor" class="oe_inline"/>
+                        </div>
+                    </group>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

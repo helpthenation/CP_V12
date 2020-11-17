@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="cp_barcode_locations_wizard_view" model="ir.ui.view">
+        <field name="name">Barcode Location</field>
+        <field name="model">barcode.location</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group string="Add barcode for excisting location">
+                        <button type="object" name="barcode_creation" id="cp_barcode_creation" class="hr_cs_btn_submit btn">Add barcode</button>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="cp_barcode_location_action" model="ir.actions.act_window">
+        <field name="name">Barcode Location Generator</field>
+        <field name="res_model">barcode.location</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+    <menuitem
+        id="cp_barcode_location_menu"
+        string="Barcode Generator"
+        parent="stock.menu_stock_warehouse_mgmt"
+        action="cp_barcode_location_action"
+        sequence="99"/>
+</odoo>

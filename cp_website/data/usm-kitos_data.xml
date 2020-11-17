@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Website page template -->
+        <record id="usm-kitos" model="ir.ui.view">
+            <field name="name">USM Kitos gebraucht</field>
+            <field name="website_id" ref="website.default_website"/>
+            <field name="type">qweb</field>
+            <field name="key">website.usm-kitos</field>
+            <field name="arch" type="xml">
+                <t name="USM Kitos gebraucht" t-name="website.usm-kitos">
+                    <t t-call="website.layout">
+                        <t t-set="pageName" t-value="'usm-kitos'"/>
+                        <div id="wrap" class="oe_structure oe_empty">
+                            <section>
+                                <div class="container">
+                                    <div class="row s_nb_column_fixed">
+                                        <div class="col-lg-12 s_title pt24" style="text-align: center;">
+                                            <h4 class="s_title_default t_title_default">USM Kitos - Schweizer Präzision</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="s_text_block">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-12 offset-lg-1 pt32 pb32">
+                                            <p class="lead">USM ist ja für modulare Möbel bekannt. Das Kitos System bietet noch mehr Flexibilität, sodass man aus einem Arbeitsplatz, mehrere Arbeitsplätze verketten kann, oder ganze Konferenzlandschaften gebaut werden können.</p>
+                                            <p class="lead">Aus diesem Grund bieten wir ihnen hier gerne eine persönliche Beratung an, da jedes Möbel nach Kundenwunsch zusammengestellt wird und dies in einem Onlineshop kaum darstellbar ist.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="s_text_image">
+                                <div class="container">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-6">
+                                            <div class="t_img_hover_1">
+                                                <img src="/web/image/2986/1506.jpeg" class="img img-fluid mx-auto" alt="Odoo • Image and Text"/>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 pt16 pb16">
+                                            <h2 class="s_it_heading text-uppercase">Kitos als "RENEW" BEispiel</h2>
+                                            <div class="s_hr text-left pb32 pt8">
+                                                <hr class="border-600 aos-init s_hr_solid w-25 mr-auto s_hr_4px border-alpha aos-animate" data-aos="s_hr_4px"/>
+                                            </div>
+                                            <p class="mb16">Auf dem linken Bild sehen Sie, wie wir aus einem gebrauchten Möbel ein neuwertiges (Renew) Möbel herstellen. Hierbei wurden neben dem Service / Qualitätscheck die Tischplatte gegen eine pulverbeschichtete MDF Platte mit flächenbündig integrierter Medientechnik zudem die Rückwand neu beschichtet und die Akustikpanele neu bezogen.</p>
+                                            <p class="mb16">Nach einer Grundreinigung sind damit "fast" keine Gebrauchspuren mehr außerhalb des Preises erkennbar.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="s_features oe_custom_bg" style="background-color: rgb(214, 239, 214);">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-4 col-md-4 col-sm-4 text-center">
+                                            <section>
+                                                <i class="fa fa-3x fa-gear m-3"/>
+                                            </section>
+                                            <section>
+                                                <div>
+                                                    <a href="#" class="t_title" data-original-title="" title="" aria-describedby="tooltip917206">Modulbauweise</a>
+                                                    <p class="t_sub_text">Flexibel aufbaubar nach ihren Wünschen</p>
+                                                </div>
+                                            </section>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-4 text-center">
+                                            <section>
+                                                <i class="fa fa-3x fa-photo m-3"/>
+                                            </section>
+                                            <section>
+                                                <div>
+                                                    <a href="#" class="t_title" data-original-title="" title="" aria-describedby="tooltip254892">Höhenverstellbar</a>
+                                                    <p class="t_sub_text">In der Höhe einstellbar.</p>
+                                                </div>
+                                            </section>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-4 text-center">
+                                            <section>
+                                                <span class="fa fa-3x m-3 fa-plus-square" style=""/>
+                                            </section>
+                                            <section>
+                                                <div>
+                                                    <a href="#" class="t_title" data-original-title="" title="" aria-describedby="tooltip899065">Made in Swiss</a>
+                                                    <p class="t_sub_text">Knowhow und Technologie aus der Schweiz</p>
+                                                </div>
+                                            </section>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <div class="input-group js_snippet hidden" data-isemipro="true" data-list-id="4"/>
+                            <section class="py-5 t_space_style"></section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <!-- Link to website page template -->
+        <record id="usm-kitos_page" model="website.page">
+            <field name="name">USM Kitos gebraucht</field>
+            <field name="website_published">True</field>
+            <field name="url">/usm-kitos-gebraucht</field>
+            <field name="view_id" ref="usm-kitos"/>
+        </record>
+    </data>
+</odoo>

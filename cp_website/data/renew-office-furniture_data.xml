@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Website page template -->
+        <record id="renew-office-furniture" model="ir.ui.view">
+            <field name="name">RENEW Büromöbel</field>
+            <field name="website_id" ref="website.default_website"/>
+            <field name="type">qweb</field>
+            <field name="key">website.renew-office-furniture</field>
+            <field name="arch" type="xml">
+                <t name="RENEW Büromöbel" t-name="website.renew-office-furniture">
+                    <t t-call="website.layout">
+                        <t t-set="pageName" t-value="'renew-office-furniture'"/>
+                        <div id="wrap" class="oe_structure oe_empty">
+                            <section>
+                                <div class="container">
+                                    <div class="row s_nb_column_fixed">
+                                        <div class="col-lg-12 s_title pt24" style="text-align: center;">
+                                            <h4 class="s_title_default t_title_default">RENEW MÖBEL - NACHHALTIG VOLLENDET</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="s_text_block">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="pt32 pb32 col-lg-12">
+                                            <p class="lead">Unser Ziel ist es, bewusst mit unserer Umwelt umzugehen. Dazu zählt auch, dass wir in der heutigen Wegwerfgesellschaft Zeichen setzen, dass bspw. gebrauchte Möbel nicht gleich schlechte Möbel sind. So haben wir uns auf ganz spezielle Möbelserien spezialisiert und können diese maximal wiederverwenden, indem wir unser Technik Knowhow, sowie ihre Designvorstellungen in dem erneuertem Möbel zusammen führen. Sie finden in unserem Shop zu jedem Artikel ein orangenes Fähnchen, welches ihnen zeigt, welches Produkt wie aufbereitet wurde.<br/></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="s_text_image">
+                                <div class="container">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-6">
+                                            <div class="t_img_hover_1">
+                                                <img src="/web/image/2965/437x500kitos.jpg" class="img img-fluid mx-auto" alt="Odoo • Image and Text"/>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 pt16 pb16">
+                                            <h2 class="text-uppercase s_it_heading">ERRATEN SIE, WAS AN DIESEM TISCH GEBRAUCHT WAR UND WAS NEU IST?</h2>
+                                            <div class="s_hr text-left pb32 pt8">
+                                                <hr class="border-600 aos-init s_hr_solid w-25 mr-auto s_hr_4px border-alpha aos-animate" data-aos="s_hr_4px"/>
+                                            </div>
+                                            <p class="mb16">Dieser HighEnd Tisch der schweizer Topmarke USM - Modell Kitos - ist ein gutes Beispiel wie wir Nachhaltigkeit leben und Sie es erleben.</p>
+                                            <p class="mb16">Das Gestell ist verchromt und weist nach einer Grundreinigung keinerlei Gebrauchspuren auf. Die pulverbeschichtete MDF Platte wird exakt so auch von USM und VITRA selbst eingesetzt. Wir haben hier lediglich unser Knowhow in Punkto Kabelmanagement und Ergonomie einfliessen lassen und gleich Medientechnik eingebaut, welche unsichtbar angeschlossen ist. Alle farbigen Metallteile wurden neu pulverbeschichtet und die Akustikpanele neu bezogen.</p>
+                                            <p class="mb16">Das einzige was gebraucht bleibt, ist der Preis.</p>
+                                            <div class="s_btn text-left pt16 pb16">
+                                                <a href="#" class="btn btn-primary" data-original-title="" title="" aria-describedby="tooltip906881">Mehr zu USM Kitos</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <!-- Link to website page template -->
+        <record id="renew-office-furniture_page" model="website.page">
+            <field name="name">Renew Büromöbel</field>
+            <field name="website_published">True</field>
+            <field name="url">/renew-bueromoebel</field>
+            <field name="view_id" ref="renew-office-furniture"/>
+        </record>
+    </data>
+</odoo>

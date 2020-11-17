@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Website page template -->
+        <record id="aboutus" model="ir.ui.view" forcecreate="True">
+            <field name="name">Über uns</field>
+            <field name="website_id" ref="website.default_website"/>
+            <field name="type">qweb</field>
+            <field name="key">website.aboutus</field>
+            <field name="arch" type="xml">
+                <t name="Ueber uns" t-name="website.aboutus">
+                    <t t-call="website.layout">
+                        <t t-set="pageName" t-value="'aboutus'"/>
+                        <div id="wrap">
+                            <div class="oe_structure">
+                                <div class="oe_structure">
+                                    <div class="oe_structure"/>
+                                </div>
+                                <div class="oe_structure"/>
+                                <section class="s_company_team">
+                                    <div class="container">
+                                        <h2 style="text-align: center;">Unser Team</h2>
+                                        <div class="row s_nb_column_fixed">
+                                            <div class="col-sm-3 col-6 pt16 pb16">
+                                                <div class="row s_col_no_resize s_col_no_bgcolor">
+                                                    <div class="col-lg-12 text-center">
+                                                        <div class="t_img_hover_1">
+                                                            <img alt="Company team" src="/web/image/2416/placeholder-men-keine.png" class="img-fluid d-block mx-auto"/>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12 text-center">
+                                                        <p class="employee_name mt16">Eric G. Clauss</p>
+                                                        <p class="text-muted employee_job_title mt8"> Geschäftsführer</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3 col-6 pt16 pb16">
+                                                <div class="row s_col_no_resize s_col_no_bgcolor">
+                                                    <div class="col-lg-12 text-center">
+                                                        <div class="t_img_hover_1">
+                                                            <img alt="Company team" src="/web/image/2418/placeholder-men-braun.png" class="img-fluid d-block mx-auto"/>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12 text-center">
+                                                        <p class="employee_name mt16">Roberto Palacios</p>
+                                                        <p class="employee_job_title mt8 text-muted"> Geschäftsführer</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row s_nb_column_fixed">
+                                            <div class="col-sm-3 col-6 pt16 pb16">
+                                                <div class="row s_col_no_resize s_col_no_bgcolor">
+                                                    <div class="col-lg-12 text-center">
+                                                        <div class="t_img_hover_1">
+                                                            <img alt="Company team" src="/web/image/2422/female-place-holder-profile-image-braun.png" class="img-fluid d-block mx-auto"/>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12 text-center">
+                                                        <p class="employee_name mt16">Konstantina Katsikari</p>
+                                                        <p class="text-muted employee_job_title mt8"> Assistentin der Geschäftsführung</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3 col-6 pt16 pb16">
+                                                <div class="row s_col_no_resize s_col_no_bgcolor">
+                                                    <div class="col-lg-12 text-center">
+                                                        <div class="t_img_hover_1">
+                                                            <img alt="Company team" src="/web/image/2424/placeholder-men-schwarz.png" class="img-fluid d-block mx-auto"/>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12 text-center">
+                                                        <p class="employee_name mt16">Remzi Jusufi</p>
+                                                        <p class="employee_job_title mt8 text-muted"> Koordination Bereich RENEW</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3 col-6 pt16 pb16">
+                                                <div class="row s_col_no_resize s_col_no_bgcolor">
+                                                    <div class="col-lg-12 text-center">
+                                                        <div class="t_img_hover_1">
+                                                            <img alt="Company team" src="/web/image/2418/placeholder-men-braun.png" class="img-fluid d-block mx-auto"/>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12 text-center">
+                                                        <p class="employee_name mt16">Pawel Grobarek</p>
+                                                        <p class="employee_job_title mt8 text-muted"> Koordination Bereich OFFICE LAB</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section class="s_company_team">
+                                    <div class="container">
+                                        <div class="row s_nb_column_fixed">
+                                            <div class="col-sm-3 col-6 pt16 pb16">
+                                                <div class="row s_col_no_resize s_col_no_bgcolor">
+                                                    <div class="col-lg-12 text-center">
+                                                        <div class="t_img_hover_1">
+                                                            <img alt="Company team" src="/web/image/2416/placeholder-men-keine.png" class="img-fluid d-block mx-auto"/>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12 text-center">
+                                                        <p class="employee_name mt16">Ljubomir Sternad</p>
+                                                        <p class="text-muted employee_job_title mt8"> Lager</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3 col-6 pt16 pb16">
+                                                <div class="row s_col_no_resize s_col_no_bgcolor">
+                                                    <div class="col-lg-12 text-center">
+                                                        <div class="t_img_hover_1">
+                                                            <img alt="Company team" src="/web/image/2416/placeholder-men-keine.png" class="img-fluid d-block mx-auto"/>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12 text-center">
+                                                        <p class="employee_name mt16">Dieter Marwitz</p>
+                                                        <p class="text-muted employee_job_title mt8"> Lager</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <!-- Link to website page template -->
+        <record id="aboutus_page" model="website.page" forcecreate="True">
+            <field name="name">Über uns</field>
+            <field name="is_published">True</field>
+            <field name="website_published">True</field>
+            <field name="url">/ueber-uns</field>
+            <field name="view_id" ref="aboutus"/>
+            <field name="track">True</field>
+        </record>
+        <!-- Main menu record -->
+        <record id="menu_aboutus" model="website.menu" forcecreate="True">
+            <field name="name">Über uns</field>
+            <field name="url">/ueber-uns</field>
+            <field name="website_id" ref="website.default_website"/>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="page_id" ref="aboutus_page"/>
+            <field name="sequence" type="int">40</field>
+        </record>
+    </data>
+</odoo>

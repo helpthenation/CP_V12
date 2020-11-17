@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Website page template -->
+        <record id="terms-conditions" model="ir.ui.view">
+            <field name="name">AGBs</field>
+            <field name="website_id" ref="website.default_website"/>
+            <field name="type">qweb</field>
+            <field name="key">website.terms-conditions</field>
+            <field name="arch" type="xml">
+                <t name="AGBs" t-name="terms-conditions">
+                    <t t-call="website.layout">
+                        <t t-set="pageName" t-value="'terms-conditions'"/>
+                        <div id="wrap" class="oe_structure oe_empty">
+                        <div style="text-align: left;">
+                            <section>
+                            <div class="container">
+                                <div class="row s_nb_column_fixed">
+                                <div class="col-lg-12 s_title pt32 pb32" style="">
+                                    <p class="s_title_default t_title_default">
+                                    <font style="font-size: 24px;">ALLGEMEINE GESCHÄFTSBEDINGUNGEN</font>
+                                    </p>
+                                </div>
+                                </div>
+                            </div>
+                            </section>
+                        </div>
+                        <section class="s_text_block">
+                            <div class="container">
+                            <div class="row">
+                                <div class="pb32 col-lg-12 pt0">
+                                <p class="lead">Die nachfolgenden Allgemeinen Geschäftsbedingungen (AGB) gelten für sämtliche Rechtsgeschäfte über Waren und Dienstleistungen, die über unseren Online-Shop &amp;nbsp;</p>
+                                <p class="lead">„ketchup-mayo-senf.de“ zustandekommen.&amp;nbsp;</p>
+                                <p class="lead">Individuelle Vertragsabreden oder anderslautende AGB des Bestellers haben nur Vorrang vor diesen Allgemeinen Geschäftsbedingungen, wenn sie vor oder bei Vetragsschluss in Schriftform vereinbart werden.&amp;nbsp;</p>
+                                <p class="lead">„ketchup-mayo-senf.de“ ist eine eingetragene Wort- / Bildmarke der Firma Clauss &amp;amp; Palacios GmbH, Würbenthaler Straße 2, D-71065 Sindelfingen.&amp;nbsp;</p>
+                                <p class="lead">Geschäftsführer: Eric G. Clauss, Roberto Palacios, Amtsgericht Stuttgart ( HRB 244999).&amp;nbsp;</p>
+                                <p class="lead">In der Geltung der Allgemeinen Geschäftsbedingung unterscheiden wir zwischen Rechtsgeschäften mit Verbrauchern und Unternehmern nach der Definition des BGB:&amp;nbsp;</p>
+                                <p class="lead">- Verbraucher ist jede natürliche Person, die ein Rechtsgeschäft zu Zwecken abschließt, die überwiegend weder ihrer gewerblichen noch ihrer selbstständigen beruflichen Tätigkeit zugeordnet werden können (§ 13 BGB).</p>
+                                <p class="lead">- Unternehmer ist eine natürliche oder juristische Person oder eine rechtsfähige Personengesellschaft, die bei Abschluss eines Rechtsgeschäfts in Ausübung ihrer gewerblichen oder selbständigen beruflichen Tätigkeit handelt, § 14 Abs. 1 BGB.<br/></p>
+                                </div>
+                            </div>
+                            </div>
+                        </section>
+                        <div style="text-align: left;">
+                            <section>
+                            <div class="container">
+                                <div class="row s_nb_column_fixed">
+                                <div class="col-lg-12 s_title pb32 pt32" style="">
+                                    <p class="s_title_default t_title_default">
+                                    <font style="font-size: 18px;">I. Unsere Allgemeinen Geschäftsbedingungen für Rechtsgeschäfte mit Verbrauchern:</font>
+                                    </p>
+                                </div>
+                                </div>
+                            </div>
+                            </section>
+                        </div>
+                        <section>
+                            <div class="container">
+                            <div class="row s_nb_column_fixed">
+                                <div class="col-lg-12 s_title pb0 pt0" style="text-align: center;">
+                                <h2 class="s_title_default t_title_default" style="text-align: left;">1. Vertragsschluss</h2>
+                                </div>
+                            </div>
+                            </div>
+                        </section>
+                        <section class="s_text_block">
+                            <div class="container">
+                            <div class="row">
+                                <div class="pb32 col-lg-12 pt0">
+                                <p class="lead">Die Präsentation der Waren unter www.ketchup-mayo-senf.de stellen kein rechtlich bindendes Vertragsangebot unsererseits dar. <br/>Im genannten Online-Shop wählt der Verbraucher aus den dort angebotenen Waren die von ihm gewünschten Artikel aus und sammelt diese in einem Warenkorb. Mit der Betätigung des Bestell-Button („Zahlungspflichtig bestellen“) zu diesem Warenkorb gibt der Verbraucher ein verbindliches Vertragsangebot bzgl. der von ihm ausgewählten Ware(n) ab. <br/>Unser Shopsystem nimmt die Bestellung entgegen und erstellt automatisiert eine Zugangsbestätigung dieser Bestellung. Die Zugangsbestätigung selbst ist noch keine verbindliche Annahme des Vertragsangebotes durch uns. Sie zeigt dem Verbraucher lediglich an, daß die Bestellung bei der Clauss &amp;amp; Palacios GmbH eingegangen ist und unter der in der Zugangsbestätigung vergebenen Nummer bearbeitet wird.<br/>Die Fa. Clauss &amp;amp; Palacios GmbH ist berechtigt, innerhalb von 48 Stunden an Werktagen zu prüfen, ob das gewünschte Vertragsangebot angenommen wird. Innerhalb dieser Frist ist der Verbraucher an sein verbindliches Angebot gebunden. <br/>Der Vertragsschluss erfolgt immer erst durch eine Auftragsbestätigung der Clauss &amp;amp; Palacios GmbH per E-Mail an die vom Verbraucher angegebene E-Mail-Adresse. Die Auftragsbestätigung fasst alle wesentlichen Punkte des Vertrages zusammen und enthält unsere Allgemeinen Geschäftsbedingungen. <br/>Den Vertragstext speichern wir. Unsere Allgemeinen Geschäftsbedingungen kann der Verbraucher jederzeit unter .......... einsehen bzw. ausdrucken. Vor Abgabe der zahlungspflichtigen Bestellung wird der Verbraucher von uns auf die AGB aufmerksam gemacht. Die Bestelldaten sind aus Sicherheitsgründen nach der Bestellung nicht mehr über das Internet zugänglich.&amp;nbsp; <br/>Sind in der Auftragsbestätigung Schreib- oder Druckfehler enthalten oder kommt es bei der Preisfestlegung zu einem technisch bedingten Übermittlungsfehler, so ist die Fa. Clauss &amp;amp; Palacios GmbH zur Anfechtung des Vertrages berechtigt. Die Beweislast für den Irrtum trägt die Fa. Clauss &amp;amp; Palacios GmbH. Bereits erfolgte Zahlungen werden in diesen Fällen dem Besteller unverzüglich rückerstattet. <br/></p>
+                                </div>
+                            </div>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="container">
+                            <div class="row s_nb_column_fixed">
+                                <div class="col-lg-12 s_title" style="text-align: center;">
+                                <h2 class="s_title_default t_title_default" style="text-align: left;">2. Preise, Abholung/Lieferung/Versand, Zahlungsarten und –modalitäten.</h2>
+                                </div>
+                            </div>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="container">
+                            <div class="row s_nb_column_fixed">
+                                <div class="col-lg-12 s_title" style="text-align: center;">
+                                <h3 class="s_title_default t_title_default" style="text-align: left;">2.1 Preise</h3>
+                                </div>
+                            </div>
+                            </div>
+                        </section>
+                        <section class="s_text_block">
+                            <div class="container">
+                            <div class="row">
+                                <div class="pb32 col-lg-12 pt0">
+                                <h3 class="lead">a) Alle Preisauszeichnungen im Online-Shop „ketchup-mayo-senf.de“ sind Abholpreise ab Lager Sindelfingen und verstehen sich: <br/>- inklusive gesetzlicher Mehrwertsteuer,<br/>- exklusive Transportverpackung und Transportvorbereitung sowie ggf. Liefer- und Versandkosten. <br/>Bei Artikeln, für die Versand bzw. Lieferung durch uns angeboten wird, ist der genaue Versandpreis inklusive gesetzlicher Mehrwertsteuer im Warenkorb separat aufgeführt, nachdem sich der Besteller mit seiner korrekten Adresse registriert hat. <br/>Die genaue Adresse ist maßgebliche Grundlage zur Ermittlung des Versandpreises.<br/>Im Versandpreis sind sämtliche Kosten, also auch Verpackungsmaterial und –vorbereitung, enthalten.</h3>
+                                <h3 class="lead">b) Mit jeder Aktualisierung oder Änderung des Online-Shops „ketchup-mayo-senf.de“ werden alle vorherigen Preise und sonstige Angaben über Waren und Dienstleistungen ungültig. Maßgeblich ist somit die jeweils zum Zeitpunkt der Bestellung gültige Fassung. <br/></h3>
+                                </div>
+                            </div>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="container">
+                            <div class="row s_nb_column_fixed">
+                                <div class="col-lg-12 s_title" style="text-align: center;">
+                                <h3 class="s_title_default t_title_default" style="text-align: left;">2.2 Abholung / Versand</h3>
+                                </div>
+                            </div>
+                            </div>
+                        </section>
+                        <section class="s_text_block">
+                            <div class="container">
+                            <div class="row">
+                                <div class="pb32 col-lg-12 pt0">
+                                <h3 class="lead">Grundsätzlich besteht für Verbraucher kein Anspruch auf Lieferung oder Versand der Ware durch die Clauss &amp;amp; Palacios GmbH.&amp;nbsp; <br/>Ist daher nichts anderes schriftlich vor oder bei Vertragsschluss vereinbart, ist die gekaufte Ware durch den Käufer oder einem von ihm beauftragten Dritten im Abhollager der Fa. Clauss &amp;amp; Palacios GmbH, Würbenthaler Strasse 2, 71065 Sindelfingen, während der regulären Öffnungszeiten innerhalb einer Frist von 14 Werktagen ab Vertragsschluss abzuholen. (Zur Vorkasse-Regelung: siehe Punkt I. 2.3 a) der AGB) <br/>Der Abholtermin muß mindestens zwei Werktage vorher mit uns abgestimmt und durch uns bestätigt sein.<br/></h3>
+                                </div>
+                            </div>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="container">
+                            <div class="row s_nb_column_fixed">
+                                <div class="col-lg-12 s_title" style="text-align: center;">
+                                <h3 class="s_title_default t_title_default" style="text-align: left;">2.3 Zahlung, Zahlungsarten</h3>
+                                </div>
+                            </div>
+                            </div>
+                        </section>
+                        <section class="s_text_block">
+                            <div class="container">
+                            <div class="row">
+                                <div class="pb32 col-lg-12 pt0">
+                                <h3 class="lead">a) Soweit nichts anderes ausdrücklich schriftlich im Vertrag vereinbart ist, erbringen wir sämtliche Leistungen aus Rechtsgeschäft nur gegen Vorkasse.</h3>
+                                <h2 class="lead">b)&amp;nbsp;<span style="font-size: 0.875rem;">Der Verbraucher hat folgende Möglichkeiten zur Zahlung:&amp;nbsp;</span></h2>
+                                <h2 class="lead">- Banküberweisung (unsere Bankverbindung ist in der Auftragsbestätigung aufgeführt.)</h2>
+                                <h2 class="lead">- Paypal&amp;nbsp;</h2>
+                                <h2 class="lead">- Bar / Kartenzahlung bei Abholung (Mastercard, Visa, American Express, JCB, UnionPay, ApplePay, SamsungPay, Maestro, Visa Electron)</h2>
+                                <h2 class="lead">c) Der Kaufpreis ist ab dem Zeitpunkt des Vetragsschlusses innerhalb von 14 Werktagen zur Zahlung fällig (Gutschrift auf einem unserer Geschäftskonten, unter Berücksichtigung der gewählten Zahlungsart) oder wird in Bar bei Abholung der Ware bezahlt.<br/>Ware wird von uns ab Lager erst zur Abholung an den Verbraucher oder seinen beaufttragten Dritten herausgegeben, wenn der Zahlungsnachweis zweifelsfrei erbracht ist.<br/>Ist die Lieferung bzw. Versand der Ware vereinbart, dann erfolgt die Lieferung innerhalb von 5 bis maximal 90 Werktagen. (Montag – Samstag, ausgenommen sind Feiertage) Fristbeginn ist der Versand der vom Verbraucher gekauften Artikel. Dieser erfolgt unverzüglich nach Erhalt der Kaufpreiszahlung (Gutschrift auf einem unserer Geschäftskonten, unter Berücksichtigung der gewählten Zahlungsart).</h2>
+                                <h2 class="lead">d) Ist zwischen uns und dem Verbraucher schriftlich etwas anderes im Kaufvertrag vereinbart als Vorkasse, so bleibt die Ware bis zur vollständigen Bezahlung des Kaufpreises unser Eigentum.&amp;nbsp; <br/>Ein Recht zur Aufrechnung steht dem Verbraucher nur zu , wenn seine Gegenansprüche rechtskräftig durch ein Gericht festgestellt sind.&amp;nbsp; <br/></h2>
+                                </div>
+                            </div>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="container">
+                            <div class="row s_nb_column_fixed">
+                                <div class="col-lg-12 s_title" style="text-align: center;">
+                                <h3 class="s_title_default t_title_default" style="text-align: left;">2.4 Vorbehalt der Selbstbelieferung</h3>
+                                </div>
+                            </div>
+                            </div>
+                        </section>
+                        <section class="s_text_block">
+                            <div class="container">
+                            <div class="row">
+                                <div class="pb32 col-lg-12 pt0">
+                                <h3 class="lead">Wir behalten uns ausdrücklich das Recht vor, vom Vertrag mit dem Verbraucher zurückzutreten, wenn wir ohne eigenes Verschulden zur Lieferung der bestellten Ware nicht in der Lage sein sollten, falls unser Lieferant seinen vertraglichen Verpflichtungen nicht nachkommt. In einem solchen Fall werden wir den Verbraucher unverzüglich über die Nichtlieferbarkeit der Ware informieren und bereits geleistete Zahlungen an uns unverzüglich rückerstatten. Die Beweislast für diesen Vorgang liegt bei uns.<br/></h3>
+                                </div>
+                            </div>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="container">
+                            <div class="row s_nb_column_fixed">
+                                <div class="col-lg-12 s_title" style="text-align: center;">
+                                <h2 class="s_title_default t_title_default" style="text-align: left;">3. Widerrufsbelehrung</h2>
+                                </div>
+                            </div>
+                            </div>
+                        </section>
+                        <section class="s_text_block">
+                            <div class="container">
+                            <div class="row">
+                                <div class="pb32 col-lg-12 pt0">
+                                <p class="lead">Widerrufsrecht für Verbraucher (Verbraucher ist jede natürliche Person, die ein Rechtsgeschäft zu Zwecken abschließt, die überwiegend weder Ihrer gewerblichen noch ihrer selbstständigen beruflichen Tätigkeit zugerechnet werden können. )&amp;nbsp; <br/><br/>Widerrufsbelehrung<br/><br/>Widerrufsrecht:&amp;nbsp; <br/>Sie haben das Recht, binnen vierzehn Tagen ohne Angabe von Gründen diesen Vertrag zu widerrufen. Die Widerrufsfrist beträgt vierzehn Tage ab dem Tag an dem Sie oder ein von Ihnen benannter Dritter, der nicht der Beförderer ist, die Waren in Besitz genommen haben bzw. hat.&amp;nbsp; <br/>Um Ihr Widerrufsrecht auszuüben, müssen Sie uns (Clauss &amp;amp; Palacios GmbH, Würbenthaler Straße 2, 71065 Sindelfingen, Telefonnummer: 07031-4676323; Telefaxnummer: 07031-4676329, E-Mail-Adresse: info@clauss-palacios.de, mittels einer eindeutigen Erklärung (z.B. ein mit der Post versandter Brief, Telefax oder E-Mail) über Ihren Entschluss, diesen Vertrag zu widerrufen, informieren.&amp;nbsp; <br/>Sie können dafür das beigefügte Muster-Widerrufsformular verwenden, das jedoch nicht vorgeschrieben ist. Sie können das Muster- Widerrufsformular oder eine andere eindeutige Erklärung auch auf unserer Webseite (www.ketchup-mayo-senf.de) elektronisch ausfüllen und übermitteln.&amp;nbsp;&amp;nbsp; <br/>Machen Sie von dieser Möglichkeit Gebrauch, so werden wir Ihnen unverzüglich (z.B. per E-Mail) eine Bestätigung über den Eingang eines solchen Widerrufs übermitteln.</p>
+                                <p class="lead">Zur Wahrung der Widerrufsfrist reicht es aus, dass Sie die Mitteilung über die Ausübung des Widerrufsrechts vor Ablauf der Widerrufsfrist absenden.&amp;nbsp; <br/>Folgen des Widerrufs:&amp;nbsp; <br/>Wenn Sie diesen Vertrag widerrufen, haben wir Ihnen alle Zahlungen, die wir von Ihnen erhalten haben, einschließlich der Lieferkosten (mit Ausnahme der zusätzlichen Kosten, die sich daraus ergeben, dass Sie eine andere Art der Lieferung als die von uns angebotene, günstige Standardlieferung gewählt haben), unverzüglich und spätestens binnen vierzehn Tagen ab dem Tag zurückzuzahlen, an dem die Mitteilung über Ihren Widerruf dieses Vertrags bei uns eingegangen ist. Für diese Rückzahlung verwenden wir dasselbe Zahlungsmittel, das Sie bei der ursprünglichen Transaktion eingesetzt haben, es sei denn, mit Ihnen wurde ausdrücklich etwas anderes vereinbart; in keinem Fall werden Ihnen wegen dieser Rückzahlung Entgelte berechnet.&amp;nbsp; <br/>Wir können die Rückzahlung verweigern, bis wir die Waren wieder zurückerhalten haben oder bis Sie den Nachweis erbracht haben, dass Sie die Waren zurückgesandt haben, je nachdem, welches der frühere Zeitpunkt ist. </p>
+                                <p class="lead">Sie haben die Waren unverzüglich und in jedem Fall spätestens binnen vierzehn Tagen ab dem Tag, an dem Sie uns über den Widerruf dieses Vertrages unterrichten, an uns zurückzusenden oder zu übergeben. Die Frist ist gewahrt, wenn Sie die Waren vor Ablauf der Frist von vierzehn Tagen absenden. Sie tragen die unmittelbaren Kosten der Rücksendung der Waren.&amp;nbsp; <br/>Sie müssen für einen etwaigen Wertverlust der Waren nur aufkommen, wenn dieser Wertverlust auf einen zur Prüfung der Beschaffenheit, Eigenschaften und Funktionsweise der Waren nicht notwendigen Umgang mit ihnen zurückzuführen ist.&amp;nbsp; <br/><br/>Ausschluss des Widerrufsrechtes:&amp;nbsp; <br/>Das Widerrufsrecht besteht nicht bei Verträgen&amp;nbsp; <br/>- zur Lieferung von Waren, die nicht vorgefertigt sind und für deren Herstellung eine individuelle Auswahl oder Bestimmung durch den Verbraucher maßgeblich ist oder die eindeutig auf die persönlichen Bedürfnisse des Verbrauchers zugeschnitten sind;</p>
+                                <p class="lead">- zur Lieferung von Waren, wenn diese nach der Lieferung auf Grund ihrer Beschaffenheit untrennbar mit anderen Gütern vermischt wurden. Alternative Streitbeilegung gemäß Art. 14 Abs. 1 ODR-VO und § 36 VSBG: <br/><br/>Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit, die Sie unter&amp;nbsp; http://ec.europa.eu/consumers/odr/&amp;nbsp; finden.&amp;nbsp; <br/>Verbraucher haben die Möglichkeit, sich für die Beilegung ihrer Streitigkeiten an die:&amp;nbsp; <br/>Allgemeine Verbraucherschlichtungsstelle des Zentrums für Schlichtung e. V.,</p>
+                                <p class="lead">Anschrift <br/>Straßburger Str. 8  77694 Kehl  Deutschland</p>
+                                <p class="lead">Kontaktinformationen <br/>E-Mail-Adresse: mail@verbraucher-schlichter.de <br/>Website:&amp;nbsp; https://www.verbraucher-schlichter.de <br/>Telefon: +49 7851 79579 40 <br/>Fax: +49 7851 79579 41 <br/>zu wenden. <br/>Wir sind bereit, an einem außergerichtlichen Schlichtungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.&amp;nbsp;<br/></p>
+                                </div>
+                            </div>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="container">
+                            <div class="row s_nb_column_fixed">
+                                <div class="col-lg-12 s_title" style="text-align: center;">
+                                <h2 class="s_title_default t_title_default" style="text-align: left;">4. Gewährleistung</h2>
+                                </div>
+                            </div>
+                            </div>
+                        </section>
+                        <section class="s_text_block">
+                            <div class="container">
+                            <div class="row">
+                                <div class="pb32 col-lg-12 pt0">
+                                <p class="lead">Die Gewährleistung richtet sich nach den gesetzlichen Bestimmungen. Soweit gebrauchte Waren Gegenstand des Vertrages mit dem Verbraucher sind, beträgt die Gewährleistungsfrist ein Jahr.<br/></p>
+                                </div>
+                            </div>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="container">
+                            <div class="row s_nb_column_fixed">
+                                <div class="col-lg-12 s_title" style="text-align: center;">
+                                <h2 class="s_title_default t_title_default" style="text-align: left;">5. Datenschutzbestimmungen</h2>
+                                </div>
+                            </div>
+                            </div>
+                        </section>
+                        <section class="s_text_block">
+                            <div class="container">
+                            <div class="row">
+                                <div class="pb32 col-lg-12 pt0">
+                                <p class="lead">Die Datenverarbeitung durch die Clauss &amp;amp; Palacios GmbH erfolgt unter Berücksichtigung des geltenden Bundesdatenschutzgesetzes (BDSG) sowie des Telemediengesetz (TMG). Im Übrigen wird auf die Hinweise der Datenschutzerklärung verwiesen. Bei Fragen zur Erhebung, Verarbeitung oder Nutzung Ihrer personenbezogenen Daten, bei Auskünften, Berichtigung, Einschränkung oder Löschung von Daten sowie Widerruf erteilter Einwilligungen oder Widerspruch gegen eine bestimmte Datenverwendung wenden Sie sich bitte direkt an uns über die Kontaktdaten in unserem Impressum.<br/></p>
+                                </div>
+                            </div>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="container">
+                            <div class="row s_nb_column_fixed">
+                                <div class="col-lg-12 s_title" style="text-align: center;">
+                                <h2 class="s_title_default t_title_default" style="text-align: left;">6. Haftung</h2>
+                                </div>
+                            </div>
+                            </div>
+                        </section>
+                        <section class="s_text_block">
+                            <div class="container">
+                            <div class="row">
+                                <div class="pb32 col-lg-12 pt0">
+                                <p class="lead">Wir haben hat nur Vorsatz und grobe Fahrlässigkeit zu vertreten. Soweit eine zurechenbare Pflichtverletzung auf einfacher Fahrlässigkeit beruht und eine wesentliche Vertragspflicht (Pflichten, deren Erfüllung die ordnungsgemäße Durchführung des Vertrages erst ermöglicht, deren Verletzung die Erreichung des Vertragszwecks gefährdet und auf deren Einhaltung Sie als Kunde regelmäßig vertrauen) schuldhaft verletzt ist, ist die Schadensersatzhaftung unsererseits auf den vorhersehbaren Schaden, der typischerweise in vergleichbaren Fällen eintritt, beschränkt. Für den Fall der Tötung, der Verletzung der Gesundheit oder des Körpers haften wir nach den gesetzlichen Bestimmungen.</p>
+                                <p class="lead">Sofern der Verkäufer fahrlässig eine unwesentliche Vertragspflicht verletzt hat, ist die Ersatzpflicht auf den Auftragswert begrenzt.&amp;nbsp; <br/>Die Haftung nach den Bestimmungen des Produkthaftungsgesetzes bleibt unberührt.<br/></p>
+                                </div>
+                            </div>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="container">
+                            <div class="row s_nb_column_fixed">
+                                <div class="col-lg-12 s_title" style="text-align: center;">
+                                <h2 class="s_title_default t_title_default" style="text-align: left;">7. Anwendbares Recht</h2>
+                                </div>
+                            </div>
+                            </div>
+                        </section>
+                        <section class="s_text_block">
+                            <div class="container">
+                            <div class="row">
+                                <div class="pb32 col-lg-12 pt0">
+                                <p class="lead">Es gilt ausschließlich deutsches Recht. Gegenüber einem Verbraucher gilt diese Rechtswahl nur insoweit, als dadurch keine zwingenden gesetzlichen Bestimmungen des Staates, in dem er seinen Wohnsitz oder gewöhnlichen Aufenthalt hat, eingeschränkt werden.<br/></p>
+                                </div>
+                            </div>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="container">
+                            <div class="row s_nb_column_fixed">
+                                <div class="col-lg-12 s_title" style="text-align: center;">
+                                <p class="s_title_default t_title_default" style="text-align: left;">II. Unsere Allgemeinen Geschäftsbedingungen für Rechtsgeschäfte mit Unternehmern gem. § 14 Abs. 1 BGB. (nachfolgend „Käufer“ genannt)</p>
+                                </div>
+                            </div>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="container">
+                            <div class="row s_nb_column_fixed">
+                                <div class="col-lg-12 s_title" style="text-align: center;">
+                                <h2 class="s_title_default t_title_default" style="text-align: left;">1. Vertragsschluss <br/></h2>
+                                </div>
+                            </div>
+                            </div>
+                        </section>
+                        <section class="s_text_block">
+                            <div class="container">
+                            <div class="row">
+                                <div class="pb32 col-lg-12 pt0">
+                                <p class="lead">Die Präsentation der Waren unter www.ketchup-mayo-senf.de stellen kein rechtlich bindendes Vertragsangebot unsererseits dar.<br/>Im genannten Online-Shop wählt der Käufer aus den dort angebotenen Waren die von ihm gewünschten Artikel aus und sammelt diese in einem Warenkorb. Mit der Betätigung des Bestell-Button („Zahlungspflichtig bestellen“) zu diesem Warenkorb gibt der Käufer ein verbindliches Vertragsangebot bzgl. der von ihm ausgewählten Ware(n) ab.&amp;nbsp; <br/>Unser Shopsystem nimmt die Bestellung entgegen und erstellt automatisiert eine Zugangsbestätigung dieser Bestellung. Die Zugangsbestätigung selbst ist noch keine verbindliche Annahme des Vertragsangebotes durch uns. Sie zeigt dem Käuferr lediglich an, daß die Bestellung bei der Clauss &amp;amp; Palacios GmbH eingegangen ist und unter der in der Zugangsbestätigung vergebenen Nummer bearbeitet wird. Die Fa. Clauss &amp;amp; Palacios GmbH ist berechtigt, innerhalb von 48 Stunden an Werktagen zu prüfen, ob das gewünschte Vertragsangebot angenommen wird. Innerhalb dieser Frist ist der Käufer an sein verbindliches Angebot gebunden.<br/>Der Vertragsschluss erfolgt immer erst durch eine Auftragsbestätigung der Clauss &amp;amp; Palacios GmbH per E-Mail an die vom Käufer angegebene E-Mail-Adresse. Die Auftragsbestätigung fasst alle wesentlichen Punkte des Vertrages zusammen und enthält unsere Allgemeinen Geschäftsbedingungen.<br/>Den Vertragstext speichern wir. Unsere Allgemeinen Geschäftsbedingungen kann der Käufer jederzeit unter .......... einsehen bzw. ausdrucken. Vor Abgabe der zahlungspflichtigen Bestellung wird der Käufer von uns auf die AGB aufmerksam gemacht. Die Bestelldaten sind aus Sicherheitsgründen nach der Bestellung nicht mehr über das Internet zugänglich.&amp;nbsp; <br/>Sind in der Auftragsbestätigung Schreib- oder Druckfehler enthalten oder kommt es bei der Preisfestlegung zu einem technisch bedingten Übermittlungsfehler, so ist die Fa. Clauss &amp;amp; Palacios GmbH zur Anfechtung des Vertrages berechtigt. Die Beweislast für den Irrtum trägt die Fa. Clauss &amp;amp; Palacios GmbH. Bereits erfolgte Zahlungen werden in diesen Fällen dem Käufer unverzüglich rückerstattet.<br/></p>
+                                </div>
+                            </div>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="container">
+                            <div class="row s_nb_column_fixed">
+                                <div class="col-lg-12 s_title" style="text-align: center;">
+                                <h2 class="s_title_default t_title_default" style="text-align: left;">2. Preise, Abholung/Lieferung/Versand, Zahlungsarten und –modalitäten.</h2>
+                                </div>
+                            </div>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="container">
+                            <div class="row s_nb_column_fixed">
+                                <div class="col-lg-12 s_title" style="text-align: center;">
+                                <h3 class="s_title_default t_title_default" style="text-align: left;">2.1 Preise</h3>
+                                </div>
+                            </div>
+                            </div>
+                        </section>
+                        <section class="s_text_block">
+                            <div class="container">
+                            <div class="row">
+                                <div class="pb32 col-lg-12 pt0">
+                                <p class="lead">a) Alle Preisauszeichnungen im Online-Shop „ketchup-mayo-senf.de“ sind Abholpreise ab Lager Sindelfingen und verstehen sich:&amp;nbsp; <br/>- inklusive gesetzlicher Mehrwertsteuer,&amp;nbsp; <br/>- exklusive Transportverpackung und Transportvorbereitung sowie ggf. Liefer- und Versandkosten.&amp;nbsp; <br/>Bei Artikeln, für die Versand bzw. Lieferung durch uns angeboten wird, ist der genaue Versandpreis inklusive gesetzlicher Mehrwertsteuer im Warenkorb separat aufgeführt, nachdem sich der Käufer mit seiner korrekten Adresse registriert hat.&amp;nbsp; <br/>Die genaue Adresse ist maßgebliche Grundlage zur Ermittlung des Versandpreises.&amp;nbsp; <br/>Im Versandpreis sind sämtliche Kosten, also auch Verpackungsmaterial und –vorbereitung, enthalten.</p>
+                                <p class="lead">b) Mit jeder Aktualisierung oder Änderung des Online-Shops „ketchup-mayo-senf.de“ werden alle vorherigen Preise und sonstige Angaben über Waren und Dienstleistungen ungültig. Maßgeblich ist somit die jeweils zum Zeitpunkt der Bestellung gültige Fassung.<br/></p>
+                                </div>
+                            </div>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="container">
+                            <div class="row s_nb_column_fixed">
+                                <div class="col-lg-12 s_title" style="text-align: center;">
+                                <h3 class="s_title_default t_title_default" style="text-align: left;">2.2 Abholung / Versand</h3>
+                                </div>
+                            </div>
+                            </div>
+                        </section>
+                        <section class="s_text_block">
+                            <div class="container">
+                            <div class="row">
+                                <div class="pb32 col-lg-12 pt0">
+                                <p class="lead">Grundsätzlich besteht für Käufer kein Anspruch auf Lieferung oder Versand der Ware durch die Clauss &amp;amp; Palacios GmbH.&amp;nbsp; <br/>Ist daher nichts anderes schriftlich vor oder bei Vertragsschluss vereinbart, ist die gekaufte Ware durch den Käufer oder einem von ihm beauftragten Dritten im Abhollager der Fa. Clauss &amp;amp; Palacios GmbH, Würbenthaler Strasse 2, 71065 Sindelfingen, während der regulären Öffnungszeiten innerhalb einer Frist von 14 Werktagen ab Vertragsschluss abzuholen. (Zur Vorkasse-Regelung: siehe Punkt I. 2.3 a) der AGB&amp;nbsp; <br/>Der Abholtermin muß mindestens zwei Werktage vorher mit uns abgestimmt und durch uns bestätigt sein.<br/></p>
+                                </div>
+                            </div>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="container">
+                            <div class="row s_nb_column_fixed">
+                                <div class="col-lg-12 s_title" style="text-align: center;">
+                                <h3 class="s_title_default t_title_default" style="text-align: left;">2.3 Zahlung, Zahlungsarten</h3>
+                                </div>
+                            </div>
+                            </div>
+                        </section>
+                        <section class="s_text_block">
+                            <div class="container">
+                            <div class="row">
+                                <div class="pb32 col-lg-12 pt0">
+                                <p class="lead">a) Soweit nichts anderes ausdrücklich schriftlich im Vertrag vereinbart&amp;nbsp;&amp;nbsp; <br/>ist, erbringen wir sämtliche Leistungen aus Rechtsgeschäft nur gegen&amp;nbsp;&amp;nbsp; <br/>Vorkasse.</p>
+                                <p class="lead">b)&amp;nbsp;<span style="font-family: inherit; font-size: 0.875rem; text-transform: unset;">Der Verbraucher hat folgende Möglichkeiten zur Zahlung:&amp;nbsp;</span></p>
+                                <p class="lead">- Banküberweisung (unsere Bankverbindung ist in der Auftragsbestätigung aufgeführt.)</p>
+                                <p class="lead">- Paypal&amp;nbsp;</p>
+                                <p class="lead">- Bar / Kartenzahlung bei Abholung (Mastercard, Visa, American Express, JCB, UnionPay, ApplePay, SamsungPay, Maestro, Visa Electron)</p>
+                                <p class="lead">e) Der Kaufpreis ist ab dem Zeitpunkt des Vetragsschlusses zur Zahlung fällig (Gutschrift auf einem unserer Geschäftskonten, unter Berücksichtigung der gewählten Zahlungsart) oder wird in Bar bei Abholung der Ware bezahlt. Ware wird von uns ab Lager erst zur Abholung an den Käufer oder seinen beaufttragten Dritten herausgegeben, wenn der Zahlungsnachweis zweifelsfrei erbracht ist.&amp;nbsp; <br/>Ist die Lieferung bzw. Versand der Ware vereinbart, dann erfolgt die Lieferung innerhalb von 5 bis maximal &amp;nbsp;90 Werktagen. (Montag – Samstag, ausgenommen sind Feiertage) Fristbeginn ist der Versand der vom Käufer&amp;nbsp; <br/>gekauften Artikel. Dieser erfolgt unverzüglich nach Erhalt der Kaufpreiszahlung (Gutschrift auf einem unserer Geschäftskonten, unter Berücksichtigung der gewählten Zahlungsart).&amp;nbsp; <br/>f) Ist zwischen uns und dem Käufer schriftlich etwas anderes im Kaufvertrag vereinbart als Vorkasse, so bleibt die Ware bis zur vollständigen Bezahlung des Kaufpreises unser Eigentum. Vor Eigentumsübergang ist eine Verpfändung, Sicherungsübereignung, Verarbeitung oder Umgestaltung ohne unsere ausdrückliche Zustimmung nicht zulässig.&amp;nbsp; <br/>Ein Recht zur Aufrechnung steht dem Verbraucher nur zu , wenn seine Gegenansprüche rechtskräftig durch ein Gericht festgestellt sind.<br/></p>
+                                </div>
+                            </div>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="container">
+                            <div class="row s_nb_column_fixed">
+                                <div class="col-lg-12 s_title" style="text-align: center;">
+                                <h3 class="s_title_default t_title_default" style="text-align: left;">2.4 Vorbehalt der Selbstbelieferung</h3>
+                                </div>
+                            </div>
+                            </div>
+                        </section>
+                        <section class="s_text_block">
+                            <div class="container">
+                            <div class="row">
+                                <div class="pb32 col-lg-12 pt0">
+                                <p class="lead">Wir behalten uns ausdrücklich das Recht vor, vom Vertrag mit dem Verbraucher zurückzutreten, wenn wir ohne eigenes Verschulden zur Lieferung der bestellten Ware nicht in der Lage sein sollten, falls unser Lieferant seinen vertraglichen Verpflichtungen nicht nachkommt. In einem solchen Fall werden wir den Verbraucher unverzüglich über die Nichtlieferbarkeit der Ware informieren und bereits geleistete Zahlungen an uns unverzüglich rückerstatten. Die Beweislast für diesen Vorgang liegt bei uns.<br/></p>
+                                </div>
+                            </div>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="container">
+                            <div class="row s_nb_column_fixed">
+                                <div class="col-lg-12 s_title" style="text-align: center;">
+                                <h2 class="s_title_default t_title_default" style="text-align: left;">3. Gewährleistung</h2>
+                                </div>
+                            </div>
+                            </div>
+                        </section>
+                        <section class="s_text_block">
+                            <div class="container">
+                            <div class="row">
+                                <div class="pb32 pt0 col-lg-12">
+                                <p class="lead">Soweit gebrauchte Waren Gegenstand des Vertrages mit dem Käufer sind, wird die Gewährleistungsfrist ausgeschlossen.&amp;nbsp; <br/>Für Neuware beträgt die Verjährungsfrist für Mängel ein Jahr ab Gefahrübergang. Der Verkäufer hat die Wahl der Art der Nacherfüllung.&amp;nbsp; <br/>Für den Käufer begründet ein unwesentlicher Mangel grundsätzlich keine Mängelansprüche.&amp;nbsp; <br/>Die Verjährung beginnt nicht erneut, wenn im Rahmen einer Mängelhaftung eine Ersatzlieferung erfolgt.&amp;nbsp; <br/>Ansonsten richtet sich die Gewährleistung nach den gesetzlichen Bestimmungen, insbesondere den Regelungen zum Handelskauf.<br/></p>
+                                </div>
+                            </div>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="container">
+                            <div class="row s_nb_column_fixed">
+                                <div class="col-lg-12 s_title" style="text-align: center;">
+                                <h2 class="s_title_default t_title_default" style="text-align: left;">4. Haftung</h2>
+                                </div>
+                            </div>
+                            </div>
+                        </section>
+                        <section class="s_text_block">
+                            <div class="container">
+                            <div class="row">
+                                <div class="pb32 col-lg-12 pt0">
+                                <p class="lead">Wir haben hat nur Vorsatz und grobe Fahrlässigkeit zu vertreten. Soweit eine zurechenbare Pflichtverletzung auf einfacher Fahrlässigkeit beruht und eine wesentliche Vertragspflicht (Pflichten, deren Erfüllung die ordnungsgemäße Durchführung des Vertrages erst ermöglicht, deren Verletzung die Erreichung des Vertragszwecks gefährdet und auf deren Einhaltung der Käufer regelmäßig vertraut) schuldhaft verletzt ist, ist die Schadensersatzhaftung unsererseits auf den vorhersehbaren Schaden, der typischerweise in vergleichbaren Fällen eintritt, beschränkt. Für den Fall der Tötung, der Verletzung der Gesundheit oder des Körpers haften wir nach den gesetzlichen Bestimmungen.&amp;nbsp; <br/>Sofern der Verkäufer fahrlässig eine unwesentliche Vertragspflicht verletzt hat, ist die Ersatzpflicht auf den Auftragswert begrenzt.&amp;nbsp; <br/>Die Haftung nach den Bestimmungen des Produkthaftungsgesetzes bleibt unberührt.Im Übrigen ist die Haftung ausgeschlossen.<br/></p>
+                                </div>
+                            </div>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="container">
+                            <div class="row s_nb_column_fixed">
+                                <div class="col-lg-12 s_title" style="text-align: center;">
+                                <h2 class="s_title_default t_title_default" style="text-align: left;">5. Datenschutzbestimmungen</h2>
+                                </div>
+                            </div>
+                            </div>
+                        </section>
+                        <section class="s_text_block">
+                            <div class="container">
+                            <div class="row">
+                                <div class="pb32 pt0 col-lg-12">
+                                <p class="lead">Die Datenverarbeitung durch die Clauss &amp;amp; Palacios GmbH erfolgt unter Berücksichtigung des geltenden Bundesdatenschutzgesetzes (BDSG) sowie des Telemediengesetz (TMG). Im Übrigen wird auf die Hinweise der Datenschutzerklärung verwiesen. Bei Fragen zur Erhebung, Verarbeitung oder Nutzung Ihrer personenbezogenen Daten, bei Auskünften, Berichtigung, Einschränkung oder Löschung von Daten sowie Widerruf erteilter Einwilligungen oder Widerspruch gegen eine bestimmte Datenverwendung wenden Sie sich bitte direkt an uns über die Kontaktdaten in unserem Impressum.<br/></p>
+                                </div>
+                            </div>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="container">
+                            <div class="row s_nb_column_fixed">
+                                <div class="col-lg-12 s_title" style="text-align: center;">
+                                <h2 class="s_title_default t_title_default" style="text-align: left;">6. Schlussbestimmungen</h2>
+                                </div>
+                            </div>
+                            </div>
+                        </section>
+                        <section class="s_text_block">
+                            <div class="container">
+                            <div class="row">
+                                <div class="pb32 col-lg-12 pt0">
+                                <p class="lead">Für sämtliche Rechtsbeziehungen der Parteien gilt das Recht der Bundesrepublik Deutschland unter Ausschluss der Gesetze über den internationalen Kauf beweglicher Waren.&amp;nbsp; <br/>Ausschließlicher Gerichtsstand für alle Streitigkeiten aus diesem Vertrag ist der Geschäftssitz des Verkäufers. Dasselbe gilt, wenn der Käufer keinen allgemeinen Gerichtsstand in Deutschland oder der EU hat oder Wohnsitz oder gewöhnlicher Aufenthalt im Zeitpunkt der Klageerhebung nicht bekannt sind. Die Befugnis, auch das Gericht an einem anderen gesetzlichen Gerichtsstand anzurufen bleibt hiervon unberührt.<br/>Die Vertragssprache ist Deutsch. <br/></p>
+                                </div>
+                            </div>
+                            </div>
+                        </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <!-- Link to website page template -->
+        <record id="terms-conditions_page" model="website.page">
+            <field name="name">AGBs</field>
+            <field name="website_published">True</field>
+            <field name="url">/agb</field>
+            <field name="view_id" ref="terms-conditions"/>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,804 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* cp_overrides
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0+e-20190206\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-12-12 17:38+0000\n"
+"PO-Revision-Date: 2019-12-12 17:38+0000\n"
+"Last-Translator: <Guido Palacios (git GmbH)>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: cp_overrides
+#: model_terms:ir.ui.view,arch_db:cp_overrides.sale_inherit_view
+msgid "Purchase Information"
+msgstr "Bestellinformationen"
+
+#. module: cp_overrides
+#: model_terms:ir.ui.view,arch_db:cp_overrides.cp_product_template_form_view
+msgid "Logistics"
+msgstr "Logistik"
+
+#. module: cp_overrides
+#: model_terms:ir.ui.view,arch_db:cp_overrides.cp_product_template_form_view
+msgid "Product Description"
+msgstr "Produkt Beschreibung"
+
+#. module: cp_overrides
+#: model_terms:ir.ui.view,arch_db:cp_overrides.cp_product_template_form_view
+msgid "Product Images"
+msgstr "Produkt Bilder"
+
+#. module: cp_overrides
+#: model_terms:ir.ui.view,arch_db:cp_overrides.cp_product_template_form_view
+#: model_terms:ir.ui.view,arch_db:cp_overrides.cp_product_variant_easy_edit_view
+msgid "Width"
+msgstr "Länge"
+
+#. module: cp_overrides
+#: model_terms:ir.ui.view,arch_db:cp_overrides.cp_product_template_form_view
+#: model_terms:ir.ui.view,arch_db:cp_overrides.cp_product_variant_easy_edit_view
+msgid "Depth"
+msgstr "Tiefe"
+
+#. module: cp_overrides
+#: model_terms:ir.ui.view,arch_db:cp_overrides.cp_product_template_form_view
+#: model_terms:ir.ui.view,arch_db:cp_overrides.cp_product_variant_easy_edit_view
+msgid "Height"
+msgstr "Höhe"
+
+#. module: cp_overrides
+#: model_terms:ir.ui.view,arch_db:cp_overrides.cp_product_template_form_view
+#: model_terms:ir.ui.view,arch_db:cp_overrides.cp_product_variant_easy_edit_view
+msgid "<span>m³</span>"
+msgstr "<span>m³</span>"
+
+#. module: cp_overrides
+#: model_terms:ir.ui.view,arch_db:cp_overrides.cp_product_template_form_view
+#: model_terms:ir.ui.view,arch_db:cp_overrides.cp_product_variant_easy_edit_view
+msgid "Volume"
+msgstr "Volumen"
+
+#. module: cp_overrides
+#: model_terms:ir.ui.view,arch_db:cp_overrides.cp_product_variant_easy_edit_view
+msgid "Weight"
+msgstr "Gewicht"
+
+#. module: cp_overrides
+#: model_terms:ir.ui.view,arch_db:cp_overrides.cp_report_picking_operations
+msgid "<span><strong>Delivery address:</strong></span>"
+msgstr "<span><strong>Lieferadresse:</strong></span>"
+
+#. module: cp_overrides
+#: model_terms:ir.ui.view,arch_db:cp_overrides.cp_report_picking_operations
+msgid "<span><strong>Warehouse address:</strong></span>"
+msgstr "<span><strong>Lagerhausadresse:</strong></span>"
+
+#. module: cp_overrides
+#: model_terms:ir.ui.view,arch_db:cp_overrides.cp_report_picking_operations
+msgid "<span><strong>Deliverer Adress:</strong></span>"
+msgstr "<span><strong>Lieferantenadresse:</strong></span>"
+
+#. module: cp_overrides
+#: model_terms:ir.ui.view,arch_db:cp_overrides.cp_report_picking_operations
+msgid "<span><strong>Customer address:</strong></span>"
+msgstr "<span><strong>Kundenadresse:</strong></span>"
+
+
+#. module: cp_overrides
+#: model_terms:ir.ui.view,arch_db:cp_overrides.cp_report_picking_operations
+msgid "<strong>Status</strong>"
+msgstr "<strong>Status</strong>"
+
+#. module: cp_overrides
+#: model_terms:ir.ui.view,arch_db:cp_overrides.cp_report_picking_operations
+msgid "<strong>Scheduled Date</strong>"
+msgstr "<strong>Geplantes Datum</strong>"
+
+#. module: cp_overrides
+#: model_terms:ir.ui.view,arch_db:cp_overrides.cp_report_picking_operations
+msgid "<strong>Weight</strong>"
+msgstr "<strong>Gewicht</strong>"
+
+#. module: cp_overrides
+#: model_terms:ir.ui.view,arch_db:cp_overrides.cp_report_picking_operations
+msgid "<strong>To</strong>"
+msgstr "<strong>Nach</strong>"
+
+#. module: cp_overrides
+#: model_terms:ir.ui.view,arch_db:cp_overrides.cp_report_picking_operations
+msgid "<strong>Charge-/Serialnumber</strong>"
+msgstr "<strong>Chargen-/Seriennummer</strong>"
+
+#. module: cp_overrides
+#: model_terms:ir.ui.view,arch_db:cp_overrides.cp_report_picking_operations
+msgid "<strong>Product Barcode</strong>"
+msgstr "<strong>Produkt Barcode</strong>"
+
+#. module: cp_overrides
+#: model_terms:ir.ui.view,arch_db:cp_overrides.cp_report_picking_operations
+msgid "Packaging"
+msgstr "Verpackung"
+
+#. module: cp_overrides
+#: model_terms:ir.ui.view,arch_db:cp_overrides.cp_report_picking_operations
+msgid "Barcode"
+msgstr Strichcode
+
+#. module: cp_overrides
+#: model_terms:ir.ui.view,arch_db:cp_overrides.cp_report_picking_operations
+msgid "Origin"
+msgstr "Herkunft"
+
+#. module: cp_overrides
+#: model_terms:ir.ui.view,arch_db:cp_overrides.cp_report_picking_operations
+msgid "Target"
+msgstr "Zielort"
+
+#. module: cp_overrides
+#: model_terms:ir.ui.view,arch_db:cp_overrides.cp_report_picking_operations
+msgid "All products could not be reserved. Click on the \"Check Availability\" button to try to reserve products."
+msgstr "Nicht alle Artikel konnten reserviert werden. Klicken sie auf den \"Verfügbarkeit prüfen\" Schalter um eine erneute Reservierung durchzuführen."
+
+
+#. module: cp_overrides
+#: model_terms:ir.ui.view,arch_db:cp_overrides.cp_report_deliveryslip_document
+#: model_terms:ir.ui.view,arch_db:cp_overrides.cp_report_picking_operations
+msgid "<strong>Product</strong>"
+msgstr "<strong>Produkt</strong>"
+
+#. module: cp_overrides
+#: model_terms:ir.ui.view,arch_db:cp_overrides.cp_report_deliveryslip_document
+#: model_terms:ir.ui.view,arch_db:cp_overrides.cp_report_picking_operations
+msgid "<strong>Amount</strong>"
+msgstr "<strong>Menge</strong>"
+
+#. module: cp_overrides
+#: model_terms:ir.ui.view,arch_db:cp_overrides.cp_report_deliveryslip_document
+#: model_terms:ir.ui.view,arch_db:cp_overrides.cp_report_picking_operations
+msgid "<strong>Order</strong>"
+msgstr "<strong>Bestellung</strong>"
+
+#. module: cp_overrides
+#: model_terms:ir.ui.view,arch_db:cp_overrides.cp_report_deliveryslip_document
+#: model_terms:ir.ui.view,arch_db:cp_overrides.cp_report_picking_operations
+msgid "<strong>Freight Leader</strong>"
+msgstr "<strong>Frachtführer</strong>"
+
+
+#. module: cp_overrides
+#: model_terms:ir.ui.view,arch_db:cp_overrides.cp_report_deliveryslip_document
+msgid "<strong>Customer reference:</strong>"
+msgstr "<strong>Kundenreferenz:</strong>"
+
+#. module: cp_overrides
+#: model_terms:ir.ui.view,arch_db:cp_overrides.cp_report_deliveryslip_document
+msgid "Delivery Slip / Picking Slip:<br/>"
+msgstr "Lieferschein / Abholschein:<br/>"
+
+#. module: cp_overrides
+#: model_terms:ir.ui.view,arch_db:cp_overrides.cp_report_deliveryslip_document
+msgid "<strong>Date</strong>"
+msgstr "<strong>Datum</strong>"
+
+#. module: cp_overrides
+#: model_terms:ir.ui.view,arch_db:cp_overrides.cp_report_deliveryslip_document
+msgid "<strong>Shipping Weight</strong>"
+msgstr "<strong>Liefergewicht</strong>"
+
+#. module: cp_overrides
+#: model_terms:ir.ui.view,arch_db:cp_overrides.cp_report_deliveryslip_document
+msgid "<strong>Tracking number</strong>"
+msgstr "<strong>Verfolgungsnummer</strong>"
+
+#. module: cp_overrides
+#: model_terms:ir.ui.view,arch_db:cp_overrides.cp_report_deliveryslip_document
+msgid "Los-/Serialnumber"
+msgstr "Los-/Seriennummer"
+
+#. module: cp_overrides
+#: model_terms:ir.ui.view,arch_db:cp_overrides.cp_report_deliveryslip_document
+msgid "All products could not send. They will be send as soon they are available."
+msgstr "Alle Artikel konnten nicht versendet werden, die restlichen werden versendet, sobald sie verfügbar sind."
+
+#. module: cp_overrides
+#: model_terms:ir.ui.view,arch_db:cp_overrides.cp_report_deliveryslip_document
+msgid "Goods complete and checked, all defects and errors seen, accepted and complete receipt confirmed."
+msgstr "Ware vollständig und geprüft, alle Mängel und Fehler gesehen, abgenommen und vollständigen Empfang bestätigt."
+
+#. module: cp_overrides
+#: model_terms:ir.ui.view,arch_db:cp_overrides.cp_report_deliveryslip_document
+msgid "<strong>____________________________</strong>"
+msgstr "<strong>____________________________</strong>"
+
+#. module: cp_overrides
+#: model_terms:ir.ui.view,arch_db:cp_overrides.cp_report_deliveryslip_document
+msgid "(Date, Signature)"
+msgstr "(Datum, Unterschrift)"
+
+
+#. module: cp_overrides
+#: model_terms:ir.ui.view,arch_db:cp_overrides.cp_view_partner_form
+msgid "ZIP"
+msgstr "PLZ"
+
+#. module: cp_overrides
+#: model_terms:ir.ui.view,arch_db:cp_overrides.cp_view_partner_form
+msgid "City"
+msgstr "Stadt"
+
+#. module: cp_overrides
+#: model_terms:ir.ui.view,arch_db:cp_overrides.cp_barcode_locations_wizard_view
+msgid "Add barcode"
+msgstr "Barcode hinzufügen"
+
+#. module: cp_overrides
+#: model_terms:ir.ui.view,arch_db:cp_overrides.cp_barcode_locations_wizard_view
+msgid "Add barcode for exciting location"
+msgstr "Barcode zu existierender Lokation hinzufügen"
+
+
+#. module: cp_overrides
+#: model_terms:ir.ui.view,arch_db:cp_overrides.customize_header_style_1
+msgid "<i class=\"fa fa-check-circle\"/>Checkout"
+msgstr "<i class=\"fa fa-check-circle\"/>Checkout"
+
+#. module: cp_overrides
+#: model_terms:ir.ui.view,arch_db:cp_overrides.customize_header_style_1
+msgid "<i class=\"fa fa-heart\"/>My Wishlist"
+msgstr "<i class=\"fa fa-heart\"/>Meine Wunschliste"
+
+#. module: cp_overrides
+#: model_terms:ir.ui.view,arch_db:cp_overrides.customize_header_style_1
+msgid "<i class=\"fa fa-pie-chart\"/>My orders"
+msgstr "<i class=\"fa fa-pie-chart\"/>Meine Bestellungen"
+
+#. module: cp_overrides
+#: model_terms:ir.ui.view,arch_db:cp_overrides.customize_header_style_1
+msgid "<i class=\"fa fa-sign-out\"/>Logout"
+msgstr "<i class=\"fa fa-sign-out\"/>Logout"
+
+#. module: cp_overrides
+#: model_terms:ir.ui.view,arch_db:cp_overrides.customize_header_style_1
+msgid "<i class=\"fa fa-user\"/>My Account"
+msgstr "<i class=\"fa fa-user\"/>Mein Konto"
+
+#. module: cp_overrides
+#: model_terms:ir.ui.view,arch_db:cp_overrides.customize_header_style_1
+msgid "Get 50% Off"
+msgstr "Erhalten sie 50% Rabatt"
+
+#. module: cp_overrides
+#: model_terms:ir.ui.view,arch_db:cp_overrides.customize_header_style_1
+msgid "Code : #ASDA44"
+msgstr "Code : #ASDA44"
+
+#. module: cp_overrides
+#: model_terms:ir.ui.view,arch_db:cp_overrides.customize_header_style_1
+msgid "Search..."
+msgstr "Suchen..."
+
+#. module: cp_overrides
+#: model_terms:ir.ui.view,arch_db:cp_overrides.customize_header_style_1
+msgid "Sign in"
+msgstr "Anmeldung"
+
+#. module: cp_overrides
+#: model_terms:ir.ui.view,arch_db:cp_overrides.customize_header_style_1
+msgid "Special Offer on First Purchase"
+msgstr "Spezial Angebot bei der ersten Bestellung"
+
+#. module: cp_overrides
+#: model_terms:ir.ui.view,arch_db:cp_overrides.cp_view_order_form
+msgid "Purchase information"
+msgstr "Bestell Informationen"
+
+#. module: cp_overrides
+#: model:ir.model.fields,field_description:cp_overrides.field_sale_order__purchase_reference
+#: model_terms:ir.ui.view,arch_db:cp_overrides.cp_view_order_form
+msgid "Purchase reference"
+msgstr "Bestell Referenz"
+
+#. module: cp_overrides
+#: model:ir.model.fields,field_description:cp_overrides.field_barcode_location__id
+#: model:ir.model.fields,field_description:cp_overrides.field_product_image__id
+#: model_terms:ir.ui.view,arch_db:cp_overrides.cp_email_template_tree
+msgid "ID"
+msgstr "ID"
+
+#. module: cp_overrides
+#: model:ir.model.fields,field_description:cp_overrides.field_product_product__image_ids
+#: model:ir.model.fields,field_description:cp_overrides.field_product_template__image_ids
+#: model_terms:ir.ui.view,arch_db:cp_overrides.cp_product_template_form_view
+msgid "Images"
+msgstr "Bilder"
+
+#. module: cp_overrides
+#: model:ir.model.fields,field_description:cp_overrides.field_stock_picking__location_source_id
+#: model_terms:ir.ui.view,arch_db:cp_overrides.cp_vpicktree
+msgid "Storage Location (Source)"
+msgstr "Lagerort (Quelle)"
+
+
+#. module: cp_overrides
+#: model:ir.model.fields,field_description:cp_overrides.field_barcode_location__create_uid
+#: model:ir.model.fields,field_description:cp_overrides.field_product_image__create_uid
+msgid "Created by"
+msgstr "Erstellt von"
+
+#. module: cp_overrides
+#: model:ir.model.fields,field_description:cp_overrides.field_barcode_location__create_date
+#: model:ir.model.fields,field_description:cp_overrides.field_product_image__create_date
+msgid "Created on"
+msgstr "Erstellt am"
+
+#. module: cp_overrides
+#: model:ir.model.fields,field_description:cp_overrides.field_barcode_location____last_update
+#: model:ir.model.fields,field_description:cp_overrides.field_product_image____last_update
+msgid "Last Modified on"
+msgstr "Zuletzt geändert am"
+
+#. module: cp_overrides
+#: model:ir.model.fields,field_description:cp_overrides.field_barcode_location__write_uid
+#: model:ir.model.fields,field_description:cp_overrides.field_product_image__write_uid
+msgid "Last Updated by"
+msgstr "Zuletzt aktualisiert von"
+
+#. module: cp_overrides
+#: model:ir.model.fields,field_description:cp_overrides.field_barcode_location__write_date
+#: model:ir.model.fields,field_description:cp_overrides.field_product_image__write_date
+msgid "Last Updated on"
+msgstr "Zuletzt aktualisiert am"
+
+
+
+#. module: cp_overrides
+#: model:ir.model.fields,field_description:cp_overrides.field_sale_order__purchase_reference
+#: model_terms:ir.ui.view,arch_db:cp_overrides.sale_inherit_view
+msgid "Purchase Reference"
+msgstr "Bestellung Referenz"
+
+#. module: cp_overrides
+#: model:ir.model.fields,field_description:cp_overrides.field_purchase_order__sale_reference
+msgid "Sale Order Reference"
+msgstr "Verkaufsauftag Referenz"
+
+#. module: cp_overrides
+#: model:ir.model.fields,field_description:cp_overrides.field_mrp_workorder__color_test
+msgid "Color"
+msgstr "Farbe"
+
+#. module: cp_overrides
+#: model:ir.model.fields,field_description:cp_overrides.field_product_product__qr_code
+#: model:ir.model.fields,field_description:cp_overrides.field_product_template__qr_code
+#: model:ir.model.fields,field_description:cp_overrides.field_stock_location__qr_code
+msgid "Qr Code"
+msgstr "Qr Code"
+
+#. module: cp_overrides
+#: model:ir.model.fields,help:cp_overrides.field_stock_picking__location_source_id
+msgid "Fetches the source location of the inventory warehouse."
+msgstr "Ruft den Quellspeicherort des Inventar-Warehouse ab"
+
+#. module: cp_overrides
+#: model:ir.model.fields,help:cp_overrides.field_product_product__description_short
+#: model:ir.model.fields,help:cp_overrides.field_product_template__description_short
+msgid "A short description of the product. "
+msgstr "Eine Kurzbeschreibung des Produktes."
+
+#. module: cp_overrides
+#: model:ir.model.fields,field_description:cp_overrides.field_product_product__description_short
+#: model:ir.model.fields,field_description:cp_overrides.field_product_template__description_short
+msgid "Short Description"
+msgstr "Kurzbeschreibung"
+
+#. module: cp_overrides
+#: model:ir.model.fields,field_description:cp_overrides.field_product_image__image
+msgid "Image"
+msgstr "Bild"
+
+#. module: cp_overrides
+#: model:ir.model.fields,field_description:cp_overrides.field_product_image__product_tmpl_id
+msgid "Related Product"
+msgstr "Zugehöriges Produkte"
+
+#. module: cp_overrides
+#: model:ir.model.fields,field_description:cp_overrides.field_product_product__width
+#: model:ir.model.fields,field_description:cp_overrides.field_product_template__width
+msgid "Width"
+msgstr "Länge"
+
+#. module: cp_overrides
+#: model:ir.model.fields,field_description:cp_overrides.field_product_product__height
+#: model:ir.model.fields,field_description:cp_overrides.field_product_template__height
+msgid "Height"
+msgstr "Höhe"
+
+#. module: cp_overrides
+#: model:ir.model.fields,field_description:cp_overrides.field_product_product__depth
+#: model:ir.model.fields,field_description:cp_overrides.field_product_template__depth
+msgid "Depth"
+msgstr "Tiefe"
+
+#. module: cp_overrides
+#: model:ir.model.fields,field_description:cp_overrides.field_barcode_location__display_name
+#: model:ir.model.fields,field_description:cp_overrides.field_product_image__display_name
+msgid "Display Name"
+msgstr "Anzeige Name"
+
+#. module: cp_overrides
+#: model:ir.model.fields,field_description:cp_overrides.field_email_template_preview__name
+#: model:ir.model.fields,field_description:cp_overrides.field_mail_template__name
+#: model:ir.model.fields,field_description:cp_overrides.field_product_image__name
+msgid "Name"
+msgstr "Name"
+
+#. module: cp_overrides
+#: model:ir.model.fields,field_description:cp_overrides.field_ir_actions_report__print_report_name
+msgid "Print Report Name"
+msgstr "Druckbericht Name"
+
+#. module: cp_overrides
+#: model:ir.model.fields,field_description:cp_overrides.field_res_company__website_logo
+msgid "Website Logo"
+msgstr "Webseiten Logo"
+
+
+
+
+
+#. module: cp_overrides
+#: model:ir.model.fields,help:cp_overrides.field_product_product__width
+#: model:ir.model.fields,help:cp_overrides.field_product_template__width
+msgid "The width of the product. Important for shipping!"
+msgstr "Die Breite (Länge) des Produkts. Wichtig für Auslieferungen!"
+
+#. module: cp_overrides
+#: model:ir.model.fields,help:cp_overrides.field_product_product__depth
+#: model:ir.model.fields,help:cp_overrides.field_product_template__depth
+msgid "The depth of the product. Important for shipping!"
+msgstr "Die Tiefe (Breite) des Produkts. Wichtig für Auslieferungen!"
+
+#. module: cp_overrides
+#: model:ir.model.fields,help:cp_overrides.field_product_product__height
+#: model:ir.model.fields,help:cp_overrides.field_product_template__height
+msgid "The height of the product. Important for shipping!"
+msgstr "Die Höhe des Produkts. Wichtig für Auslieferungen!"
+
+#. module: cp_overrides
+#: model:ir.model.fields,help:cp_overrides.field_ir_actions_report__print_report_name
+msgid "This is the filename of the report going to download. Keep empty to not change the report filename. You can use a python expression with the 'object' and 'time' variables."
+msgstr "Das ist der Dateiname des herunter zuladenden Berichts. Nicht ausfüllen um den Dateinamen nicht zu ändern. Es können python expressions mit den 'object' und 'time' Variablen benutzt werden."
+
+
+
+#. module: cp_overrides
+#: model:ir.model,name:cp_overrides.model_account_invoice
+msgid "Invoice"
+msgstr "Rechnung"
+
+#. module: cp_overrides
+#: model:ir.model,name:cp_overrides.model_barcode_location
+msgid "Barcode Location"
+msgstr "Barcode Lagerplatz"
+
+#. module: cp_overrides
+#: model:ir.model,name:cp_overrides.model_mrp_workorder
+msgid "Work Order"
+msgstr "Arbeitsauftrag"
+
+#. module: cp_overrides
+#: model:ir.model,name:cp_overrides.model_mail_template
+msgid "Email Templates"
+msgstr "E-Mail Vorlagen"
+
+#. module: cp_overrides
+#: model:ir.model,name:cp_overrides.model_product_image
+msgid "Product Image"
+msgstr "Produkt Bild"
+
+#. module: cp_overrides
+#: model:ir.model,name:cp_overrides.model_product_template
+msgid "Product Template"
+msgstr "Produkt Vorlage"
+
+#. module: cp_overrides
+#: model:ir.model,name:cp_overrides.model_product_product
+msgid "Product Variants Template"
+msgstr "Produkt Varianten Vorlage"
+
+#. module: cp_overrides
+#: model:ir.model,name:cp_overrides.model_purchase_order
+msgid "Purchase Order"
+msgstr "Bestell Auftrag"
+
+#. module: cp_overrides
+#: model:ir.model,name:cp_overrides.model_res_company
+msgid "Companies"
+msgstr "Firmen"
+
+#. module: cp_overrides
+#: model:ir.model,name:cp_overrides.model_sale_order
+msgid "Sale Order"
+msgstr "Verkaufsauftag"
+
+#. module: cp_overrides
+#: model:ir.model,name:cp_overrides.model_stock_location
+msgid "Inventory Locations"
+msgstr "Inventar Lagerplätze"
+
+#. module: cp_overrides
+#: model:ir.model,name:cp_overrides.model_stock_picking
+msgid "Transfer"
+msgstr "Transfer"
+
+#. module: cp_overrides
+#: model:ir.model,name:cp_overrides.model_ir_actions_report
+msgid "Report Action"
+msgstr "Bericht Aktion"
+
+
+#. module: cp_overrides
+#: model:ir.actions.act_window,name:cp_overrides.barcode_location_action
+#: model:ir.ui.menu,name:cp_overrides.barcode_location_menu
+msgid "Location Barcode Generator"
+msgstr "Lagerort Barcode Generator"
+
+
+
+#. module: cp_overrides
+#: model:ir.actions.report,name:cp_overrides.cp_sale_template
+msgid "Quotation / Order"
+msgstr "Angebot / Auftrag"
+
+#. module: cp_overrides
+#: model:ir.actions.report,name:cp_overrides.cp_account_template
+msgid "Invoice"
+msgstr "Rechnung"
+
+#. module: cp_overrides
+#: model:ir.actions.report,name:cp_overrides.cp_action_report_picking
+msgid "Picking Operations"
+msgstr "Packvorgänge"
+
+#. module: cp_overrides
+#: model:ir.actions.report,name:cp_overrides.cp_action_report_delivery
+msgid "Delivery Slip"
+msgstr "Lieferschein"
+
+#. module: cp_overrides
+#: model:ir.actions.report,name:cp_overrides.cp_action_report_location_qrcode
+msgid "Location Qrcode"
+msgstr "Lagerplatz Qrcode"
+
+#. module: cp_overrides
+#: model:ir.actions.report,name:cp_overrides.cp_action_report_location_qrcode_small
+msgid "Location Qrcode (small)"
+msgstr "Lagerplatz Qrcode (klein)"
+
+#. module: cp_overrides
+#: model:ir.actions.report,name:cp_overrides.cp_action_report_qrcode_product
+msgid "Product Qrcode"
+msgstr "Produkt Qrcode"
+
+#. module: cp_overrides
+#: model:ir.actions.report,name:cp_overrides.cp_action_report_qrcode_product_variants
+msgid "Product Qrcode (Variants)"
+msgstr "Produkt Qrcode (Varianten)"
+
+#. module: cp_overrides
+#: model:ir.actions.report,name:cp_overrides.cp_paperformat_qrcode
+msgid "Barcode / QrCode Printer"
+msgstr "Barcode / QrCode Drucker"
+
+
+
+#. module: sale
+#: model:ir.actions.report,print_report_name:sale.action_report_saleorder
+msgid "(object.state in ('draft', 'sent') and 'Quotation_%s' % (object.name)) or 'Order_%s' % (object.name)"
+msgstr "(object.state in ('draft', 'sent') and 'Angebot_%s' % (object.name)) or 'Auftrag_%s' % (object.name)"
+
+#. module: account
+#: model:ir.actions.report,print_report_name:account.account_invoices
+msgid "'Invoice_%s_%s' % ((object.partner_id.name or '').replace(' ','_'), object.number)"
+msgstr "'Rechnung_%s_%s' % ((object.partner_id.name or '').replace(' ','_'), object.number)"
+
+#. module: cp_overrides
+#: model:ir.actions.report,print_report_name:cp_overrides.cp_action_report_picking
+msgid "'PickingOperations_%s_%s' % ((object.partner_id.name or '').replace(' ','_'), object.name)"
+msgstr "'Packvorgänge_%s_%s' % ((object.partner_id.name or '').replace(' ','_'), object.name)"
+
+#. module: cp_overrides
+#: model:ir.actions.report,print_report_name:cp_overrides.cp_action_report_delivery
+msgid "'DeliverySlip_%s_%s' % ((object.partner_id.name or '').replace(' ','_'), object.name)"
+msgstr "'Lieferschein_%s_%s' % ((object.partner_id.name or '').replace(' ','_'), object.name)"
+
+#. module: cp_overrides
+#: model:ir.actions.report,print_report_name:cp_overrides.cp_action_report_location_qrcode
+#: model:ir.actions.report,print_report_name:cp_overrides.cp_action_report_location_qrcode_small
+msgid "'%s' % (object.complete_name).replace('Physical Locations','Location')"
+msgstr "'%s' % (object.complete_name).replace('Physical Locations','Lagerplatz')"
+
+#. module: cp_overrides
+#: model:ir.actions.report,print_report_name:cp_overrides.cp_action_report_qrcode_product
+msgid "'QrCode_%s' % (object.name)"
+msgstr "'QrCode_%s' % (object.name)"
+
+#. module: cp_overrides
+#: model:ir.actions.report,print_report_name:cp_overrides.cp_action_report_product_variants_qrcode
+msgid "'QrCode_Variants_%s' % (object.name)"
+msgstr "'QrCode_Varianten_%s' % (object.name)"
+
+#. module: cp_overrides
+#: model:ir.actions.report,print_report_name:cp_overrides.cp_action_report_qrcode_product_variants
+msgid "'QrCode_Variants_%s' % (object.name)"
+msgstr "'QrCode_Varianten_%s' % (object.name)"
+
+
+
+#. module: cp_overrides
+#: model:mail.template,name:cp_overrides.cp_account_template
+msgid "Invoice: Send by e-mail"
+msgstr "Rechnung: Per E-Mail senden"
+
+#. module: cp_overrides
+#: model:mail.template,name:cp_overrides.cp_sale_template
+msgid "Quotation / Order: Send by e-mail"
+msgstr "Angebot / Auftrag: Per E-Mail senden"
+
+#. module: cp_overrides
+#: model:mail.template,name:cp_overrides.cp_kms_ebay_template
+msgid "KMS eBay Template"
+msgstr "KMS eBay Template"
+
+
+
+
+#. module: cp_overrides
+#: model:mail.template,subject:cp_overrides.cp_sale_template
+msgid "${object.company_id.name} ${object.state in ('draft', 'sent') and 'Quotation' or 'Order'} ${object.name or 'n/a' }"
+msgstr "${object.company_id.name} ${object.state in ('draft', 'sent') and 'Angebot' or 'Auftrag'} ${object.name or 'n/a' }"
+
+#. module: cp_overrides
+#: model:mail.template,subject:cp_overrides.cp_account_template
+msgid "${object.company_id.name} - Invoice ${object.number or 'n/a'}"
+msgstr "${object.company_id.name} - Rechnung ${object.number or 'n/a'}"
+
+
+
+#. module: cp_overrides
+#: model:mail.template,report_name:cp_overrides.cp_sale_template
+msgid "${object.state in ('draft', 'sent') and 'Quotation_' or 'Order_'}${(object.name or '').replace('/','_')}"
+msgstr "${object.state in ('draft', 'sent') and 'Angebot_' or 'Auftrag_'}${(object.name or '').replace('/','_')}"
+
+#. module: cp_overrides
+#: model:mail.template,report_name:cp_overrides.cp_account_template
+msgid "Invoice_${(object.number or '').replace('/','_')}"
+msgstr "Rechnung_${(object.number or '').replace('/','_')}"
+
+
+
+#. module: cp_overrides
+#: model:mail.template,body_html:cp_overrides.cp_sale_template
+msgid ""
+"<p><strong>Dear(r) ${object.partner_id.title.name or ''} ${object.partner_id."
+"name}</strong>,</p><p>Attached please find the ${object.state in ('draft', "
+"'sent') and 'quotation' or 'order'} with the number ${doc_name} ${object."
+"name}.</p><p>${object.state in ('draft', 'sent') and 'We would be very happe "
+"if you like the offer.' or ''}</p><p>For further inquiries, we are happy to "
+"help.</p>"
+msgstr ""
+"<p><strong>Sehr geehrte(r) ${object.partner_id.title.name or ''} ${object."
+"partner_id.name}</strong>,</p><p>anbei erhalten sie wie gewünscht ${object."
+"state in ('draft', 'sent') and 'das Angebot' or 'ihre Auftragsbestätigung'} "
+"mit der Nummer ${doc_name} ${object.name}.</p><p>${object.state in ('draft', "
+"'sent') and 'Wir würden uns sehr freuen, wenn es Ihnen zusagt und senden "
+"Ihnen dann gerne die Auftragsbestätigung / ProForma Rechnung zu.' or ''}</"
+"p><p>Bei Rückfragen und Änderungswünschen stehen wir Ihnen gerne zur "
+"Verfügung</p>"
+
+#. module: cp_overrides
+#: model:mail.template,body_html:cp_overrides.cp_account_template
+msgid "<div style="margin: 0px; padding: 0px;">"
+    "<p style="margin: 0px; padding: 0px; font-size: 13px;">"
+        "Dear ${object.partner_id.title.name or ''} ${object.partner_id.name}<br/><br/>"
+        "Here is your invoice <strong>${object.number}</strong> (with reference: ${object.origin})"
+        "amounting in <strong>${format_amount(object.amount_total, object.currency_id)}</strong>"
+        "from ${object.company_id.name}."
+        "${object.state in ('paid') and 'This invoice is already paid.' or 'Please remit payment at your earliest convenience.'}"
+    "</p>"
+"</div>"
+""
+msgstr "<div style="margin: 0px; padding: 0px;">"
+    "<p style="margin: 0px; padding: 0px; font-size: 13px;">"
+        "Sehr geehrte(r) ${object.partner_id.name}<br/><br/>"
+        "vielen Dank für Ihren Auftrag und das entgegengebrachte Vertrauen. Gerne übersenden wir Ihnen im Anhang Ihre Rechnung.<br><br>"
+        "<strong>Rechnungsnummer: ${object.number}</strong> (mit Referenz: ${object.origin})"
+    "</p>"
+"</div>"
+""
+
+
+#. module: account
+#: model_terms:ir.ui.view,arch_db:account.account_invoice_send_wizard_form
+#: model_terms:ir.ui.view,arch_db:account.invoice_form
+msgid "Send & Print"
+msgstr "Senden & Drucken"
+
+#. module: account
+#: model_terms:ir.ui.view,arch_db:account.account_invoice_send_wizard_form
+msgid "Invoice Send & Print"
+msgstr "Rechnung Senden & Drucken"
+
+#. module: account
+#: code:addons/account/models/account_invoice.py:607
+#, python-format
+msgid "Send Invoice"
+msgstr "Rechnung senden"
+
+#. module: cp_overrides
+#: code:addons/cp_overrides/models/account_invoice.py:29
+#, python-format
+msgid "Send Invoice"
+msgstr "Rechnung senden"
+
+
+#. module: account
+#: model_terms:ir.ui.view,arch_db:account.account_invoice_send_wizard_form
+msgid "Preview as a PDF"
+msgstr "Vorschauen als PDF"
+
+
+#. module: mail
+#. openerp-web
+#: code:addons/mail/static/src/xml/systray.xml:94
+#, python-format
+msgid "Late"
+msgstr "Verspätet"
+
+#. module: mail
+#. openerp-web
+#: code:addons/mail/static/src/xml/systray.xml:95
+#, python-format
+msgid "0 Late"
+msgstr "0 Verspätet"
+
+#. module: mail
+#. openerp-web
+#: code:addons/mail/static/src/xml/systray.xml:96
+#, python-format
+msgid "Today"
+msgstr "Heute"
+
+#. module: mail
+#. openerp-web
+#: code:addons/mail/static/src/xml/systray.xml:97
+#, python-format
+msgid "0 Today"
+msgstr "0 Heute"
+
+#. module: mail
+#. openerp-web
+#: code:addons/mail/static/src/xml/systray.xml:98
+#, python-format
+msgid "Future"
+msgstr "Zukünftig"
+
+#. module: mail
+#. openerp-web
+#: code:addons/mail/static/src/xml/systray.xml:99
+#, python-format
+msgid "0 Future"
+msgstr "0 Zukünftig"
+
+
+#. module: stock
+#: model:ir.actions.report,name:stock.action_report_location_barcode
+msgid "Location Barcode"
+msgstr "Lagerplatz Barcode"

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="cp_location_qrcode">
+        <table class="table mb-0" style="border:2px solid black;width:100%;height:4.9in;">
+            <thead>
+                <tr>
+                    <td style="border-bottom:2px solid black;padding:10px;vertical-align:middle;height:60px;" colspan="2">
+                        <span style="display:inline-block;width:70%;font-size:40px;line-height:1.2;"><strong t-field="o.location_id"/><strong>/</strong><strong t-field="o.name"/></span>
+                        <span style="display:inline-block;width:29%;font-size:40px;line-height:1.2;text-align:center;border-left:2px solid black;"><strong>E</strong><strong t-field="o.posz"/></span>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td width="50%" style="text-align:center;vertical-align:middle;border-right:2px solid black;">
+                        <strong style="font-size:200px;line-height:1.2;" t-field="o.name"/>
+                    </td>
+                    <td width="50%" style="text-align:center;vertical-align:middle;">
+                        <t t-esc="o.qr_generator()"/>
+                        <t t-if="o.barcode">
+                            <img style="width:300px;height:300px;" t-attf-src="data:image/*;base64,{{o.qr_code}}"/>
+                        </t>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </template>
+
+    <template id="cp_report_qrcode_location">
+        <t t-call="web.basic_layout">
+            <div class="page" style="position:absolute;top:0;left:0;width:100%;height:100%;margin:0;padding:0;">
+                <t t-foreach="docs" t-as="o">
+                    <t t-call="cp_overrides.cp_location_qrcode">
+                        <t t-set="o" t-value="o"/>
+                    </t>
+                </t>
+            </div>
+        </t>
+    </template>
+
+</odoo>

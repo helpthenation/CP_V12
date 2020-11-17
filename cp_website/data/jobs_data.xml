@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Website page template -->
+        <record id="jobs" model="ir.ui.view">
+            <field name="name">Stellenangebote</field>
+            <field name="website_id" ref="website.default_website"/>
+            <field name="type">qweb</field>
+            <field name="key">website.jobs</field>
+            <field name="arch" type="xml">
+                <t name="Stellenangebote" t-name="website.jobs">
+                    <t t-call="website.layout">
+                        <t t-set="pageName" t-value="'jobs'"/>
+                        <div id="wrap" class="oe_structure oe_empty">
+                            <section>
+                                <div class="container">
+                                    <div class="row s_nb_column_fixed">
+                                        <div class="col-lg-12 s_title" style="text-align: center;">
+                                            <h4 class="s_title_default t_title_default">STELLENANGEBOTE</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="s_text_block">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-12 offset-lg-1 pt32 pb32">
+                                            <p class="lead o_default_snippet_text">Hier finden Sie immer unsere aktuellen Stellenangebote.</p>
+                                            <p class="lead o_default_snippet_text">
+                                                <br/>
+                                            </p>
+                                            <p class="lead">Sollten Sie der Meinung sein, auch ohne hier eine Stelle ausgeschrieben zu sehen, in unser Team zu passen, zögern sie nicht uns eine Mail mit ihren Aussagekräftigen Bewerbungsunterlagen zu schicken.&amp;nbsp;</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <!-- Link to website page template -->
+        <record id="jobs_page" model="website.page">
+            <field name="name">Stellenangebote</field>
+            <field name="website_published">True</field>
+            <field name="url">/stellenangebote</field>
+            <field name="view_id" ref="jobs"/>
+        </record>
+    </data>
+</odoo>

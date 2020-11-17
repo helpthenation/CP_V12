@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <record id="ebay_ext_product_template_only_form_view" model="ir.ui.view">
+            <field name="name">ebay_ext_product_template_only_form_view</field>
+            <field name="model">product.template</field>
+            <field name="inherit_id" ref="stock.product_template_form_view_procurement_button"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='ebay_private_listing']" position="after">
+                    <field name="add_product_tax_ebay_price"/>
+                </xpath>
+                <xpath expr="//field[@name='ebay_description']" position="replace">
+                    <field name="ebay_description" widget="html" options="{'style-inline': true}" placeholder="Product description text which is getting parsed into the eBay Template goes here."/>
+                </xpath>
+            </field>
+        </record>
+        <record id="ebay_ext_product_variant_easy_edit_view" model="ir.ui.view">
+            <field name="name">ebay_ext_product_product_view_form_easy</field>
+            <field name="model">product.product</field>
+            <field name="inherit_id" ref="product.product_variant_easy_edit_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='active']" position="after">
+                    <field name="ebay_variant_listing"/>
+                </xpath>
+                <xpath expr="//group[@name='pricing']" position="replace">
+                    <group name="pricing" string="Pricing">
+                        <field name="product_variant_count" invisible="1"/>
+                        <field name="lst_price" widget="monetary" options="{'currency_field': 'currency_id', 'field_digits': True}" attrs="{'readonly': [('product_variant_count', '&gt;', 1)]}"/>
+                        <field name="standard_price" widget="monetary" options="{'currency_field': 'currency_id', 'field_digits': True}"/>
+                        <field name="ebay_fixed_price" string="eBay fixed price" readonly="1"/>
+                        <field name="currency_id" invisible="1"/>
+                    </group>
+                </xpath>
+            </field>
+        </record>
+        <record id="ebay_ext_product_template_ebay_image_view" model="ir.ui.view">
+            <field name="name">ebay_ext_product_template_ebay_image_view</field>
+            <field name="model">product.image</field>
+            <field name="inherit_id" ref="website_sale.view_product_image_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='name']" position="after">
+                    <label for="ebay_image_url" string="eBay Image URL"/>
+                    <field name="ebay_image_url" readonly="1"/>
+                </xpath>
+            </field>
+        </record>
+        <record id="ebay_ext_product_attribute_view_form" model="ir.ui.view">
+            <field name="name">ebay_ext_product_attribute_view_form</field>
+            <field name="model">product.attribute</field>
+            <field name="inherit_id" ref="product.product_attribute_view_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='create_variant']" position="after">
+                    <field name="ebay_attr_is_variant"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Website page template -->
+        <record id="new-office-furniture" model="ir.ui.view">
+            <field name="name">Neue Büromöbel</field>
+            <field name="website_id" ref="website.default_website"/>
+            <field name="type">qweb</field>
+            <field name="key">website.new-office-furniture</field>
+            <field name="arch" type="xml">
+                <t name="Neue Büromöbel" t-name="website.new-office-furniture">
+                    <t t-call="website.layout">
+                        <t t-set="pageName" t-value="'new-office-furniture'"/>
+                        <div id="wrap" class="oe_structure oe_empty">
+                            <section>
+                                <div class="container">
+                                    <div class="row s_nb_column_fixed">
+                                        <div class="col-lg-12 s_title pt24" style="text-align: center;">
+                                        <h4 class="s_title_default t_title_default">PRODUKTE GANZ NACH IHREN WÜNSCHEN</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="s_text_block">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="pt32 pb32 col-lg-12">
+                                        <p class="lead">Für all die Kunden, die lieber neue Produkte in ihrem Büro sehen möchten und hierbei ihren Wünschen keine Grenzen gesetzt sind, bieten wir eine erlesene Auswahl an Herstellern an.<br/></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="s_text_image">
+                                <div class="container">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-6">
+                                            <div class="t_img_hover_1">
+                                                <img src="/web/image/1156/okamura-contessa.png" class="img img-fluid mx-auto" alt="Odoo • Image and Text"/>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 pt16 pb16">
+                                            <h2 class="text-uppercase s_it_heading o_default_snippet_text">ÜBER GESCHMACK LÄSST SICH STREITEN.</h2>
+                                            <h2 class="text-uppercase s_it_heading">ÜBER ERGONOMIE NICHT.</h2>
+                                            <div class="s_hr text-left pb32 pt8">
+                                                <hr class="border-600 aos-init s_hr_solid w-25 mr-auto s_hr_4px border-alpha aos-animate" data-aos="s_hr_4px"/>
+                                            </div>
+                                            <p class="mb16">Die Erfahrung über 10 Jahre mit allen erdenklichen Marken hat uns dazu gebracht eine Auswahl an Herstellern auch als Neuware zu führen, die in unseren Augen aus unterschiedlichen Gründen interessant sind.</p>
+                                            <p class="mb16">Zum einen zählt das Preis / Leistungsverhältnis da jeder Unternehmer sensibel haushalten muss. Zum anderen sind es Softfacts wie Gefühl, Sympathie und in erster Linie Langlebigkeit, Qualität und Nachhaltigkeit.</p>
+                                            <p class="mb16">Da auch wir durch das Thema RENEW zum Produzenten geworden sind, führen wir mittlerweile ein eigenes Sortiment an Tischen und ersparen unseren Kunden unnötige Kostenblöcke durch den direkten Verkauf.</p>
+                                            <p class="mb16">Sie können entweder in unserem Shop stöbern, oder viel besser, nehmen mit uns persönlich Kontakt auf und erklären uns, was Sie genau suchen. In unserem 600qm Office Lab in Sindelfingen, können wir viele Lösungen greifbar machen.</p>
+                                            <div class="s_btn text-left pt16 pb16">
+                                                <a href="/kontakt" class="btn btn-primary" data-original-title="" title="" aria-describedby="tooltip805836">persönliche Beratung</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <div class="oe_structure"/>
+                            <section class="s_references bg-200 pt16 pb16">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-2 pt48 t_ref_text">
+                                            <h4>Unsere Marken</h4>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <img src="/web/image/2967/clausspalacios.png" class="img img-fluid" alt="Demo-Logo"/>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <img src="/web/image/2969/okamura.png" class="img img-fluid" alt="Demo-Logo"/>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <img src="/web/image/2971/narbutas.png" class="img img-fluid" alt="Demo-Logo"/>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <img src="/web/image/2973/senator.png" class="img img-fluid" alt="Demo-Logo"/>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <img src="/web/image/2975/giroflex.png" class="img img-fluid" alt="Demo-Logo"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <!-- Link to website page template -->
+        <record id="new-office-furniture_page" model="website.page">
+            <field name="name">Neue Büromöbel</field>
+            <field name="website_published">True</field>
+            <field name="url">/neue-bueromoebel</field>
+            <field name="view_id" ref="new-office-furniture"/>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Website page template -->
+        <record id="elift-pro" model="ir.ui.view">
+            <field name="name">eLift Pro Schreibtisch elektrisch</field>
+            <field name="website_id" ref="website.default_website"/>
+            <field name="type">qweb</field>
+            <field name="key">website.elift-pro</field>
+            <field name="arch" type="xml">
+                <t name="eLift Pro Schreibtisch elektrisch" t-name="website.elift-pro">
+                    <t t-call="website.layout">
+                        <t t-set="pageName" t-value="'elift-pro'"/>
+                        <div id="wrap" class="oe_structure oe_empty">
+                            <section class="py-5 t_space_style pb24"></section>
+                            <section>
+                                <div class="container">
+                                    <div class="row s_nb_column_fixed">
+                                        <div class="col-lg-12 s_title" style="text-align: center;">
+                                            <h1 class="s_title_default t_title_default">eLift Pro - Schreibtisch der Oberklasse</h1>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="s_picture bg-100 pt48 pb24">
+                                <div class="container">
+                                    <div class="row s_nb_column_fixed">
+                                        <div class="col-lg-12 t_text_title_center">
+                                            <h2 class="s_title_thin t_text_small_title" style="text-align:center;">elektrisch höhenverstellbarer Schreibtisch aus Baden-Württemberg</h2>
+                                        </div>
+                                        <div class="col-lg-12 pt16 pb16">
+                                            <p style="text-align: center;" class="o_default_snippet_text">eLift Pro - professioneller elektrischer Schreibtisch</p>
+                                            <p style="text-align: center;">Fragen Sie uns nach ihrem persönlichen Angebot.</p>
+                                        </div>
+                                        <div class="col-lg-8 offset-lg-2 pb24">
+                                            <figure class="figure">
+                                                <img src="/web/image/1185/eliftproofficelila.png" class="figure-img img-fluid rounded img-thumbnail padding-large" alt="Odoo • A picture with a caption"/>
+                                            </figure>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="s_features oe_custom_bg" style="background-color: rgb(214, 239, 214);">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-4 col-lg-4 text-center">
+                                            <span class="fa fa-3x m-3 fa-text-height" style="" data-original-title="" title="" aria-describedby="tooltip222360"/>
+                                            <div>STUFENLOS HÖHENVERSTELLBAR<p class="features_discreption mt8">Verstellbereich 650 - 1300 mm </p></div>
+                                        </div>
+                                        <div class="col-md-4 col-lg-4 text-center">
+                                            <span class="fa fa-3x m-3 fa-text-width" style=""/>
+                                            <div>BREITENVERSTELLUNG<p class="features_discreption mt8">Verstellbarkeit von 140-200cm </p></div>
+                                        </div>
+                                        <div class="col-md-4 col-lg-4 text-center">
+                                            <span class="fa fa-3x m-3 fa-heart" style=""/>
+                                            <div>MADE IN BADEN WÜRTTEMBERG<br/><p class="features_discreption mt8">Dieses Gestell wird ausschliesslich in BadenWürttemberg hergestellt und sichert deutsche Arbeitsplätze. </p></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <div class="input-group js_snippet hidden" data-isemipro="true" data-list-id="3"/>
+                            <div class="input-group js_snippet hidden" data-isemipro="true"/>
+                            <div class="input-group js_snippet hidden" data-isemipro="true"/>
+                            <section class="s_text_image bg-white oe_custom_bg" style="">
+                                <div class="container">
+                                    <div class="row align-items-center aos-init" data-aos="align-items-center">
+                                        <div class="col-lg-6 pt16 pb16">
+                                            <h2 class="text-uppercase s_it_heading">Elektrischer Schreibtisch im Einsatz</h2>
+                                            <div class="s_hr text-left pb32 pt8">
+                                                <hr class="border-600 s_hr_solid w-25 mr-auto s_hr_4px border-alpha"/>
+                                            </div>
+                                            <p class="mb16 o_default_snippet_text">Ein Sitz - Steh Schreibtisch ist die perfekte Ergänzung zu einem ergonomischen Bürodrehstuhl. Die Möglichkeit jederzeit auch im Stehen zu Arbeiten bietet dem Körper die notwendige Entlastung &amp;nbsp;und erhöht die Konzentration. Elektrische Schreibtische fördern neben der Flexibilität auch die Zusammenarbeit. &amp;nbsp;Der medizinische Aspekt bei einem elektrischen Schreibtisch ist eine Sache., der Wohlfühlaspekt ein ganz anderer. Gerade in Büros mit mehreren elektrischen Schreibtischen ist die Kommunikation deutlich höher, was zu einer Produktivitätssteigerung führen kann. Bei den Sitz Stehtischen gibt es Varianten mit manueller Höhenverstellung, sowie auch elektrisch höhenverstellbare Schreibtische. Dabei sollte der Standby Betrieb nicht außer Acht genommen werden, da jeder Schreibtisch sonst in Summe die Stromkosten beeinträchtigen kann.</p>
+                                            <p class="mb16 o_default_snippet_text">Durch den Einsatz von programmierbaren Bedienelementen, können mehrere Positionen abgespeichert werden. Gerade &amp;nbsp;wenn zwei Menschen sich einen elektrischen Schreibtisch teilen, sind 4 Positionen eine komfortable Lösung.</p>
+                                            <p class="mb16 o_default_snippet_text">Die Praxis zeigt, dass zwar immer mehr elektrische Schreibtische auf den Markt kommen, bzw. immer mehr Kunden einen elektrischen Schreibtisch kaufen, aber dennoch die Mehrheit immer noch die gewohnte sitzende Position ausübt. Grund hierfür ist sicherlich die fehlende Information und Sensibilität den Mitarbeitern gegenüber, wie wichtig die permanente Nutzung eines Sitz Steh Tisches ist. Hierbei geht es nicht darum der Firma den Invest zu rechtfertigen, sondern schlichtweg um die Gesundheit der Mitarbeiter. &amp;nbsp;Wir haben auch schon Lösungen begeleitet, bei denen Firmen von 2500 Arbeitsplätzen auf 1500 reduzieren konnten, da analysiert wurde, wer wann wie oft wirklich den Schreibtisch nutzt. Zudem war ein Konzept die Möglichkeit, elektrische Schreibtische bei Arbeitsbeginn zu buchen. Somit konnte man in der Praxis herausfinden, ob die Menge an bereitgestellten Sitz Stehtischen ausreichend war, oder weitere Sitz Steh Arbeitsplätze integriert werden mussten.</p>
+                                            <p class="mb16">Für Arbeitgeber gilt: Gerade im Zeitalter der fehlenden Fachkräfte, sollte ein Entscheider alle Möglichkeiten nutzen, dem zukünftigen Talent eine möglichst attraktive Arbeitsumgebung zu schaffen.</p>
+                                        </div>
+                                        <div class="col-lg-6 pt16 pb16">
+                                            <div class="t_img_hover_1">
+                                                <img src="/web/image/1176/1451.jpeg" class="img img-fluid mx-auto" alt="Odoo • Text and Image" data-original-title="" title="" aria-describedby="tooltip889781"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="s_text_image bg-100 oe_custom_bg">
+                                <div class="container">
+                                    <div class="row align-items-center aos-init" data-aos="align-items-center">
+                                        <div class="col-lg-6">
+                                            <div class="t_img_hover_1">
+                                                <img src="/web/image/1189/500px-Flag_of_Baden-W%C3%BCrttemberg_(state,_lesser_arms).png" class="img img-fluid mx-auto" alt="Odoo • Image and Text"/>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 pt16 pb16">
+                                            <h2 class="text-uppercase s_it_heading">Made in Baden-Württemberg</h2>
+                                            <div class="s_hr text-left pb32 pt8">
+                                                <hr class="border-600 aos-init s_hr_solid w-25 mr-auto s_hr_4px border-alpha" data-aos="s_hr_4px"/>
+                                            </div>
+                                            <p class="mb16 o_default_snippet_text">Unsere eLift Pro elektrischen Schreibtische werden ausschliesslich in Baden-Württemberg produziert. Beispielsweise werden unsere Gestelle mit BOSCH Motoren angetrieben, welche leise und qualitativ sehr hochwertig sind.</p>
+                                            <p class="mb16 o_default_snippet_text">Arbeitsplatzsicherung in unserer Heimat ist uns ein ebenso hohes Anliegen, wie die gerinstmögliche Umweltbelastung. Gerade unter dem Aspekt der CO2 Einsparung machen Produkte aus bspw. China für uns keinen Sinn. Unsere Kunden sind ebenfalls überwiegend aus dem Süddeutschen Raum und legen den gleichen Wert auf lokale Nähe und schnelle Reaktionszeiten.</p>
+                                            <p class="mb16 o_default_snippet_text">Ein guter Service ist nicht aus der Ferne machtbar und von daher können wir auch bei elektrischen Schreibtischen fast alle erdenklichen Sonderwünsche umsetzen. Auch in Punkto Zubehör sind wir durch den Nahen Produktionsstandort und den direkten Kontakt mit gleichsprachigen Servicemitarbeitern meist einen Schritt voraus.</p>
+                                            <p class="mb16 o_default_snippet_text">
+                                                <br/>
+                                            </p>
+                                            <p class="mb16 o_default_snippet_text">Nachhaltigkeit:</p>
+                                            <p class="mb16 o_default_snippet_text">Kaum einer in Deutschland macht sich wirklich Gedanken um das Thema Nachhaltigkeit bei Büromöbeln. In der Grunddenke ist Deutschland sicherlich für viele Ländern ein hoch angesehenes Vorbild, aber in der Ausführung sind wir leider größtenteils wirtschaftlich gesteuert, als dass jeder von uns weiss, was für einen CO2 Abdruck er in dieser Welt hinterlässt.</p>
+                                            <p class="mb16 o_default_snippet_text">Ein gutes Beispiel ist die Frage, wieviel Papier durchschnittlich aus einem Baum gewonnen werden kann. Dann die nächste Frage, wieviel Papier - im Durchschnitt - pro Arbeitsplatz pro Jahr verbraucht wird. Wenn Sie diese Frage interessiert, freuen wir uns, ihnen die erschreckende Antwort in einem persönlichen Gespräch mitzuteilen.</p>
+                                            <p class="mb16">Aus diesem Grund sind wir nicht nur Möbelhersteller sondern bieten unseren Kunden auch Lösungen an, den Papierverbrauch innerhalb der Büroprozesse zu minimieren.&amp;nbsp;</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="s_text_image bg-white oe_custom_bg" style="">
+                                <div class="container">
+                                    <div class="row align-items-center aos-init" data-aos="align-items-center">
+                                        <div class="col-lg-6 pt16 pb16">
+                                            <h2 class="text-uppercase s_it_heading">Unser Service für Sie</h2>
+                                            <div class="s_hr text-left pb32 pt8">
+                                                <hr class="border-600 s_hr_solid w-25 mr-auto s_hr_4px border-alpha"/>
+                                            </div>
+                                            <p class="mb16 o_default_snippet_text">Sie haben bei uns die Möglichkeit die Möbel jederzeit auch vor Ort in Sindelfingen zu besichtigen und zu testen. Gerade elektrische Schreibtische sollte man vorher einmal anfassen um die Stabilität gerade auch im ausgefahrenen Zustand zu testen. &amp;nbsp;Unser Schreibtisch Gestell hat den Pendeltest bestanden und wird auch fast identisch von anderen großen Herstellern &amp;nbsp;verwendet.&amp;nbsp;</p>
+                                            <p class="mb16 o_default_snippet_text">Wenn je einmal etwas nicht stimmen sollte, wird ihre Ware nicht umständlich eingeschickt, sondern nehmen Sie während der Öffnungszeiten immer für Sie an und versuchen gleich direkt vor Ort eine Lösung zu erarbeiten. Auch wenn einmal in ihrem Büro Not am Mann ist, helfen wir gerne. &amp;nbsp;Ergonomieschulungen sind für uns kein Problem. Denn ein elektrischer Schreibtisch sollte auch richtig bedient werden. Als weiteren Service bieten wir Interessenten die Möglichkeit auch ganze Mockups bei uns zu planen und zu testen. Gerne stellen wir unsere 600 qm dafür zur Verfügung.</p>
+                                            <p class="mb16">Der eigene Fuhrpark und die eigenen Servicekräfte bieten eine schnellstmögliche Reaktionszeit. &amp;nbsp;Durch unser Netzwerk sind wir europaweit tätig und können ebenso europaweit qualitative Services anbieten.</p>
+                                            <p class="mb16 o_default_snippet_text">Sie haben bei uns die Möglichkeit die Möbel jederzeit auch vor Ort in Sindelfingen zu besichtigen und zu testen. Gerade elektrische Schreibtische sollte man vorher einmal anfassen um die Stabilität gerade auch im ausgefahrenen Zustand zu testen. &amp;nbsp;Unser Schreibtisch Gestell hat den Pendeltest bestanden und wird auch fast identisch von anderen großen Herstellern &amp;nbsp;verwendet.&amp;nbsp;</p>
+                                            <p class="mb16 o_default_snippet_text">Wenn je einmal etwas nicht stimmen sollte, wird ihre Ware nicht umständlich eingeschickt, sondern nehmen Sie während der Öffnungszeiten immer für Sie an und versuchen gleich direkt vor Ort eine Lösung zu erarbeiten. Auch wenn einmal in ihrem Büro Not am Mann ist, helfen wir gerne. &amp;nbsp;Ergonomieschulungen sind für uns kein Problem. Denn ein elektrischer Schreibtisch sollte auch richtig bedient werden. Als weiteren Service bieten wir Interessenten die Möglichkeit auch ganze Mockups bei uns zu planen und zu testen. Gerne stellen wir unsere 600 qm dafür zur Verfügung.</p>
+                                            <p class="mb16 o_default_snippet_text">Der eigene Fuhrpark und die eigenen Servicekräfte bieten eine schnellstmögliche Reaktionszeit. &amp;nbsp;Durch unser Netzwerk sind wir europaweit tätig und können ebenso europaweit qualitative Services anbieten.</p>
+                                            <p class="mb16 o_default_snippet_text">Sie haben bei uns die Möglichkeit die Möbel jederzeit auch vor Ort in Sindelfingen zu besichtigen und zu testen. Gerade elektrische Schreibtische sollte man vorher einmal anfassen um die Stabilität gerade auch im ausgefahrenen Zustand zu testen. &amp;nbsp;Unser Schreibtisch Gestell hat den Pendeltest bestanden und wird auch fast identisch von anderen großen Herstellern &amp;nbsp;verwendet.&amp;nbsp;</p>
+                                            <p class="mb16 o_default_snippet_text">Wenn je einmal etwas nicht stimmen sollte, wird ihre Ware nicht umständlich eingeschickt, sondern nehmen Sie während der Öffnungszeiten immer für Sie an und versuchen gleich direkt vor Ort eine Lösung zu erarbeiten. Auch wenn einmal in ihrem Büro Not am Mann ist, helfen wir gerne. &amp;nbsp;Ergonomieschulungen sind für uns kein Problem. Denn ein elektrischer Schreibtisch sollte auch richtig bedient werden. Als weiteren Service bieten wir Interessenten die Möglichkeit auch ganze Mockups bei uns zu planen und zu testen. Gerne stellen wir unsere 600 qm dafür zur Verfügung.</p>
+                                            <p class="mb16">Der eigene Fuhrpark und die eigenen Servicekräfte bieten eine schnellstmögliche Reaktionszeit. &amp;nbsp;Durch unser Netzwerk sind wir europaweit tätig und können ebenso europaweit qualitative Services anbieten.</p>
+                                        </div>
+                                        <div class="col-lg-6 pt16 pb16">
+                                            <div class="t_img_hover_1">
+                                                <img src="/web/image/1191/handschalter%20elektrischer%20schreibtisch.png" class="img img-fluid mx-auto" alt="Odoo • Text and Image"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="s_text_image bg-100 oe_custom_bg" style="">
+                                <div class="container">
+                                    <div class="row align-items-center aos-init" data-aos="align-items-center">
+                                        <div class="col-lg-6">
+                                            <div class="t_img_hover_1">
+                                                <img src="/web/image/1193/Officelabklein.jpg" class="img img-fluid mx-auto" alt="Odoo • Image and Text" data-original-title="" title="" aria-describedby="tooltip273489"/>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 pt16 pb16">
+                                            <h2 class="text-uppercase s_it_heading">Office LAB für ihre Ideen</h2>
+                                            <div class="s_hr text-left pb32 pt8">
+                                                <hr class="border-600 aos-init s_hr_solid w-25 mr-auto s_hr_4px border-alpha" data-aos="s_hr_4px"/>
+                                            </div>
+                                            <p class="mb16 o_default_snippet_text">Auf unserer 600qm großen OfficeLab Fläche, stellen wir nicht nur alle Produkte vor, sondern bieten auch den Service, für Sie Mockups aufzubauen, damit Sie vor einer Entscheidung ihre zukünftige Umgebung erleben können. Sollten Sie mir einem Innen / Architekten arbeiten, freuen wir uns über deren Kontaktaufnahme um Details zu besprechen.</p>
+                                            <p class="mb16 o_default_snippet_text">Natürlich bieten wir auch das Rundumsorglospaket inklusive 3D Planung bis hin zu GU Leistungen an, damit Sie einen reibungslosen Ablauf erleben können. Profitieren Sie von unserer 20-jährigen Erfahrung im Projektmanagement. Durch unser erweitertes Knowhow im IT Bereich, können wir auch die immer mehr ineinandergreifenden Themen wie Arbeitsplatz und Technik bestens planen, darstellen und umsetzen.</p>
+                                            <p class="mb16">Sie sehen, es geht nicht nur um ihren elektrischen Schreibtisch. Wir kümmern uns gerne um all ihre Belangen rund um das Innere ihrer Räumlichkeiten.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <div class="oe_structure"/>
+                            <section class="bg-white oe_custom_bg" style="">
+                                <div class="d-inline-block w-100">
+                                    <div class="container">
+                                        <div class="row t_zoom_img_effect align-items-center">
+                                            <section class="col-lg-4">
+                                                <div class="d-inline-block w-100">
+                                                    <section>
+                                                        <span class="d-block mx-auto">
+                                                            <h2 class="content_image_style_heading">Hilfreiche Links</h2>
+                                                            <p class="content_image_style_content mt16">Thema: Ergonomie am Arbeitsplatz</p>
+                                                            <p class="content_image_style_content mt16">
+                                                                <a href="https://www.arbeitsschutzgesetz.org/ergonomie-am-arbeitsplatz/" target="_blank">Arbeitsschutzgesetz.org</a>
+                                                            </p>
+                                                            <p class="content_image_style_content mt16">Ergonomie am Arbeitsplatz: Für mehr Dynamik im Arbeitsalltag</p>
+                                                            <p class="content_image_style_content mt16">
+                                                                <a href="http://www.faz.net/aktuell/technik-motor/technik/ergonomie-steh-schreibtische-werden-immer-beliebter-15246591.html" target="_blank">faz.net</a>
+                                                                <br/>
+                                                            </p>
+                                                            <p class="content_image_style_content mt16">
+                                                                <a href="http://www.faz.net/aktuell/technik-motor/technik/ergonomie-steh-schreibtische-werden-immer-beliebter-15246591.html" target="_blank">Stehplatz auf der Arbeit bevorzugt</a>
+                                                                <br/>
+                                                            </p>
+                                                        </span>
+                                                    </section>
+                                                </div>
+                                            </section>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <!-- Link to website page template -->
+        <record id="elift-pro_page" model="website.page">
+            <field name="name">eLift Pro Schreibtisch elektrisch</field>
+            <field name="website_published">True</field>
+            <field name="url">/elift-pro-schreibtisch-elektrisch</field>
+            <field name="view_id" ref="elift-pro"/>
+        </record>
+    </data>
+</odoo>

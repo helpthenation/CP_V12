@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <!-- main website record -->
+        <record id="website.default_website" model="website" forcecreate="True">
+            <field name="name">Ketchup-Mayo-Senf.de</field>
+            <field name="domain">www.ketchup-mayo-senf.de</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="user_id" ref="base.public_user"/>
+            <field name="homepage_id" ref="website.homepage_page"/>
+            <field name="country_group_ids" eval="[(6,0,[ref('base.europe')])]"/>
+            <field name="default_lang_id" ref="base.lang_de"/>
+            <field name="theme_id"/>
+            <field name="facebook_sharing" eval="False"/>
+            <field name="social_facebook">https://www.facebook.com/Clauss-Palacios-GmbH-1859657694160711/</field>
+            <field name="linkedin_sharing" eval="False"/>
+            <field name="social_linkedin">https://www.linkedin.com/company/clauss-%26-palacios-gmbh/</field>
+            <field name="social_instagram"></field>
+            <field name="twitter_sharing" eval="False"/>
+            <field name="social_twitter">https://twitter.com/Roberto24903717</field>
+            <field name="social_youtube"/>
+            <field name="social_googleplus"/>
+            <field name="google_management_client_id"/>
+            <field name="google_management_client_secret"/>
+            <field name="google_analytics_key">UA-27700895-2</field>
+            <field name="google_maps_api_key">AIzaSyAI_sfoaONOc3l60pVGTPFxkCHmlf0B3tE</field>
+            <field name="social_github"/>
+        </record>
+    </data>
+</odoo>

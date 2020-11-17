@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <report
+            string="Picking Operations"
+            id="cp_action_report_picking"
+            model="stock.picking"
+            report_type="qweb-pdf"
+            name="cp_overrides.cp_report_picking_operations"
+            file="cp_overrides.cp_report_picking_operations"
+            print_report_name="'PickingOperations_%s_%s' % ((object.partner_id.name or '').replace(' ', '_'), object.name)"
+        />
+        <report
+            string="Delivery Slip"
+            id="cp_action_report_delivery"
+            model="stock.picking"
+            report_type="qweb-pdf"
+            name="cp_overrides.cp_report_deliveryslip"
+            file="cp_overrides.cp_report_deliveryslip"
+            print_report_name="'DeliverySlip_%s_%s' % ((object.partner_id.name or '').replace(' ', '_'), object.name)"
+        />
+        <report
+            string="Location Qrcode"
+            id="cp_action_report_location_qrcode"
+            model="stock.location"
+            report_type="qweb-pdf"
+            name="cp_overrides.cp_report_qrcode_location"
+            file="cp_overrides.cp_report_qrcode_location"
+            print_report_name="'%s' % (object.complete_name).replace('Physical Locations','Location')"
+        />
+        <report
+            string="Location Qrcode (small)"
+            id="cp_action_report_location_qrcode_small"
+            model="stock.location"
+            report_type="qweb-pdf"
+            name="cp_overrides.cp_report_qrcode_location_small"
+            file="cp_overrides.cp_report_qrcode_location_small"
+            print_report_name="'%s' % (object.complete_name).replace('Physical Locations','Location')"
+        />
+
+        <record id="cp_overrides.cp_action_report_location_qrcode" model="ir.actions.report">
+            <field name="paperformat_id" ref="cp_overrides.cp_paperformat_qrcode"/>
+        </record>
+        <record id="cp_overrides.cp_action_report_location_qrcode_small" model="ir.actions.report">
+            <field name="paperformat_id" ref="cp_overrides.cp_paperformat_qrcode"/>
+        </record>
+    </data>
+</odoo>

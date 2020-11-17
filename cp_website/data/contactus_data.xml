@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <!-- Website page template -->
+        <record id="website.contactus" model="ir.ui.view" forcecreate="True">
+            <field name="name">Kontakt</field>
+            <field name="website_id" ref="website.default_website"/>
+            <field name="type">qweb</field>
+            <field name="key">website.contactus</field>
+            <field name="arch" type="xml">
+                <t name="Kontakt" t-name="website.contactus">
+                    <t t-call="website.layout">
+                        <div id="wrap">
+                            <div class="oe_structure">
+                                <section class="pt8 pb8">
+                                    <div class="container">
+                                        <div class="row s_nb_column_fixed">
+                                            <div class="col-lg-12 s_title pt16 pb16">
+                                                <h1>Kontaktieren Sie uns: +49 (0) 7031 3042 07-0</h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                            <div class="container mt-2">
+                                <div class="row">
+                                    <div class="col-lg-8">
+                                        <div class="oe_structure">
+                                            <section class="s_text_block">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-lg-12">
+                                                            <p>Gerne beantworten wir ihnen jede Frage zu unserer Firma und unseren Produkten.</p>
+                                                            <p>Wir geben unser Bestes um ihnen schnellstmöglich zu antworten.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </section>
+                                        </div>
+                                        <div class="text-center my-3" name="mail_button">
+                                            <a role="button" t-attf-href="mailto:{{ res_company.email }}" class="btn btn-primary" id="o_contact_mail">Senden Sie uns eine E-Mail</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <t t-call="website.company_description"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="oe_structure mt-2"/>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <!-- Link to website page template -->
+        <record id="website.contactus_page" model="website.page" forcecreate="True">
+            <field name="name">Kontakt</field>
+            <field name="is_published">True</field>
+            <field name="website_published">True</field>
+            <field name="url">/kontakt</field>
+            <field name="view_id" ref="website.contactus"/>
+            <field name="track">True</field>
+        </record>
+        <!-- Main menu record -->
+        <delete id="website.menu_contactus" model="website.menu"/>
+        <record id="menu_contactus" model="website.menu" forcecreate="True">
+            <field name="name">Kontakt</field>
+            <field name="url">/kontakt</field>
+            <field name="website_id" ref="website.default_website"/>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="page_id" ref="website.contactus_page"/>
+            <field name="sequence" type="int">70</field>
+        </record>
+    </data>
+</odoo>

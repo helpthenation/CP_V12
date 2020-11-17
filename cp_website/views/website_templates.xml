@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="footer_cp" inherit_id="website.layout" name="Footer">
+        <xpath expr="//div[@id='footer']" position="replace">
+            <div id="footer" class="oe_structure oe_structure_solo" t-ignore="true" t-if="not no_footer">
+                <section class="s_text_block pt16 pb8">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <!-- Company Address -->
+                                <h5><a href="/ueber-uns"><small t-field="res_company.name"/></a></h5>
+                                <div id="connect">
+                                    <ul class="list-unstyled">
+                                        <li t-if="res_company.street or res_company.street2 or res_company.city or res_company.stacp_id or res_company.zip or res_company.country_id">
+                                            <i class="fa fa-address-card"/> 
+                                            <span class="o_force_ltr pl-1">
+                                                <span t-field="res_company.street" /><span t-field="res_company.street2" />
+                                            </span>
+                                        </li>
+                                        <li class="pl-4"><span t-field="res_company.zip" /><span t-field="res_company.city" /></li>
+                                        <li class="pl-4"><span t-field="res_company.state_id" /></li>
+                                        <li class="pl-4"><span t-field="res_company.country_id" /></li>
+                                        <li><i class="fa fa-phone"/> <span class="o_force_ltr pl-1" t-field="res_company.phone"/></li>
+                                        <li><i class="fa fa-envelope"/> <span class="pl-1" t-field="res_company.email"/></li>
+                                    </ul>
+                                    <p>
+                                        <a t-if="website.social_facebook" t-att-href="website.social_facebook" class="btn btn-sm btn-link"><i class="fa fa-2x fa-facebook-square"/></a>
+                                        <a t-if="website.social_twitter" t-att-href="website.social_twitter" class="btn btn-sm btn-link"><i class="fa fa-2x fa-twitter"/></a>
+                                        <a t-if="website.social_linkedin" t-att-href="website.social_linkedin" class="btn btn-sm btn-link"><i class="fa fa-2x fa-linkedin"/></a>
+                                        <a t-if="website.social_youtube" t-att-href="website.social_youtube" class="btn btn-sm btn-link"><i class="fa fa-2x fa-youtube-play"/></a>
+                                        <a t-if="website.social_github" t-att-href="website.social_github" class="btn btn-sm btn-link"><i class="fa fa-2x fa-github"/></a>
+                                        <a t-if="website.social_instagram" t-att-href="website.social_instagram" class="btn btn-sm btn-link"><i class="fa fa-2x fa-instagram"/></a>
+                                    </p>
+                                </div>
+                                <!-- Company Logo -->
+                                <div class="mt32">
+                                    <a href="/" class="cp_footer_logo">
+                                        <span t-field="res_company.logo" class="cp_footer_logo_img"
+                                            t-options="{'widget': 'image'}" role="img"
+                                            t-att-aria-label="'Logo of %s' % res_company.name"
+                                            t-att-title="res_company.name" />
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-6">
+                                        <ul class="list-group list-group-flush cp_footer_info">
+                                            <li class="list-group-item"><a href="/ueber-uns">Über uns</a></li>
+                                            <li class="list-group-item"><a href="/kundenprojekte">Kundenprojekte</a></li>
+                                            <li class="list-group-item"><a href="/portfolio">Portfolio</a></li>
+                                            <li class="list-group-item"><a href="/stellenangebote">Stellenangebote</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-6">
+                                        <ul class="list-group list-group-flush cp_footer_info">
+                                            <li class="list-group-item"><a href="/shop">SHOP</a></li>
+                                            <li class="list-group-item"><a href="/gebrauchte-bueromoebel">GEBRAUCHT</a></li>
+                                            <li class="list-group-item"><a href="/renew-bueromoebel">RENEW</a></li>
+                                            <li class="list-group-item"><a href="/neue-bueromoebel">NEU</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-6">
+                                        <ul class="list-group list-group-flush cp_footer_info">
+                                            <li class="list-group-item"><a href="/wie-bestellen">Wie bestellen</a></li>
+                                            <li class="list-group-item"><a href="/rueckruf-erhalten">Rückruf erhalten</a></li>
+                                            <li class="list-group-item"><a href="/zahlung-und-lieferung">Zahlung &amp; Lieferung</a></li>
+                                            <li class="list-group-item"><a href="/widerrufsbelehrung">Widerrufsbelehrung</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row text-center mt32">
+                                    <div class="col-lg-12">
+                                        <p><strong>Zahlungsmethoden: </strong><img class="img-fluid" src="/cp_website/static/src/img/payment-methods.png"/></p>
+                                        <!--<t t-call="website.brand_promotion"/>-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </xpath>
+    </template>
+    <template id="layout_footer_copyright_cp" inherit_id="website.layout_footer_copyright" name="Footer Copyright">
+        <xpath expr="//div[@class='o_footer_copyright']" position="replace">
+            <div class="o_footer_copyright">
+                <div class="container">
+                    <div class="row text-center">
+                        <div class="col-lg-4 text-muted">
+                            <span>Copyright &amp;copy;</span> <span t-field="res_company.name" itemprop="name" />
+                        </div>
+                        <div class="col-lg-8">
+                            <ul class="list-inline pb-16">
+                                <li class="list-inline-item"><a href="/kontakt" data-original-title="" title="" aria-describedby="tooltip609048">Kontakt</a></li>
+                                <li class="list-inline-item"><a href="/impressum" data-original-title="" title="" aria-describedby="tooltip366804">Impressum</a></li>
+                                <li class="list-inline-item"><a href="/datenschutz" data-original-title="" title="" aria-describedby="tooltip609048">Datenschutz</a></li>
+                                <li class="list-inline-item"><a href="/agb" data-original-title="" title="" aria-describedby="tooltip366804">AGB</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </xpath>
+    </template>
+</odoo>

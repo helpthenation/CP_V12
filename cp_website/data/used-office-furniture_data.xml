@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Website page template -->
+        <record id="used-office-furniture" model="ir.ui.view">
+            <field name="name">Gebrauchte Büromöbel</field>
+            <field name="website_id" ref="website.default_website"/>
+            <field name="type">qweb</field>
+            <field name="key">website.used-office-furniture</field>
+            <field name="arch" type="xml">
+                <t name="Gebrauchte Büromöbel" t-name="website.used-office-furniture">
+                    <t t-call="website.layout">
+                        <t t-set="pageName" t-value="'used-office-furniture'"/>
+                        <div id="wrap" class="oe_structure oe_empty">
+                            <section class="oe_custom_bg" style="">
+                                <div class="container">
+                                    <div class="row s_nb_column_fixed">
+                                        <div class="col-lg-12 s_title pt32 pb16" style="text-align: center;">
+                                            <h4 class="s_title_default t_title_default">Gebrauchte Büromöbel</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="s_text_image oe_custom_bg" style="background-color: rgb(214, 239, 214);">
+                                <div class="container">
+                                    <div class="row align-items-center aos-init" data-aos="align-items-center">
+                                        <div class="col-lg-6 pt16 pb16">
+                                            <h2 class="text-uppercase s_it_heading">Wann gebrauchte Büromöbel Sinn machen?</h2>
+                                            <div class="s_hr text-left pb32 pt8">
+                                                <hr class="border-600 s_hr_solid w-25 mr-auto s_hr_4px border-alpha"/>
+                                            </div>
+                                            <p class="mb16">Gebrauchte Büromöbel machen dann Sinn, wenn Sie auf Grund des Einsatzortes Gebrauchspuren aktzeptieren können.</p>
+                                            <p class="mb16">In unserem Fall reden wir von so minimalen Spuren, dass man unsere gebrauchen Büromöbel problemlos in jedes Büro stellen kann.&amp;nbsp;</p>
+                                            <p class="mb16">Hierbei achten wir jedoch darauf, dass &amp;nbsp;möglichst viele Gebrauchspuren beseitigt werden. Bspw. reinigen und desinfizieren wir Polstermöbel grundsätzlich und da die professionellen Hersteller wie &amp;nbsp;Vitra, König Neurath, Sedus, Interstuhl, Wilkhahn etc. immer hochwertige Stoffe benutzen, lässt sich damit meistens auch die Reinigung durchführen, ohne dass der Stoff zu schaden kommt.</p>
+                                            <p class="mb16">Wenn das nicht reicht, wandert das Sitzmöbel in unsere Renew Abteilung und wird neu gepolstert.</p>
+                                        </div>
+                                        <div class="col-lg-6 pt16 pb16">
+                                            <div class="t_img_hover_1">
+                                                <img src="/web/image/2961/437x500eap.jpg" class="img img-fluid mx-auto" alt="Odoo • Text and Image"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="s_text_image">
+                                <div class="container">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-6">
+                                            <div class="t_img_hover_1">
+                                                <img src="/web/image/2963/437x500eapteam.jpg" class="img img-fluid mx-auto" alt="Odoo • Image and Text"/>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 pt16 pb16">
+                                            <h2 class="text-uppercase s_it_heading">Mehr Budget für ihre Individualität</h2>
+                                            <div class="s_hr text-left pb32 pt8">
+                                                <hr class="border-600 aos-init s_hr_solid w-25 mr-auto s_hr_4px border-alpha aos-animate" data-aos="s_hr_4px"/>
+                                            </div>
+                                            <p class="mb16">Durch den Mix aus gebrauchten Büromöbeln und Renew bzw. Neuen Büromöbeln, haben Sie die Möglichkeit an den richtigen Stellen Budget einzusparen, dass dann wiederum an den Stellen eingesetzt werden kann, an denen Sie ihren persönlichen Vorstellungen freien Lauf lassen möchten.</p>
+                                            <p class="mb16">Sei es die Umsetzung mit ihrem CI, oder einfach nur dadurch, dass sie mir dem gesparten Budget Mehrwertzonen für ihre Mitarbeiter schaffen, für die ursprünglich kein Budget geplant war.</p>
+                                            <p class="mb16">Auf dem Bild links sehen sie ein Beispiel, wie aus langweiligen grauen Trennwänden ein dynamisches Motiv den Raum belebt. Der Tisch selbst war ursprünglich in der Vorstandsetage von JP Morgan und wurde von uns zu einem hochwertigen Sitz Steh Tisch umgebaut inklusive eingelassener Medientechnik. Nun ein absolut hochwertiges Unikat.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="s_call_to_action bg-200 pt48 pb24">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-9 pb24">
+                                            <h3>Schauen Sie sich doch einfach in unserem Shop um.<br/></h3>
+                                            <p class="lead">Sollten Sie ihre Wunschmöbel nicht finden, zögern Sie nicht uns zu kontaktieren. Gerne erstellen wir ihnen dann ein Maßgeschneidertes Angebot.&amp;nbsp;</p>
+                                        </div>
+                                        <div class="col-lg-3 s_btn text-right pt8 pb24">
+                                            <a href="/shop" class="btn btn-primary btn-lg" data-original-title="" title="" aria-describedby="tooltip610950"> Zum Shop <i class="fa fa-1x fa-fw fa-arrow-circle-right ml-1" data-original-title="" title="" aria-describedby="tooltip507968"/> </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+        <!-- Link to website page template -->
+        <record id="used-office-furniture_page" model="website.page">
+            <field name="name">Gebrauchte Büromöbel</field>
+            <field name="website_published">True</field>
+            <field name="url">/gebrauchte-bueromoebel</field>
+            <field name="view_id" ref="used-office-furniture"/>
+        </record>
+    </data>
+</odoo>
